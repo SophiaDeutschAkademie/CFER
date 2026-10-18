@@ -295,6 +295,55 @@
   });
 
 
+
+  /* ---------- 뜻 · 발음 도우미 켜고 끄기 ---------- */
+  document.querySelectorAll("[data-aid]").forEach(function (btn) {
+    var cls = btn.getAttribute("data-aid");            // 예: no-ko, no-pr
+    var key = "aid:" + cls;
+    var def = btn.getAttribute("data-default") || "on";
+    var saved = store.get(key);
+    var on = saved === null ? def === "on" : saved === "on";
+    function apply() {
+      document.body.classList.toggle(cls, !on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    }
+    apply();
+    btn.addEventListener("click", function () { on = !on; store.set(key, on ? "on" : "off"); apply(); });
+  });
+
+  /* ---------- ä ö ü ß 입력 버튼 ---------- */
+  var keypad = document.createElement("div");
+  keypad.className = "keypad";
+  keypad.setAttribute("aria-label", "독일어 특수 문자 입력");
+  ["ä", "ö", "ü", "ß", "Ä", "Ö", "Ü"].forEach(function (ch) {
+    var k = document.createElement("button");
+    k.type = "button"; k.textContent = ch;
+    k.addEventListener("mousedown", function (e) { e.preventDefault(); });   // 입력 칸 포커스 유지
+    k.addEventListener("click", function () {
+      var el = keypad._target;
+      if (!el) return;
+      var a = el.selectionStart, z = el.selectionEnd;
+      el.value = el.value.slice(0, a) + ch + el.value.slice(z);
+      el.selectionStart = el.selectionEnd = a + 1;
+      el.dispatchEvent(new Event("input", { bubbles: true }));
+      el.focus();
+    });
+    keypad.appendChild(k);
+  });
+  document.body.appendChild(keypad);
+  document.addEventListener("focusin", function (e) {
+    var el = e.target;
+    var de = el.closest && el.closest('[lang="de"]');
+    if ((el.matches && el.matches("input.blank, textarea")) && (de || el.getAttribute("lang") === "de")) {
+      keypad._target = el; keypad.classList.add("show");
+    }
+  });
+  document.addEventListener("focusout", function () {
+    setTimeout(function () {
+      if (!document.activeElement || !document.activeElement.matches("input.blank, textarea")) keypad.classList.remove("show");
+    }, 150);
+  });
+
   /* ---------- 이 과의 지도 (넓은 화면 왼쪽) ---------- */
   var toc = document.getElementById("toc");
   if (toc) {

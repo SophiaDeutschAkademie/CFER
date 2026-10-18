@@ -430,8 +430,44 @@ footer { max-width: var(--maxw); margin: 4rem auto 2rem; padding: 0 16px; color:
   .toc .block { font-size: .72rem; color: var(--accent-2); margin: .35rem 0 .1rem .55rem; letter-spacing: .02em; }
 }
 
+
+/* ---------- 초보자 지원: 뜻 · 발음 도우미 · 문장 카드 ---------- */
+.ko { display: block; font-size: .86rem; color: var(--text-muted); line-height: 1.45; margin-top: .05rem; }
+.pr { font-size: .78rem; color: var(--accent-2); margin-left: .35rem; white-space: nowrap; }
+.pr::before { content: "["; } .pr::after { content: "]"; }
+body.no-ko .ko, body.no-pr .pr { display: none; }
+.line .tx { display: block; }
+.toggle.aid[aria-pressed="false"] { opacity: .6; text-decoration: line-through; }
+
+.today { background: var(--surface); border: 2px solid var(--accent); border-radius: var(--radius); padding: .9rem 1rem; margin: 1rem 0; }
+.today-title { margin: 0 0 .5rem; font-weight: 700; color: var(--accent); }
+.chunks { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: .5rem; margin: .5rem 0; }
+.chunk { background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .55rem .75rem; }
+.chunk b[lang="de"] { font-size: 1.05rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .5rem; margin: .6rem 0; }
+.card-word { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .6rem .7rem; text-align: center; }
+.card-word b { display: block; font-size: 1.05rem; }
+.card-word .when { display: block; font-size: .75rem; color: var(--accent-2); margin-bottom: .2rem; }
+details.more { margin: .8rem 0; border: 1px dashed var(--border); border-radius: var(--radius-sm); padding: .5rem .8rem; background: var(--surface); }
+details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600; font-size: .9rem; }
+.step-tag { display: inline-block; font-size: .72rem; font-weight: 700; color: var(--surface); background: var(--accent-2); border-radius: 6px; padding: 0 .4rem; margin-right: .35rem; vertical-align: .1em; }
+.template { font-size: 1.05rem; line-height: 2.4; }
+
+/* 움라우트 버튼 */
+.keypad {
+  position: fixed; left: 50%; bottom: 12px; transform: translateX(-50%); z-index: 40; display: none;
+  gap: .3rem; background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow);
+  border-radius: 999px; padding: .3rem .5rem;
+}
+.keypad.show { display: flex; }
+.keypad button {
+  font: inherit; font-family: var(--font-de); font-size: 1.05rem; min-width: 2.3rem; height: 2.3rem; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--text); cursor: pointer;
+}
+.keypad button:hover { border-color: var(--accent); }
+
 @media print {
-  .topbar, .toc, .say-btn, .ex-actions, .timer, .toggle { display: none !important; }
+  .topbar, .toc, .say-btn, .ex-actions, .timer, .toggle, .keypad { display: none !important; }
   body { background: #fff; color: #000; font-size: 11pt; }
   .card { box-shadow: none; break-inside: avoid; }
   .stunde { break-before: page; }
