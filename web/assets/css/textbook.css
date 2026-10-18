@@ -263,6 +263,12 @@ img.mood-s { height: 34px; width: 34px; object-fit: cover; object-position: 50% 
 .cast figure { margin: 0 -2px; flex: 0 0 auto; width: 74px; text-align: center; }
 .cast img.person { height: 112px; margin-bottom: .2rem; }
 @media (max-width: 560px) { .cast figure { width: 19%; } .cast img.person { height: 84px; } .cast figcaption small { display: none; } }
+.cast-big { gap: 1.25rem 2.5rem; padding: 1.25rem 0 .5rem; }
+.cast-big figure { width: auto; margin: 0; }
+.cast-big img.person { height: 260px; margin-bottom: .4rem; }
+.cast-big figcaption { font-size: 1rem; color: var(--text); font-weight: 700; }
+.cast-big figcaption small { display: block; font-weight: 400; color: var(--text-muted); font-size: .85rem; }
+@media (max-width: 560px) { .cast-big { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; } .cast-big figure { width: auto; } .cast-big img.person { height: 190px; } .cast-big figcaption small { display: block; } }
 .profiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; }
 .profiles img.person { height: 130px; }
 .profiles b { display: block; margin: .3rem 0 .15rem; }
@@ -415,11 +421,11 @@ footer { max-width: var(--maxw); margin: 4rem auto 2rem; padding: 0 16px; color:
 .chunks { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .5rem; margin: .5rem 0; }
 .chunk { background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .55rem .75rem; }
 .chunk b[lang="de"] { font-size: 1.05rem; }
-.chunks-v { grid-template-columns: 1fr; max-width: 760px; }
-.chunks-v .chunk { display: grid; grid-template-columns: minmax(0, 15rem) 2rem minmax(0, 1fr); align-items: center; column-gap: 1rem; padding: .7rem 1rem; }
+.chunks-v { grid-template-columns: 1fr; max-width: 860px; }
+.chunks-v .chunk { display: grid; grid-template-columns: minmax(0, 17.5rem) 2rem minmax(0, 1fr); align-items: center; column-gap: 1rem; padding: .7rem 1rem; }
 .chunks-v .chunk .say-btn { margin: 0 !important; }
 .chunks-v .chunk .ko { margin: 0; font-size: .95rem; }
-.chunks-v .chunk:nth-child(2n) { margin-bottom: .6rem; }
+.chunks-v.paired .chunk:nth-child(2n) { margin-bottom: .6rem; }
 @media (max-width: 560px) { .chunks-v .chunk { grid-template-columns: minmax(0, 1fr) 2rem; row-gap: .15rem; } .chunks-v .chunk .ko { grid-column: 1 / -1; } }
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .6rem; margin: .6rem 0; }
 .cards-4 { grid-template-columns: repeat(4, 1fr); }
