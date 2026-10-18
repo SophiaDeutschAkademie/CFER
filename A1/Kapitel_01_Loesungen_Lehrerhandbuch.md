@@ -41,6 +41,11 @@
 > ⏱ **시간이 부족할 때 줄일 곳**: 1차시 5b(발음 놀이), 2차시 10a(듣기 → 숙제), 3차시 13b(소개는 3–4명만)
 > ⏱ **시간이 남을 때**: 6번 추가 활동 참고
 
+### 🏠 숙제 운영 (차시당 60분)
+- 숙제는 **연습 문제 + 듣기·말하기 + 단어**를 섞어 60분이 되도록 짰습니다. 학생용 숙제 상자에 항목별 시간이 적혀 있습니다.
+- 🎙️ **녹음 숙제**(2차시 철자, 3차시 1분 자기소개)는 메신저나 학습 플랫폼으로 받습니다. 1분 녹음은 발음(w·z·ei/ie)과 동사 위치 두 가지만 짧게 피드백해 주세요.
+- 다음 차시 시작 **5분 복습** 때 숙제 정답을 확인합니다. 쓰기(Steckbrief)만 교사가 첨삭합니다.
+
 ### 💡 수업 팁
 - **문법은 설명보다 발견 먼저**: 4번 규칙 표를 바로 보여 주지 말고, 대화문에서 동사를 찾아 형광펜으로 표시하게 한 뒤 “ich일 때 끝이 뭐로 끝나요?”라고 질문하세요.
 - **동사 2번째 자리 시각화**: 문장 카드를 잘라 배열하게 하고, 동사 카드만 빨간색으로 만들어 항상 두 번째 칸에 놓게 하면 효과적입니다.
@@ -76,6 +81,24 @@
 6. Woher kommt Amira?
 
 **G4** 1 Sie · 2 du · 3 Sie · 4 du
+
+**H1** (숙제)
+| | machen | heißen | arbeiten | sprechen |
+|---|---|---|---|---|
+| ich | mache | heiße | arbeite | spreche |
+| du | machst | heißt | arbeitest | sprichst |
+| er/sie/es | macht | heißt | arbeitet | spricht |
+| wir | machen | heißen | arbeiten | sprechen |
+| ihr | macht | heißt | arbeitet | sprecht |
+| sie/Sie | machen | heißen | arbeiten | sprechen |
+
+**H2** (숙제 · 다른 답도 가능)
+1. Wie heißt du? / Wie heißen Sie?
+2. Woher kommst du? / Woher kommen Sie?
+3. Wo wohnen Sie? *(Frau Wagner → Sie)*
+4. Was studierst du? / Was machst du?
+5. Wer ist das?
+6. Sprichst du Englisch? / Sprechen Sie Englisch?
 
 **10a** 1 Wagner · 2 Haddad · 3 Jeong · 4 Schulze
 
