@@ -1,4 +1,4 @@
-# Kapitel 1 · Lehrerhandbuch (교사용)
+# Der falsche Koffer · Kapitel 1 · Lehrerhandbuch (교사용)
 ### 정답 · 듣기 대본 · 수업 운영안 · 첨삭 가이드
 
 ---
@@ -13,7 +13,7 @@
 |---|---|---|---|---|
 | 1교시 | 0–5분 | 1 Einstieg | 그림 보고 추측, 아는 인사말 모으기 | 말하기 |
 | | 5–20분 | 2 Teil A | 듣기 → A1 r/f → 짝 읽기(기분 바꿔서) | 듣기·말하기 |
-| | 20–35분 | 3 Teil B | 듣기 → B1 표 완성 → B2 연결 | 듣기·읽기 |
+| | 20–35분 | 3 Teil B | 듣기 → B1 표 완성 → B2 연결 → 🔎 가방 속 물건 확인 + B3 추리 한 줄 | 듣기·읽기 |
 | | 35–50분 | 4 Grammatik ① | 동사 형광펜 표시 → 어미 규칙 **스스로 발견** → 표 정리 | 문법 |
 | 2교시 | 0–20분 | 5 Übungen | G1 → 🎲 동사 주사위 게임 | 문법 |
 | | 20–35분 | 6 Aussprache | w, z, j, ei/ie, -er · 6a · 6b | 발음 |
@@ -28,16 +28,16 @@
 | | 30–50분 | 10 Grammatik ③ | 문장 카드로 동사 2번째 자리 체험 → 의문사 → G3 1–3 | 문법 |
 | 2교시 | 0–15분 | 11 du/Sie | 규칙 정리 → G4 → 🃏 역할 카드 | 문법·말하기 |
 | | 15–35분 | 12 Alphabet | 따라 하기 → 12a 듣기 → 12b 이름 철자 짝 활동 | 발음·듣기·말하기 |
-| | 35–50분 | 13 Rollenspiel | 어학원 등록(Sie) – 역할 바꿔 2번, 등록 카드 작성 | 말하기·쓰기 |
+| | 35–50분 | 13 Rollenspiel | **분실물 센터**(Sie) – 역할 바꿔 2번, 분실 신고서 작성 | 말하기·쓰기 |
 
-### 3차시 · Unser Kurs
+### 3차시 · Wer ist T. S.?
 | 교시 | 시간 | 섹션 | 활동 | 기능 |
 |---|---|---|---|---|
 | 1교시 | 0–5분 | 복습 | 숙제 확인 + 동사 퀴즈(“wohnen – du!”) | 문법 |
-| | 5–20분 | 14 Zahlen | 따라 하기 → 14a 전화번호 듣기 → 14b 짝 활동 | 듣기·말하기 |
+| | 5–20분 | 14 Zahlen | 따라 하기 → 14a 전화번호 듣기 → 🔎 14b 이름표 번호 듣기(040 = Hamburg) → 14c 짝 활동 | 듣기·말하기 |
 | | 20–35분 | 15 Lesen | 반 친구 프로필 → L1 → L2 | 읽기 |
 | | 35–50분 | 16 Sprechen ① | 교실 인터뷰(4명 이상) | 말하기 |
-| 2교시 | 0–10분 | 17 Sprechen ② | 인터뷰한 친구 소개 (er/sie 형태) | 말하기 |
+| 2교시 | 0–10분 | 17 🔁 Sprachmittlung | 계단 장면(한국어) 듣기 → Jonas에게 독일어로 전하기(er/sie 형태) | 중개하기 |
 | | 10–45분 | 18 Schreiben | 모범 답안 분석(5) → 직접 쓰기(20) → **짝 첨삭**(10) | 쓰기 |
 | | 45–50분 | 마무리 | 민준의 일기, 자기 점검, 숙제 안내 | 읽기 |
 
@@ -47,14 +47,15 @@
 ### 준비물
 - 🎲 주사위(그룹당 1개) + 동사 카드 7장 (1차시)
 - 문장 카드(단어별로 자른 것, 동사 카드는 빨간색) (2차시)
-- 🃏 역할 카드 3장: 선생님 / 친구 / 관청 직원 (2차시)
+- 🃏 역할 카드 3장: 선생님 / 친구 / 분실물 센터 직원 (2차시)
+- (선택) 검은 여행가방 + 낡은 외투·흑백 사진·봉투(„Für E.“)·이름표(„T. S.“) 소품 – 1차시 Teil B에서 실제로 꺼내 보이면 효과 만점 🔎
 
-> ⏱ **시간이 부족할 때 줄일 곳**: 1차시 7b(발표), 2차시 12a(듣기 → 숙제), 3차시 17(소개는 3–4명만)
+> ⏱ **시간이 부족할 때 줄일 곳**: 1차시 7b(발표), 2차시 12a(듣기 → 숙제), 3차시 17b(Frau Schulze 질문은 생략 가능)
 > ⏱ **시간이 남을 때**: 6번 추가 활동 참고
 
 ### 🏠 숙제 운영 (차시당 60분)
 - 숙제는 **연습 문제 + 쓰기 + 듣기·말하기 + 단어**를 섞어 60분이 되도록 짰습니다. 수업 시간이 늘어나 G1·G2·B2는 수업 안에서 끝냅니다. 학생용 숙제 상자에 항목별 시간이 적혀 있습니다.
-- ✍️ **H3**(롤플레이 대본)과 **H4**(첫날 일기)는 정답이 없는 자유 쓰기입니다. 동사 위치와 어미만 기호로 표시해 주세요.
+- ✍️ **H3**(롤플레이 대본)과 **사건 수첩**(Fallakte)은 정답이 없는 자유 쓰기입니다. 동사 위치와 어미만 기호로 표시해 주세요.
 - 🎙️ **녹음 숙제**(2차시 철자, 3차시 1분 자기소개)는 메신저나 학습 플랫폼으로 받습니다. 1분 녹음은 발음(w·z·ei/ie)과 동사 위치 두 가지만 짧게 피드백해 주세요.
 - 다음 차시 시작 **5분 복습** 때 숙제 정답을 확인합니다. 교사가 꼼꼼히 첨삭하는 것은 쓰기 과제(Steckbrief)이고, 나머지 쓰기 숙제는 기호 표시만 합니다.
 
@@ -62,15 +63,19 @@
 - **문법은 설명보다 발견 먼저**: 4번 규칙 표를 바로 보여 주지 말고, 대화문에서 동사를 찾아 형광펜으로 표시하게 한 뒤 “ich일 때 끝이 뭐로 끝나요?”라고 질문하세요.
 - **동사 2번째 자리 시각화**: 문장 카드를 잘라 배열하게 하고, 동사 카드만 빨간색으로 만들어 항상 두 번째 칸에 놓게 하면 효과적입니다.
 - **du/Sie**: 교실에서 학생끼리는 du, 교사에게는 Sie를 쓰도록 첫날부터 규칙을 정하면 자연스럽게 익힙니다.
-- **두 주인공**: 민준(유학 준비생)과 수진(아이를 둔 이민 가정)은 우리 학원의 두 학습자 그룹입니다. 활동 예시를 고를 때 학생이 자기와 가까운 주인공을 골라 역할을 맡게 하면 몰입도가 높아집니다.
-- **수수께끼 씨앗**: 일기 마지막의 Frau Schulze 이야기는 B1 27과까지 이어지는 수수께끼의 시작입니다. “Frau Schulze는 왜 웃지 않을까요?” 한마디만 던지고 답은 주지 마세요.
+- **두 주인공**: 민준(유학 준비생)과 수진(아이를 둔 이민 가정)은 우리 학원의 두 학습자 그룹입니다. 1과는 민준 중심이고 수진은 3차시에 처음 등장합니다. 2과부터 수진의 장면(통합 과정, Kita)이 본격적으로 나옵니다.
+- **사건은 답을 주지 않는 게 핵심**: 가방의 주인(T. S.), 편지의 수신자(E.), 웃지 않는 Frau Schulze – 1과에서는 질문만 던지고 답은 주지 마세요. 학생들의 추리를 칠판 한쪽(또는 교실 벽 ‘사건 게시판’)에 붙여 두고 과마다 갱신하면, 다음 수업을 기다리게 만드는 힘이 생깁니다.
+- **한국어 장면(17번)을 반가워하게**: “여러분이 독일에 가서 한국인 이웃을 만나면 당연히 한국어로 말하겠죠? 그런데 그 내용을 독일 친구에게 전해야 한다면?” – 중개하기 활동의 이유를 이렇게 설명해 주세요. 번역이 아니라 **필요한 정보만 골라 전하기**가 목표입니다.
+- **스포일러 주의 (교사만 알기)**: T. S. = Thomas Schulze(함부르크, 77세), E. = Erika Schulze(1층 이웃, Thomas의 여동생). 사라진 편지는 2과에서 도윤이 가져가 그림을 그리고, A2 9과에서 하은이 밝힙니다.
 - **이야기 몰입**: 수업 시작 때마다 “민준은 지금 어디에 있죠? 누구를 만났죠?”로 복습하면 다음 과로 이어지는 흐름이 생깁니다.
 
 ---
 
 ## 2 · 정답
 
-**A1** 1 r · 2 f (*ein bisschen* müde – 조금 피곤함) · 3 r
+**A1** 1 r · 2 r · 3 f (*ein bisschen* müde – 조금 피곤함) · 4 r
+
+**B3** 정답 없음. 예: “함부르크 할아버지?”, “사진 속 남자?” – 다음 과까지 칠판 한쪽에 학생들의 추리를 붙여 두세요.
 
 **B1**
 | | Minjun | Lena | Jonas |
@@ -82,7 +87,7 @@
 
 **G1** 1 wohne · 2 kommt · 3 kommst · 4 lernen · 5 studiert · 6 macht · 7 spricht · 8 heißt
 
-**C1** 1 Carlos · 2 Frau Wagner · 3 Sujin · 4 Amira · 5 Minjun · 6 Minjun, Sujin
+**C1** 1 Carlos · 2 Frau Wagner · 3 Priya · 4 Tomasz · 5 Minjun · 6 Priya, Minjun
 
 **G2** 1 bin · 2 ist · 3 sind · 4 Bist · 5 sind · 6 seid
 
@@ -92,7 +97,7 @@
 3. Wie heißen Sie?
 4. Jonas studiert Informatik.
 5. Sprichst du Deutsch?
-6. Woher kommt Amira?
+6. Woher kommt Priya?
 
 **G4** 1 Sie · 2 du · 3 Sie · 4 du
 
@@ -114,13 +119,19 @@
 5. Wer ist das?
 6. Sprichst du Englisch? / Sprechen Sie Englisch?
 
-**12a** 1 Wagner · 2 Haddad · 3 Jeong · 4 Schulze
+**12a** 1 Wagner · 2 Sharma · 3 Jeong · 4 Schulze
 
-**14a** Minjun 0176 – 13 05 18 9 · Carlos 0157 – 20 16 4 12 · Amira 0152 – 17 11 19 3
+**14a** Minjun 0176 – 13 05 18 9 · Carlos 0157 – 20 16 4 12 · Priya 0152 – 17 11 19 3
 
-**L1** 1 r · 2 f (mit ihrer Familie – 가족과 함께) · 3 r · 4 f (sie lernt *gern* Grammatik) · 5 r
+**14b** 040 – 17 ▓▓ 3 ▓▓▓ → Vorwahl 040 = Hamburg (민준은 아직 모르지만, T. S.는 함부르크에 사는 Thomas Schulze)
 
-**L2** 1 Amira · 2 Carlos · 3 Minjun, Sujin
+**L1** 1 r · 2 f (Sie ist Informatikerin.) · 3 r · 4 f (er lernt *gern* Grammatik) · 5 r
+
+**L2** 1 Priya · 2 Tomasz · 3 Carlos · 4 Minjun
+
+**17a** Das ist **Sujin**. Sie kommt aus **Seoul / Südkorea**. Sie wohnt jetzt **hier**. Das Mädchen ist **Haeun**. Sie spricht schon **Deutsch**!
+
+**17b** (예) Sie wohnt unten. Sie sagt nur „Guten Tag“. Sie lacht nicht.
 
 **6a** dr**ei** · v**ie**r · h**ei**ßen · W**ie** · S**ie** · fr**ei**
 
@@ -134,20 +145,28 @@
 
 **Track 1-05** · 이름 철자
 > 1. **Frau Wagner:** Mein Name ist Wagner. W – A – G – N – E – R.
-> 2. **Amira:** Ich heiße Haddad. H – A – D – D – A – D.
+> 2. **Priya:** Ich heiße Sharma. S – H – A – R – M – A.
 > 3. **Junge Frau:** Mein Nachname ist Jeong. J – E – O – N – G.
-> 4. **Ältere Frau:** Schulze. S – C – H – U – L – Z – E. *(→ 민준의 이웃, 8과에서 다시 등장!)*
+> 4. **Ältere Frau:** Schulze. S – C – H – U – L – Z – E. *(→ 3차시 계단 장면에서 등장하는 1층 이웃!)*
 
 **Track 1-07** · 전화번호
 > **Frau Wagner:** So, ich habe hier eine Liste. Herr Park, ist Ihre Handynummer null – eins – sieben – sechs, dreizehn, null fünf, achtzehn, neun?
 > **Minjun:** Ja, richtig.
 > **Frau Wagner:** Herr Ruiz, Ihre Nummer, bitte?
 > **Carlos:** Null – eins – fünf – sieben, zwanzig, sechzehn, vier, zwölf.
-> **Frau Wagner:** Und Frau Haddad?
-> **Amira:** Null – eins – fünf – zwei, siebzehn, elf, neunzehn, drei.
+> **Frau Wagner:** Und Frau Sharma?
+> **Priya:** Null – eins – fünf – zwei, siebzehn, elf, neunzehn, drei.
 > **Frau Wagner:** Vielen Dank!
 
 **Track 1-08** · 발음 (표의 예시 단어 → 6a 단어: drei, vier, heißen, Wie, Sie, frei)
+
+**Track 1-09** · 이름표의 번호 (WG 부엌)
+> **Jonas:** Hier ist eine Nummer. Null – vier – null … dann siebzehn … dann … hm, das kann ich nicht lesen.
+> **Lena:** Zeig mal! … Null – vier – null, siebzehn, … drei … Der Rest ist weg.
+> **Lena:** Moment! Null – vier – null? Das ist Hamburg! Ich komme aus Hamburg!
+> **Jonas:** Der Mann kommt aus Hamburg? Das ist ein Fall für uns!
+
+**Track 1-10** · 계단 장면 – 교재 본문의 한국어 대화와 같습니다. 원어민 녹음 시 하은의 “Guten Tag, Frau Schulze!”와 Frau Schulze의 짧은 “Guten Tag.”만 독일어입니다.
 
 ---
 
