@@ -929,5 +929,19 @@ def _attach_audio(h):
         return m.group(0)[:-1] + (f' data-audio="{AUD}{fn}"' if os.path.exists(_AUD_DIR + fn) else "") + ">"
     h = re.sub(r'<span class="lis" data-say="[^"]+">', lis, h)
     return h
-open(OUT, "w", encoding="utf-8").write(_attach_audio(page))
-print("written", len(page))
+# ---- 1과 파일(표지·목차·1과)에 합치기: 2과의 id·탭·라디오 이름 앞에 k2- ----
+P = "k2-"
+def _prefix(h):
+    h = re.sub(r'\bid="([^"]+)"', rf'id="{P}\1"', h)
+    h = re.sub(r'href="#(?!i-)([^"]+)"', rf'href="#{P}\1"', h)
+    for a in ("data-tab", "data-panel", "data-play", "data-ex"):
+        h = re.sub(rf'{a}="([^"]+)"', rf'{a}="{P}\1"', h)
+    h = re.sub(r'(<input type="radio" name=")([^"]+)"', rf'\1{P}\2"', h)
+    return h
+_main = _attach_audio(page).split("<main>", 1)[1].split("</main>", 1)[0]
+FRAG = _prefix(_main.replace(SPRITE, ""))
+NAV = _prefix('<span class="tabs" data-ch="2"><b class="ch-badge">2과</b><a href="#kapitel-2" data-tab="start" data-label="2과 목표">목표</a><a href="#stunde-1" data-tab="stunde-1" data-label="2과 1차시">1차시</a><a href="#stunde-2" data-tab="stunde-2" data-label="2과 2차시">2차시</a><a href="#stunde-3" data-tab="stunde-3" data-label="2과 3차시">3차시</a><a href="#anhang" data-tab="anhang" data-label="2과 부록">부록</a></span>')
+
+if __name__ == "__main__":   # 2과만 고쳐도 1과 파일을 다시 만든다
+    import runpy
+    runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gen_k01.py"), run_name="__main__")

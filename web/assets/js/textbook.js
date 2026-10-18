@@ -334,7 +334,7 @@
     var tabLinks = document.querySelectorAll("[data-tab]");
     var tabLabel = function (n) {
       var t = document.querySelector('[data-tab="' + n + '"]');
-      return t ? t.textContent.trim() : n;
+      return t ? (t.getAttribute("data-label") || t.textContent.trim()) : n;
     };
     var showPanel = function (name) {
       if (names.indexOf(name) < 0) name = names[0];

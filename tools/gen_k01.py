@@ -1119,7 +1119,7 @@ anh = f'''  <section class="card" id="saetze">
     ("Unten wohnt Frau Schulze. Sie lacht nicht.", "아래층에는 슐체 할머니가 산다. 할머니는 웃지 않는다."),
     ("<b>Wer ist T. S.? Und wer ist E.?</b>", "T. S.는 누구일까? 그리고 E.는 누구일까?")]) + f'''
     </div>
-    <p class="next">→ 다음 과 · <span lang="de">Kapitel 2: Meine WG, meine Familie</span><br><span class="muted">가방 속 물건을 하나씩 살펴보는 민준과 친구들. 그리고 수진 가족의 새집에서는 작은 손 하나가 테이블 위의 종이를 집어 드는데…</span></p>
+    <p class="next"><a href="#k2-kapitel-2">→ 다음 과 · <span lang="de">Kapitel 2: Meine WG, meine Familie</span></a><br><span class="muted">가방 속 물건을 하나씩 살펴보는 민준과 친구들. 그리고 수진 가족의 새집에서는 작은 손 하나가 테이블 위의 종이를 집어 드는데…</span></p>
   </section>
 
   <section class="card box mystery" id="fallakte">
@@ -1197,7 +1197,7 @@ for i, (t, k, story) in enumerate(A1_TOC, 1):
     if i == 1:
         toc_items += f'<li><a class="toc-ch" href="#kapitel-1" data-tab="start">{inner}<span class="toc-go">시작 →</span></a></li>'
     elif i == 2:
-        toc_items += f'<li><a class="toc-ch" href="kapitel-02.html">{inner}<span class="toc-go">시작 →</span></a></li>'
+        toc_items += f'<li><a class="toc-ch" href="#k2-kapitel-2" data-tab="k2-start">{inner}<span class="toc-go">시작 →</span></a></li>'
     else:
         toc_items += f'<li><div class="toc-ch soon">{inner}<span class="toc-go">준비 중</span></div></li>'
 CONTENTS = f'''<section id="contents" class="contents" data-panel="contents">
@@ -1244,12 +1244,15 @@ plan1 = "<p>1교시: 그림 5′ → 인사말 15′ → Teil A 15′ → 문장
 plan2 = "<p>1교시: 복습 5′ → Teil B 15′ → 나라와 언어 10′ → 문장 틀 ② 20′ · 2교시: Teil C du/Sie 15′ → 분실물 센터 20′ → 인터뷰 15′</p><p><b>준비물</b>: 문장 카드(동사 카드는 빨간색) · (선택) 검은 가방과 외투·흑백 사진·봉투·이름표 소품</p>"
 plan3 = "<p>1교시: 복습 5′ → Teil D 10′ → 문장 틀 ③ 15′ → 숫자·전화번호 20′ · 2교시: 읽기 15′ → 중개하기 10′ → 쓰기 20′ → 마무리 5′</p><p><b>다음 과 첫 10분</b>: 첨삭한 자기소개 돌려주기 → 반 전체 공통 오류 3개 함께 고치기</p>"
 
+import os as _os2, sys as _sys
+_sys.path.insert(0, _os2.path.dirname(_os2.path.abspath(__file__)))
+import gen_k02 as K2   # 2과는 같은 파일 안에 이어 붙인다
 page = f'''<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kapitel 1 · Hallo, ich bin Minjun!</title>
+<title>Der falsche Koffer · A1</title>
 <meta name="description" content="Der falsche Koffer – 독일어를 처음 배우는 학생을 위한 CEFR A1 통합형 교재 1과">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -1261,7 +1264,7 @@ page = f'''<!DOCTYPE html>
   <div class="topbar-inner">
     <a class="brand" href="#cover" data-tab="cover">{ic("suitcase")} <span class="lbl">Der falsche Koffer</span></a>
     <nav aria-label="차시 이동">
-      <a href="#contents" data-tab="contents">목차</a><a href="#kapitel-1" data-tab="start">목표</a><a href="#stunde-1" data-tab="stunde-1">1차시</a><a href="#stunde-2" data-tab="stunde-2">2차시</a><a href="#stunde-3" data-tab="stunde-3">3차시</a><a href="#anhang" data-tab="anhang">부록</a>
+      <a href="#contents" data-tab="contents">목차</a><span class="tabs" data-ch="1"><b class="ch-badge">1과</b><a href="#kapitel-1" data-tab="start" data-label="1과 목표">목표</a><a href="#stunde-1" data-tab="stunde-1" data-label="1과 1차시">1차시</a><a href="#stunde-2" data-tab="stunde-2" data-label="1과 2차시">2차시</a><a href="#stunde-3" data-tab="stunde-3" data-label="1과 3차시">3차시</a><a href="#anhang" data-tab="anhang" data-label="1과 부록">부록</a></span>{K2.NAV}
     </nav>
     <button type="button" class="toggle" id="theme-toggle" aria-label="화면 테마">◐ <span class="lbl">자동</span></button>
   </div>
@@ -1300,12 +1303,12 @@ page = f'''<!DOCTYPE html>
   <div class="stunde-head"><span class="stunde-no">부록</span><h2>복습과 숙제용</h2></div>
 {anh}
 </section>
-
+{K2.FRAG}
 </main>
 </div>
 
 <footer>
-  Der falsche Koffer · A1 Kapitel 1 · CEFR 기반 통합형 독일어 교재 · 등장인물과 병원·회사는 가상이며, 역사적 사실과 장소는 실제에 맞춰 서술합니다.
+  Der falsche Koffer · A1 · CEFR 기반 통합형 독일어 교재 · 등장인물과 병원·회사는 가상이며, 역사적 사실과 장소는 실제에 맞춰 서술합니다.
 </footer>
 
 <script src="../assets/js/textbook.js"></script>

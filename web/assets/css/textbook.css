@@ -501,7 +501,7 @@ img.kitem-img { width: 88px; height: 88px; object-fit: contain; background: #fff
 .kword { font-weight: 700; font-size: 1.1rem; overflow-wrap: anywhere; }
 .kword + .say-btn { margin: 0 !important; }
 .kitem .ko { margin: 0; font-size: .95rem; }
-@media (max-width: 560px) {
+@media (max-width: 720px) {
   .kitem { grid-template-columns: 64px 1fr; gap: .8rem; padding: .55rem .7rem; }
   img.kitem-img { width: 64px; height: 64px; }
   .kitem figcaption { grid-template-columns: minmax(0, 1fr) 2rem; row-gap: .15rem; }
@@ -659,3 +659,11 @@ tr.hl th, tr.hl td { background: color-mix(in srgb, var(--accent, #B87830) 10%, 
 .sum .table-wrap table { font-size: .88rem; }
 .sum .table-wrap td, .sum .table-wrap th { padding: .35rem .4rem; }
 @media (max-width: 420px) { .sum .table-wrap table { font-size: .8rem; } .sum .table-wrap td, .sum .table-wrap th { padding: .3rem .25rem; } }
+
+/* 한 파일에 여러 과: 상단 탭은 지금 보고 있는 과의 것만 */
+.topbar nav .tabs { display: contents; }
+body[data-current^="k2-"] .topbar nav .tabs[data-ch="1"],
+body:not([data-current^="k2-"]) .topbar nav .tabs[data-ch="2"] { display: none; }
+.ch-badge { align-self: center; font-size: .78rem; font-weight: 700; color: var(--accent); padding: 0 .3rem 0 .5rem; white-space: nowrap; }
+.next a { color: inherit; text-decoration: none; }
+.next a:hover { text-decoration: underline; }

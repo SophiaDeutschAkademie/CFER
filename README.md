@@ -23,8 +23,8 @@
 | [`web/index.html`](web/index.html) | **HTML 교재 목차** (웹앱 원형) |
 | [`web/cover-a1.html`](web/cover-a1.html) · [`web/dist/cover-a1.pdf`](web/dist/cover-a1.pdf) | **A1 표지 – 미니멀** (A4 인쇄용, SODA 로고 포함) |
 | [`web/cover-a1-illustrated.html`](web/cover-a1-illustrated.html) · [`web/dist/cover-a1-illustrated.pdf`](web/dist/cover-a1-illustrated.pdf) | A1 표지 – 삽화형 (이전 안) |
-| [`web/A1/kapitel-01.html`](web/A1/kapitel-01.html) | **A1 교재 (표지 → 목차 → 1과)** – 자동 채점, 음성 듣기, 차시별 보기, 사건 수첩 저장 |
-| [`web/A1/kapitel-02.html`](web/A1/kapitel-02.html) | **A1 2과** Meine WG, meine Familie – `tools/gen_k02.py`로 생성 (공용 함수 `tools/kapitel_lib.py`) |
+| [`web/A1/kapitel-01.html`](web/A1/kapitel-01.html) | **A1 교재 (표지 → 목차 → 1과 → 2과)** – 자동 채점, 음성 듣기, 차시별 보기, 사건 수첩 저장 |
+| `tools/gen_k02.py` | 2과 생성기 – 1과 파일 안에 이어 붙음(id 앞에 `k2-`). `python3 tools/gen_k02.py`로 1·2과를 함께 다시 만듦 |
 | [`A1/Kapitel_01_Hallo_ich_bin_Minjun.md`](A1/Kapitel_01_Hallo_ich_bin_Minjun.md) | **1과 시범 원고 (학생용)** |
 | [`A1/Kapitel_01_Loesungen_Lehrerhandbuch.md`](A1/Kapitel_01_Loesungen_Lehrerhandbuch.md) | 1과 정답 · 수업 운영안 · 첨삭 가이드 (교사용) |
 
