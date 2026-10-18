@@ -44,7 +44,7 @@
   /* ---------- 테마 (자동 → 밝게 → 어둡게) ---------- */
   var themeBtn = document.getElementById("theme-toggle");
   var themes = ["auto", "light", "dark"];
-  var themeLabels = { auto: ["🌓", "자동"], light: ["☀️", "밝게"], dark: ["🌙", "어둡게"] };
+  var themeLabels = { auto: ["◐", "자동"], light: ["☼", "밝게"], dark: ["☾", "어둡게"] };
   function applyTheme(t) {
     if (t === "auto") document.documentElement.removeAttribute("data-theme");
     else document.documentElement.setAttribute("data-theme", t);
@@ -179,7 +179,7 @@
     });
     var score = ex.querySelector(".score");
     if (score) {
-      score.textContent = right + " / " + total + (right === total ? " 🎉" : "");
+      score.textContent = right + " / " + total + (right === total ? " · 모두 정답!" : "");
       score.classList.toggle("all", right === total);
     }
   }
@@ -234,7 +234,7 @@
   /* ---------- 동사 주사위 게임 ---------- */
   var dice = document.getElementById("verb-dice");
   if (dice) {
-    var faces = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"];
+    function face(n) { return '<svg class="ic" aria-hidden="true"><use href="#i-die-' + n + '"/></svg>'; }
     var subjects = ["ich", "du", "er / sie", "wir", "ihr", "sie / Sie"];
     var verbs = {
       wohnen: ["wohne", "wohnst", "wohnt", "wohnen", "wohnt", "wohnen"],
@@ -245,7 +245,7 @@
       arbeiten: ["arbeite", "arbeitest", "arbeitet", "arbeiten", "arbeitet", "arbeiten"],
       sprechen: ["spreche", "sprichst", "spricht", "sprechen", "sprecht", "sprechen"]
     };
-    var face = dice.querySelector(".dice-face");
+    var faceEl = dice.querySelector(".dice-face");
     var result = dice.querySelector(".dice-result");
     var answer = dice.querySelector(".dice-answer");
     var current = null;
@@ -254,7 +254,7 @@
       var names = Object.keys(verbs);
       var v = names[Math.floor(Math.random() * names.length)];
       current = { n: n, v: v };
-      face.textContent = faces[n];
+      faceEl.innerHTML = face(n + 1);
       result.innerHTML = "<b lang=\"de\">" + subjects[n] + "</b> + <b lang=\"de\">" + v + "</b> → ?";
       answer.textContent = "";
     });
