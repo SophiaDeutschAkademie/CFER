@@ -435,9 +435,7 @@ footer { max-width: var(--maxw); margin: 4rem auto 2rem; padding: 0 16px; color:
 .ko { display: block; font-size: .86rem; color: var(--text-muted); line-height: 1.45; margin-top: .05rem; }
 .pr { font-size: .78rem; color: var(--accent-2); margin-left: .35rem; white-space: nowrap; }
 .pr::before { content: "["; } .pr::after { content: "]"; }
-body.no-ko .ko, body.no-pr .pr { display: none; }
 .line .tx { display: block; }
-.toggle.aid[aria-pressed="false"] { opacity: .6; text-decoration: line-through; }
 
 .today { background: var(--surface); border: 2px solid var(--accent); border-radius: var(--radius); padding: .9rem 1rem; margin: 1rem 0; }
 .today-title { margin: 0 0 .5rem; font-weight: 700; color: var(--accent); }
@@ -466,7 +464,17 @@ details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600
 }
 .keypad button:hover { border-color: var(--accent); }
 
+
+/* ---------- 차시별 보기 ---------- */
+.panel-off { display: none !important; }
+.topbar nav a[aria-current="page"] { background: var(--accent); color: var(--surface); border-color: var(--accent); }
+.panel-nav { display: flex; justify-content: space-between; gap: .75rem; margin: 2rem 0 1rem; }
+.panel-nav .btn:only-child { margin-left: auto; }
+.panel-nav .btn { padding: .55rem 1.2rem; font-size: .95rem; }
+
 @media print {
+  .panel-off { display: block !important; }
+  .panel-nav { display: none !important; }
   .topbar, .toc, .say-btn, .ex-actions, .timer, .toggle, .keypad { display: none !important; }
   body { background: #fff; color: #000; font-size: 11pt; }
   .card { box-shadow: none; break-inside: avoid; }

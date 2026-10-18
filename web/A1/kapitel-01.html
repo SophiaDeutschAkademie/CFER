@@ -46,10 +46,8 @@
   <div class="topbar-inner">
     <a class="brand" href="../index.html"><svg class="ic" aria-hidden="true"><use href="#i-suitcase"/></svg> <span class="lbl">Der falsche Koffer</span></a>
     <nav aria-label="차시 이동">
-      <a href="#ziele">목표</a><a href="#stunde-1">1차시</a><a href="#stunde-2">2차시</a><a href="#stunde-3">3차시</a><a href="#anhang">부록</a>
+      <a href="#ziele" data-tab="start">목표</a><a href="#stunde-1" data-tab="stunde-1">1차시</a><a href="#stunde-2" data-tab="stunde-2">2차시</a><a href="#stunde-3" data-tab="stunde-3">3차시</a><a href="#anhang" data-tab="anhang">부록</a>
     </nav>
-    <button type="button" class="toggle aid" data-aid="no-ko" aria-pressed="true" title="대화 아래 한국어 뜻 보이기/숨기기">가 <span class="lbl">뜻</span></button>
-    <button type="button" class="toggle aid" data-aid="no-pr" aria-pressed="true" title="한글 발음 도우미 보이기/숨기기">[ ] <span class="lbl">발음</span></button>
     <button type="button" class="toggle" id="theme-toggle" aria-label="화면 테마">◐ <span class="lbl">자동</span></button>
     <button type="button" class="toggle" id="teacher-toggle" aria-pressed="false" aria-label="교사 모드"><svg class="ic" aria-hidden="true"><use href="#i-teacher"/></svg> <span class="lbl">교사 모드</span></button>
   </div>
@@ -59,7 +57,7 @@
 <nav class="toc" id="toc" aria-label="이 과의 지도"></nav>
 <main>
 
-<section class="hero">
+<section class="hero" data-panel="start">
   <div class="series">DER FALSCHE KOFFER · A1 · KAPITEL 1 · 독일어 첫걸음</div>
   <h1 lang="de">Hallo, ich bin Minjun!</h1>
   <div class="meta">
@@ -67,18 +65,18 @@
     <div><b>수업</b> 3차시(1주) · 1차시 = 1교시 50분 + 2교시 50분 · 차시마다 숙제 60분</div>
   </div>
   <div class="cast" aria-label="등장인물"><figure><img class="person" src="../assets/img/k01/person-minjun.webp" alt="민준" loading="lazy"><figcaption>민준</figcaption></figure><figure><img class="person" src="../assets/img/k01/person-jonas.webp" alt="Jonas" loading="lazy"><figcaption>Jonas</figcaption></figure><figure><img class="person" src="../assets/img/k01/person-lena.webp" alt="Lena" loading="lazy"><figcaption>Lena</figcaption></figure><figure><img class="person" src="../assets/img/k01/person-wagner.webp" alt="Frau Wagner" loading="lazy"><figcaption>Frau Wagner</figcaption></figure><figure><img class="person" src="../assets/img/k01/person-carlos.webp" alt="Carlos" loading="lazy"><figcaption>Carlos</figcaption></figure><figure><img class="person" src="../assets/img/k01/person-tomasz.webp" alt="Tomasz" loading="lazy"><figcaption>Tomasz</figcaption></figure><figure><img class="person" src="../assets/img/k01/person-priya.webp" alt="Priya" loading="lazy"><figcaption>Priya</figcaption></figure><figure><img class="person" src="../assets/img/k01/person-sujin.webp" alt="수진" loading="lazy"><figcaption>수진</figcaption></figure><figure><img class="person" src="../assets/img/k01/person-haeun.webp" alt="하은" loading="lazy"><figcaption>하은</figcaption></figure><figure><img class="person" src="../assets/img/k01/person-schulze.webp" alt="Frau Schulze" loading="lazy"><figcaption>Frau Schulze</figcaption></figure></div>
-  <div class="box tip"><svg class="ic" aria-hidden="true"><use href="#i-tip"/></svg><b>이 교재 사용법</b> · 대화 아래 회색 글씨는 <b>한국어 뜻</b>, 파란 [ ] 글씨는 <b>한글 발음 도우미</b>예요. 위쪽 <b>뜻 · 발음</b> 버튼으로 켜고 끌 수 있어요. ▶를 누르면 독일어를 들을 수 있고, 입력 칸을 누르면 아래에 <span lang="de">ä ö ü ß</span> 버튼이 나와요.</div>
+  <div class="box tip"><svg class="ic" aria-hidden="true"><use href="#i-tip"/></svg><b>이 교재 사용법</b> · 대화 아래 회색 글씨는 <b>한국어 뜻</b>, 파란 [ ] 글씨는 <b>한글 발음 도우미</b>예요. 위쪽 버튼(<b>목표 · 1차시 · 2차시 · 3차시 · 부록</b>)을 누르면 그 부분이 열려요. ▶를 누르면 독일어를 들을 수 있고, 입력 칸을 누르면 아래에 <span lang="de">ä ö ü ß</span> 버튼이 나와요.</div>
     <aside class="teacher-note"><p class="box-title"><svg class="ic" aria-hidden="true"><use href="#i-teacher"/></svg>교사 모드 안내</p><p>초록 상자는 운영 팁·대본·스포일러입니다. 활동 제목 옆 시간 배지를 누르면 타이머가 시작됩니다.</p><p><b>1과 설계 원칙</b>: ① 소리 먼저, 글자 나중 ② 주어를 하나씩 늘리기: ich/du(1차시) → Sie(2차시) → er/sie(3차시), wir/ihr는 2과 ③ 문장 덩어리 먼저, 규칙은 짧게 ④ 쉬운 연습부터: 고르기 → 빈칸 → 틀에 맞춰 쓰기</p></aside>
 </section>
 
-<section id="ziele" class="card">
+<section id="ziele" class="card" data-panel="start">
   <h2><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg>이번 과가 끝나면</h2>
   <div class="goal-grid"><div class="goal"><svg class="ic" aria-hidden="true"><use href="#i-speak"/></svg><div><p class="goal-ko">때에 맞게 인사하고 작별 인사를 할 수 있어요.</p><p class="goal-de" lang="de">Hallo! · Guten Tag! · Tschüss!</p></div></div><div class="goal"><svg class="ic" aria-hidden="true"><use href="#i-abc"/></svg><div><p class="goal-ko">내 이름을 말하고 철자로 알려 줄 수 있어요.</p><p class="goal-de" lang="de">Ich heiße … · P – A – R – K</p></div></div><div class="goal"><svg class="ic" aria-hidden="true"><use href="#i-speak"/></svg><div><p class="goal-ko">어디에서 왔는지, 어디에 사는지 말하고 물을 수 있어요.</p><p class="goal-de" lang="de">Woher kommst du? · Wo wohnst du?</p></div></div><div class="goal"><svg class="ic" aria-hidden="true"><use href="#i-speak"/></svg><div><p class="goal-ko">다른 사람을 소개할 수 있어요.</p><p class="goal-de" lang="de">Das ist Priya. Sie kommt aus Indien.</p></div></div><div class="goal"><svg class="ic" aria-hidden="true"><use href="#i-123"/></svg><div><p class="goal-ko">0–20 숫자와 전화번호를 말할 수 있어요.</p><p class="goal-de" lang="de">null – eins – sieben – sechs</p></div></div><div class="goal"><svg class="ic" aria-hidden="true"><use href="#i-write"/></svg><div><p class="goal-ko">4–5문장으로 나를 소개하는 글을 쓸 수 있어요.</p><p class="goal-de" lang="de">Ich heiße … Ich komme aus …</p></div></div></div>
   <h3>이번 주 수업 · 3차시</h3>
   <div class="plan-grid"><a class="plan" href="#stunde-1"><span class="stunde-no">1차시</span><b lang="de">Hallo! Ich bin Minjun.</b><span><small>1교시</small> 인사 · ich/du · Teil A 역에서</span><span><small>2교시</small> 알파벳·발음 · 이름 철자 · 첫 대화</span></a><a class="plan" href="#stunde-2"><span class="stunde-no">2차시</span><b lang="de">Woher kommst du?</b><span><small>1교시</small> Teil B WG에서 · 나라와 언어 · 동사 2번째</span><span><small>2교시</small> Teil C du/Sie · 분실물 센터 · 인터뷰</span></a><a class="plan" href="#stunde-3"><span class="stunde-no">3차시</span><b lang="de">Wer ist das?</b><span><small>1교시</small> Teil D 반 친구 소개 · er/sie · 숫자</span><span><small>2교시</small> 읽기 · 중개하기 · 자기소개 쓰기</span></a></div>
 </section>
 
-<section id="stunde-1" class="stunde" data-stunde="1">
+<section id="stunde-1" class="stunde" data-stunde="1" data-panel="stunde-1">
   <div class="stunde-head"><span class="stunde-no">1차시</span><h2 lang="de">Hallo! Ich bin Minjun.</h2></div>
     <aside class="teacher-note"><p class="box-title"><svg class="ic" aria-hidden="true"><use href="#i-teacher"/></svg>1차시 운영안</p><p>1교시: 그림 5′ → 인사말 15′ → Teil A 15′ → 문장 틀 ① 15′ · 2교시: 알파벳·발음 20′ → 이름 철자 15′ → 첫 만남 대화 15′</p><p><b>원칙</b>: 소리 먼저. 1교시에는 쓰기보다 <b>듣고 따라 말하기</b>를 충분히. 한글 발음 도우미는 처음에만 켜고, 학생이 소리에 익숙해지면 끄게 하세요.</p></aside>
   <div class="block-head">▶ 1교시 · 50분 · Input</div>
@@ -95,7 +93,7 @@
     <h3>2 · Hallo! · 첫 독일어 인사 <span class="time" data-min="15"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg>15분</span></h3>
     <p>카드를 눌러 듣고, 소리 내어 <b>세 번씩</b> 따라 하세요.</p>
     <div class="cards"><div class="card-word"><span class="when">아침</span><b lang="de" data-say>Guten Morgen!</b><span class="pr">구텐 모르겐</span><span class="ko">좋은 아침이에요</span></div><div class="card-word"><span class="when">낮</span><b lang="de" data-say>Guten Tag!</b><span class="pr">구텐 탁</span><span class="ko">안녕하세요</span></div><div class="card-word"><span class="when">저녁</span><b lang="de" data-say>Guten Abend!</b><span class="pr">구텐 아벤트</span><span class="ko">좋은 저녁이에요</span></div><div class="card-word"><span class="when">언제나 · 친구</span><b lang="de" data-say>Hallo!</b><span class="pr">할로</span><span class="ko">안녕!</span></div><div class="card-word"><span class="when">헤어질 때 · 친구</span><b lang="de" data-say>Tschüss!</b><span class="pr">취스</span><span class="ko">안녕! (작별)</span></div><div class="card-word"><span class="when">헤어질 때 · 어른</span><b lang="de" data-say>Auf Wiedersehen!</b><span class="pr">아우프 비더제엔</span><span class="ko">안녕히 계세요/가세요</span></div><div class="card-word"><span class="when">고마울 때</span><b lang="de" data-say>Danke!</b><span class="pr">당케</span><span class="ko">고마워요</span></div><div class="card-word"><span class="when">미안할 때</span><b lang="de" data-say>Entschuldigung!</b><span class="pr">엔트슐디궁</span><span class="ko">죄송합니다 / 실례합니다</span></div></div>
-    <div class="box tip"><svg class="ic" aria-hidden="true"><use href="#i-tip"/></svg>한글 발음(<span class="pr">구텐 탁</span>)은 <b>비슷한 소리</b>일 뿐이에요. 꼭 음성을 듣고 따라 하세요. 위쪽 <b>발음</b> 버튼으로 끌 수 있어요.</div>
+    <div class="box tip"><svg class="ic" aria-hidden="true"><use href="#i-tip"/></svg>한글 발음(<span class="pr">구텐 탁</span>)은 <b>비슷한 소리</b>일 뿐이에요. 꼭 음성을 듣고 따라 하세요.</div>
     <div class="ex" data-check data-ex="A0">
       <div class="ex-head"><span class="tag">A1</span>누구에게, 언제? 알맞은 인사를 고르세요.</div>
       <ol>
@@ -237,7 +235,7 @@
 
 </section>
 
-<section id="stunde-2" class="stunde" data-stunde="2">
+<section id="stunde-2" class="stunde" data-stunde="2" data-panel="stunde-2">
   <div class="stunde-head"><span class="stunde-no">2차시</span><h2 lang="de">Woher kommst du?</h2></div>
     <aside class="teacher-note"><p class="box-title"><svg class="ic" aria-hidden="true"><use href="#i-teacher"/></svg>2차시 운영안</p><p>1교시: 복습 5′ → Teil B 15′ → 나라와 언어 10′ → 문장 틀 ② 20′ · 2교시: Teil C du/Sie 15′ → 분실물 센터 20′ → 인터뷰 15′</p><p><b>준비물</b>: 문장 카드(동사 카드는 빨간색) · (선택) 검은 가방과 외투·흑백 사진·봉투·이름표 소품</p></aside>
   <div class="block-head">▶ 1교시 · 50분 · Input</div>
@@ -438,7 +436,7 @@
 
 </section>
 
-<section id="stunde-3" class="stunde" data-stunde="3">
+<section id="stunde-3" class="stunde" data-stunde="3" data-panel="stunde-3">
   <div class="stunde-head"><span class="stunde-no">3차시</span><h2 lang="de">Wer ist das?</h2></div>
     <aside class="teacher-note"><p class="box-title"><svg class="ic" aria-hidden="true"><use href="#i-teacher"/></svg>3차시 운영안</p><p>1교시: 복습 5′ → Teil D 10′ → 문장 틀 ③ 15′ → 숫자·전화번호 20′ · 2교시: 읽기 15′ → 중개하기 10′ → 쓰기 20′ → 마무리 5′</p><p><b>다음 과 첫 10분</b>: 첨삭한 자기소개 돌려주기 → 반 전체 공통 오류 3개 함께 고치기</p></aside>
   <div class="block-head">▶ 1교시 · 50분 · Input</div>
@@ -547,7 +545,7 @@
   <div class="block-head">▶ 2교시 · 50분 · Output</div>
   <section class="activity card" id="s3-lesen" data-block="output">
     <h3>17 · <span lang="de">Lesen</span> · 우리 반 프로필 <span class="time" data-min="15"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg>15분</span></h3>
-    <p>Frau Wagner가 교실 벽에 붙인 <b lang="de">Steckbrief</b>(프로필)예요. 먼저 <b>뜻을 끄고</b> 읽어 보세요!</p>
+    <p>Frau Wagner가 교실 벽에 붙인 <b lang="de">Steckbrief</b>(프로필)예요. 먼저 <b>한국어 뜻을 손으로 가리고</b> 읽어 보세요!</p>
     <div class="vocab" style="grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));"><div class="profile"><img class="person" src="../assets/img/k01/person-carlos.webp" alt="Carlos Ruiz" loading="lazy"><b>Carlos Ruiz</b><span lang="de">Hallo! Ich heiße Carlos. Ich komme aus Spanien. Ich wohne in Leipzig. Ich spreche Spanisch und Englisch.</span><span class="ko">안녕! 내 이름은 카를로스야. 스페인에서 왔어. 라이프치히에 살아. 스페인어와 영어를 해.</span></div><div class="profile"><img class="person" src="../assets/img/k01/person-tomasz.webp" alt="Tomasz Nowak" loading="lazy"><b>Tomasz Nowak</b><span lang="de">Hallo, ich bin Tomasz. Ich komme aus Polen. Ich bin Ingenieur. Ich spreche Polnisch, Englisch und Russisch.</span><span class="ko">안녕, 나는 토마스야. 폴란드에서 왔어. 엔지니어야. 폴란드어, 영어, 러시아어를 해.</span></div><div class="profile"><img class="person" src="../assets/img/k01/person-priya.webp" alt="Priya Sharma" loading="lazy"><b>Priya Sharma</b><span lang="de">Hi! Ich heiße Priya. Ich komme aus Indien. Ich spreche Hindi und Englisch. Ich möchte in Leipzig studieren.</span><span class="ko">안녕! 내 이름은 프리야야. 인도에서 왔어. 힌디어와 영어를 해. 라이프치히에서 대학에 다니고 싶어.</span></div><div class="profile"><img class="person" src="../assets/img/k01/person-minjun.webp" alt="Minjun Park" loading="lazy"><b>Minjun Park</b><span lang="de">Hallo! Ich heiße Minjun. Ich komme aus Südkorea. Ich wohne in einer WG. Ich spreche Koreanisch und Englisch.</span><span class="ko">안녕! 내 이름은 민준이야. 한국에서 왔어. WG에 살아. 한국어와 영어를 해.</span></div></div>
     <div class="ex" data-check data-ex="L1">
       <div class="ex-head"><span class="tag">L1</span>맞으면 r, 틀리면 f</div>
@@ -618,11 +616,11 @@
 
 </section>
 
-<section id="anhang" class="stunde">
+<section id="anhang" class="stunde" data-panel="anhang">
   <div class="stunde-head"><span class="stunde-no">부록</span><h2>복습과 숙제용</h2></div>
   <section class="card" id="saetze">
     <h3><svg class="ic" aria-hidden="true"><use href="#i-speak"/></svg>이번 과의 핵심 문장 10 · 말하기 카드</h3>
-    <p>▶를 눌러 듣고, 뜻을 끈 다음 독일어로 말할 수 있는지 확인해 보세요.</p>
+    <p>▶를 눌러 듣고, 한국어 뜻만 보고 독일어로 말할 수 있는지 확인해 보세요.</p>
     <div class="table-wrap"><table><tbody><tr><td lang="de" data-say>Hallo! / Guten Tag!</td><td>안녕! / 안녕하세요!</td></tr><tr><td lang="de" data-say>Ich heiße Minjun. / Ich bin Minjun.</td><td>내 이름은 민준이야.</td></tr><tr><td lang="de" data-say>Wie heißt du? / Wie heißen Sie?</td><td>이름이 뭐야? / 성함이 어떻게 되세요?</td></tr><tr><td lang="de" data-say>Woher kommst du? – Ich komme aus Südkorea.</td><td>어디에서 왔어? – 한국에서 왔어.</td></tr><tr><td lang="de" data-say>Wo wohnst du? – Ich wohne in Leipzig.</td><td>어디에 살아? – 라이프치히에 살아.</td></tr><tr><td lang="de" data-say>Sprichst du Deutsch? – Ja, ein bisschen.</td><td>독일어 해? – 응, 조금.</td></tr><tr><td lang="de" data-say>Das ist Priya. Sie kommt aus Indien.</td><td>이쪽은 프리야야. 인도에서 왔어.</td></tr><tr><td lang="de" data-say>Wie bitte? / Wie schreibt man das?</td><td>뭐라고요? / 어떻게 써요?</td></tr><tr><td lang="de" data-say>Wie ist deine Handynummer?</td><td>네 휴대폰 번호가 뭐야?</td></tr><tr><td lang="de" data-say>Tschüss! / Auf Wiedersehen!</td><td>안녕! / 안녕히 계세요!</td></tr></tbody></table></div>
   </section>
 

@@ -296,20 +296,6 @@
 
 
 
-  /* ---------- 뜻 · 발음 도우미 켜고 끄기 ---------- */
-  document.querySelectorAll("[data-aid]").forEach(function (btn) {
-    var cls = btn.getAttribute("data-aid");            // 예: no-ko, no-pr
-    var key = "aid:" + cls;
-    var def = btn.getAttribute("data-default") || "on";
-    var saved = store.get(key);
-    var on = saved === null ? def === "on" : saved === "on";
-    function apply() {
-      document.body.classList.toggle(cls, !on);
-      btn.setAttribute("aria-pressed", on ? "true" : "false");
-    }
-    apply();
-    btn.addEventListener("click", function () { on = !on; store.set(key, on ? "on" : "off"); apply(); });
-  });
 
   /* ---------- ä ö ü ß 입력 버튼 ---------- */
   var keypad = document.createElement("div");
@@ -344,6 +330,83 @@
     }, 150);
   });
 
+
+  /* ---------- 차시별로 나눠 보기 (상단 버튼 = 탭) ---------- */
+  var currentPanel = null;
+  var filterToc = function (name) {   // 왼쪽 지도: 목표 화면에서는 전체, 차시에서는 그 차시만
+    document.querySelectorAll("#toc .toc-group").forEach(function (g) {
+      g.style.display = (name === "start" || g.getAttribute("data-toc-panel") === name) ? "" : "none";
+    });
+  };
+  var panelEls = Array.prototype.slice.call(document.querySelectorAll("[data-panel]"));
+  if (panelEls.length) {
+    var names = [];
+    panelEls.forEach(function (e) { var n = e.getAttribute("data-panel"); if (names.indexOf(n) < 0) names.push(n); });
+    var tabLinks = document.querySelectorAll("[data-tab]");
+    var tabLabel = function (n) {
+      var t = document.querySelector('[data-tab="' + n + '"]');
+      return t ? t.textContent.trim() : n;
+    };
+    var showPanel = function (name) {
+      if (names.indexOf(name) < 0) name = names[0];
+      panelEls.forEach(function (e) { e.classList.toggle("panel-off", e.getAttribute("data-panel") !== name); });
+      tabLinks.forEach(function (a) {
+        if (a.getAttribute("data-tab") === name) a.setAttribute("aria-current", "page");
+        else a.removeAttribute("aria-current");
+      });
+      store.set("panel", name);
+      currentPanel = name; filterToc(name);
+      var tab = document.querySelector('[data-tab="' + name + '"]');
+      if (tab) { try { history.replaceState(null, "", tab.getAttribute("href")); } catch (err) { /* 무시 */ } }
+    };
+    var jump = function (fn) {   // 부분을 바꿀 때는 부드러운 스크롤 없이 바로 이동
+      var root = document.documentElement, old = root.style.scrollBehavior;
+      root.style.scrollBehavior = "auto"; fn(); root.style.scrollBehavior = old;
+    };
+    var goTo = function (hash) {
+      var id = (hash || "").replace(/^#/, "");
+      var target = id ? document.getElementById(id) : null;
+      if (!target) { showPanel(store.get("panel") || names[0]); return; }
+      var owner = target.closest("[data-panel]");
+      var name = owner ? owner.getAttribute("data-panel") : names[0];
+      showPanel(name);
+      var first = panelEls.filter(function (e) { return e.getAttribute("data-panel") === name; })[0];
+      jump(function () {
+        if (target === first) window.scrollTo(0, 0);
+        else target.scrollIntoView();
+      });
+    };
+    // 화면 안의 모든 #링크: 해당 부분을 열고 이동
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('a[href^="#"]');
+      if (!a) return;
+      var h = a.getAttribute("href");
+      if (h.length < 2 || !document.getElementById(h.slice(1))) return;
+      e.preventDefault();
+      if (a.hasAttribute("data-tab")) { showPanel(a.getAttribute("data-tab")); jump(function () { window.scrollTo(0, 0); }); }
+      else { goTo(h); try { history.replaceState(null, "", h); } catch (err) { /* 무시 */ } }
+    });
+    // 각 부분 끝에 이전 / 다음 버튼
+    names.forEach(function (n, i) {
+      var own = panelEls.filter(function (e) { return e.getAttribute("data-panel") === n; });
+      var last = own[own.length - 1];
+      var nav = document.createElement("div");
+      nav.className = "panel-nav";
+      if (i > 0) nav.innerHTML += '<button type="button" class="btn ghost" data-go="' + names[i - 1] + '">← ' + tabLabel(names[i - 1]) + "</button>";
+      if (i < names.length - 1) nav.innerHTML += '<button type="button" class="btn" data-go="' + names[i + 1] + '">' + tabLabel(names[i + 1]) + " →</button>";
+      nav.setAttribute("data-panel", n);
+      last.insertAdjacentElement("afterend", nav);
+      panelEls.push(nav);
+    });
+    document.addEventListener("click", function (e) {
+      var b = e.target.closest && e.target.closest("[data-go]");
+      if (!b) return;
+      showPanel(b.getAttribute("data-go"));
+      jump(function () { window.scrollTo(0, 0); });
+    });
+    goTo(location.hash);
+  }
+
   /* ---------- 이 과의 지도 (넓은 화면 왼쪽) ---------- */
   var toc = document.getElementById("toc");
   if (toc) {
@@ -356,7 +419,7 @@
     document.querySelectorAll("main > section.stunde").forEach(function (st) {
       var no = st.querySelector(".stunde-no");
       var h2 = st.querySelector(".stunde-head h2");
-      html += '<div class="toc-group"><a class="toc-head" href="#' + st.id + '">' + (no ? no.textContent + " · " : "") + (h2 ? label(h2) : "") + "</a>";
+      html += '<div class="toc-group" data-toc-panel="' + (st.getAttribute("data-panel") || st.id) + '"><a class="toc-head" href="#' + st.id + '">' + (no ? no.textContent + " · " : "") + (h2 ? label(h2) : "") + "</a>";
       Array.prototype.forEach.call(st.children, function (el) {
         if (el.classList.contains("block-head")) { html += '<div class="block">' + label(el) + "</div>"; return; }
         if (!el.id) return;
@@ -369,6 +432,7 @@
       html += "</div>";
     });
     toc.innerHTML = html;
+    if (currentPanel) filterToc(currentPanel);
     if ("IntersectionObserver" in window) {
       var links = {};
       toc.querySelectorAll("a.item").forEach(function (a) { links[a.getAttribute("data-target")] = a; });
