@@ -83,14 +83,15 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; font-size: 19px; }
+@media (max-width: 560px) { html { font-size: 17.5px; } }
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font);
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.75;
   -webkit-text-size-adjust: 100%;
   word-break: keep-all;          /* 한글은 어절 단위로 줄바꿈 */
   overflow-wrap: break-word;
@@ -276,14 +277,18 @@ img.mood-s { height: 34px; width: 34px; object-fit: cover; object-position: 50% 
 .line .who { display: flex; align-items: center; }
 
 /* ---------- 연습 문제 ---------- */
-.ex { margin: 1rem 0; }
-.ex-head { font-weight: 700; margin-bottom: .35rem; }
+.ex { margin: 2rem 0; line-height: 1.9; }
+.ex-head { font-weight: 700; margin-bottom: .9rem; font-size: 1.05rem; }
 .ex-head .tag {
   display: inline-block; background: var(--accent); color: var(--surface);
   border-radius: 6px; padding: 0 .45rem; margin-right: .4rem; font-size: .85rem;
 }
-.ex ol, .ex ul { padding-left: 1.4rem; margin: .4rem 0; }
-.ex li { margin: .6rem 0; }
+.ex ol, .ex ul { padding-left: 1.6rem; margin: .6rem 0; }
+.ex li { margin: 1.15rem 0; padding-left: .2rem; }
+.ex .rf td, .ex .rf th { padding-top: .7rem; padding-bottom: .7rem; }
+.ex .dialog { gap: .9rem; }
+.ex .form-grid { gap: 1rem; }
+.ex-actions { margin-top: 1.1rem !important; }
 .hw-only { font-size: .8rem; color: var(--text-muted); }
 
 input.blank {
@@ -402,7 +407,7 @@ footer { max-width: var(--maxw); margin: 4rem auto 2rem; padding: 0 16px; color:
 
 
 /* ---------- 초보자 지원: 뜻 · 발음 도우미 · 문장 카드 ---------- */
-.ko { display: block; font-size: .86rem; color: var(--text-muted); line-height: 1.45; margin-top: .05rem; }
+.ko { display: block; font-size: .9rem; color: var(--text-muted); line-height: 1.45; margin-top: .05rem; }
 .line .tx { display: block; }
 
 .today { background: var(--surface); border: 2px solid var(--accent); border-radius: var(--radius); padding: .9rem 1rem; margin: 1rem 0; }
@@ -413,7 +418,8 @@ footer { max-width: var(--maxw); margin: 4rem auto 2rem; padding: 0 16px; color:
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .6rem; margin: .6rem 0; }
 .cards-4 { grid-template-columns: repeat(4, 1fr); }
 .cards-3 { grid-template-columns: repeat(3, 1fr); }
-@media (min-width: 1000px) { .cards-3 { grid-template-columns: repeat(6, 1fr); } }
+@media (min-width: 1250px) { .cards-3 { grid-template-columns: repeat(6, 1fr); } }
+@media (max-width: 1000px) { .cards-4 { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .cards-4, .cards-3 { grid-template-columns: repeat(2, 1fr); } }
 .card-word { min-width: 0; }
 .card-word b { overflow-wrap: anywhere; }
@@ -446,7 +452,7 @@ img.card-img { display: block; width: 100%; height: auto; border-radius: var(--r
 .form-card dt { color: var(--text-muted); font-size: .9rem; }
 .form-card dd { margin: 0; font-family: "Courier New", monospace; font-weight: 700; }
 
-.hk-list li { margin: .9rem 0; }
+.hk-list li { margin: 1.4rem 0; }
 .hk-list p { margin: .3rem 0 .3rem 2.6rem; display: grid; grid-template-columns: 9rem auto; align-items: center; justify-content: start; }
 .hk-list p.hk-who { display: block; }
 .hk-list small { color: var(--text-muted); }
@@ -506,7 +512,7 @@ details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600
   .card-word b { font-size: .95rem; }
 }
 
-@media (max-width: 380px) { .gram table { font-size: .7rem; } }
+@media (max-width: 420px) { .gram table { font-size: .66rem; } .gram th, .gram td { padding: .3rem .15rem; } .card-word b { font-size: .88rem; } td input.blank.wide { min-width: 0; width: 7.5rem; } }
 
 /* 단어장: 넓은 화면에서 두 단 */
 .wgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 0 2.5rem; }
