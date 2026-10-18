@@ -415,29 +415,6 @@ footer { max-width: var(--maxw); margin: 4rem auto 2rem; padding: 0 16px; color:
 .sum-title { font-weight: 700; color: var(--accent); margin: .2rem 0 .4rem; }
 .sum table { background: var(--surface); font-size: .9rem; }
 
-/* ---------- 넓은 화면: 왼쪽 이 과의 지도 ---------- */
-.page { max-width: var(--maxw); margin: 0 auto; }
-.toc { display: none; }
-@media (min-width: 1180px) {
-  .page { max-width: 1200px; display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 2rem; padding: 0 16px; }
-  .page > main { padding: 0 0 6rem; max-width: var(--maxw); }
-  .topbar-inner { max-width: 1200px; }
-  .toc {
-    display: block; position: sticky; top: 64px; align-self: start;
-    max-height: calc(100vh - 80px); overflow-y: auto; padding: 2.5rem 0 1rem; font-size: .84rem;
-  }
-  .toc .toc-group { margin: 0 0 .9rem; }
-  .toc .toc-head { display: block; font-weight: 700; color: var(--accent); text-decoration: none; margin-bottom: .25rem; }
-  .toc a.item {
-    display: flex; justify-content: space-between; gap: .5rem; text-decoration: none; color: var(--text-muted);
-    padding: .2rem .5rem; border-left: 2px solid var(--border); line-height: 1.35;
-  }
-  .toc a.item:hover { color: var(--text); }
-  .toc a.item.on { color: var(--accent); border-left-color: var(--accent); background: var(--surface-2); font-weight: 600; }
-  .toc .t { color: var(--accent-2); font-size: .75rem; white-space: nowrap; }
-  .toc .block { font-size: .72rem; color: var(--accent-2); margin: .35rem 0 .1rem .55rem; letter-spacing: .02em; }
-}
-
 
 /* ---------- 초보자 지원: 뜻 · 발음 도우미 · 문장 카드 ---------- */
 .ko { display: block; font-size: .86rem; color: var(--text-muted); line-height: 1.45; margin-top: .05rem; }
@@ -483,7 +460,7 @@ details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600
 @media print {
   .panel-off { display: block !important; }
   .panel-nav { display: none !important; }
-  .topbar, .toc, .say-btn, .ex-actions, .timer, .toggle, .keypad { display: none !important; }
+  .topbar, .say-btn, .ex-actions, .timer, .toggle, .keypad { display: none !important; }
   body { background: #fff; color: #000; font-size: 11pt; }
   .card { box-shadow: none; break-inside: avoid; }
   .stunde { break-before: page; }
@@ -539,7 +516,6 @@ details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600
 </header>
 
 <div class="page">
-<nav class="toc" id="toc" aria-label="이 과의 지도"></nav>
 <main>
 
 <section class="hero" data-panel="start">
@@ -1559,12 +1535,6 @@ details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600
 
 
   /* ---------- 차시별로 나눠 보기 (상단 버튼 = 탭) ---------- */
-  var currentPanel = null;
-  var filterToc = function (name) {   // 왼쪽 지도: 목표 화면에서는 전체, 차시에서는 그 차시만
-    document.querySelectorAll("#toc .toc-group").forEach(function (g) {
-      g.style.display = (name === "start" || g.getAttribute("data-toc-panel") === name) ? "" : "none";
-    });
-  };
   var panelEls = Array.prototype.slice.call(document.querySelectorAll("[data-panel]"));
   if (panelEls.length) {
     var names = [];
@@ -1582,7 +1552,6 @@ details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600
         else a.removeAttribute("aria-current");
       });
       store.set("panel", name);
-      currentPanel = name; filterToc(name);
       var tab = document.querySelector('[data-tab="' + name + '"]');
       if (tab) { try { history.replaceState(null, "", tab.getAttribute("href")); } catch (err) { /* 무시 */ } }
     };
@@ -1634,46 +1603,6 @@ details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600
     goTo(location.hash);
   }
 
-  /* ---------- 이 과의 지도 (넓은 화면 왼쪽) ---------- */
-  var toc = document.getElementById("toc");
-  if (toc) {
-    var html = "";
-    var label = function (el) {
-      var c = el.cloneNode(true);
-      c.querySelectorAll(".time, svg, button").forEach(function (x) { x.remove(); });
-      return c.textContent.replace(/\s+/g, " ").trim();
-    };
-    document.querySelectorAll("main > section.stunde").forEach(function (st) {
-      var no = st.querySelector(".stunde-no");
-      var h2 = st.querySelector(".stunde-head h2");
-      html += '<div class="toc-group" data-toc-panel="' + (st.getAttribute("data-panel") || st.id) + '"><a class="toc-head" href="#' + st.id + '">' + (no ? no.textContent + " · " : "") + (h2 ? label(h2) : "") + "</a>";
-      Array.prototype.forEach.call(st.children, function (el) {
-        if (el.classList.contains("block-head")) { html += '<div class="block">' + label(el) + "</div>"; return; }
-        if (!el.id) return;
-        var h = el.querySelector("h3, .box-title");
-        if (!h) return;
-        var t = el.querySelector(".time");
-        html += '<a class="item" href="#' + el.id + '" data-target="' + el.id + '"><span>' + label(h) + "</span>" +
-          (t ? '<span class="t">' + t.textContent.trim() + "</span>" : "") + "</a>";
-      });
-      html += "</div>";
-    });
-    toc.innerHTML = html;
-    if (currentPanel) filterToc(currentPanel);
-    if ("IntersectionObserver" in window) {
-      var links = {};
-      toc.querySelectorAll("a.item").forEach(function (a) { links[a.getAttribute("data-target")] = a; });
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) {
-          if (en.isIntersecting && links[en.target.id]) {
-            toc.querySelectorAll("a.item.on").forEach(function (a) { a.classList.remove("on"); });
-            links[en.target.id].classList.add("on");
-          }
-        });
-      }, { rootMargin: "-20% 0px -70% 0px" });
-      Object.keys(links).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
-    }
-  }
 
   /* ---------- 저장되는 입력 (사건 수첩, 자기 점검, 추리 메모) ---------- */
   document.querySelectorAll("[data-persist]").forEach(function (el) {

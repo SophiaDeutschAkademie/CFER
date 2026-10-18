@@ -332,12 +332,6 @@
 
 
   /* ---------- 차시별로 나눠 보기 (상단 버튼 = 탭) ---------- */
-  var currentPanel = null;
-  var filterToc = function (name) {   // 왼쪽 지도: 목표 화면에서는 전체, 차시에서는 그 차시만
-    document.querySelectorAll("#toc .toc-group").forEach(function (g) {
-      g.style.display = (name === "start" || g.getAttribute("data-toc-panel") === name) ? "" : "none";
-    });
-  };
   var panelEls = Array.prototype.slice.call(document.querySelectorAll("[data-panel]"));
   if (panelEls.length) {
     var names = [];
@@ -355,7 +349,6 @@
         else a.removeAttribute("aria-current");
       });
       store.set("panel", name);
-      currentPanel = name; filterToc(name);
       var tab = document.querySelector('[data-tab="' + name + '"]');
       if (tab) { try { history.replaceState(null, "", tab.getAttribute("href")); } catch (err) { /* 무시 */ } }
     };
@@ -407,46 +400,6 @@
     goTo(location.hash);
   }
 
-  /* ---------- 이 과의 지도 (넓은 화면 왼쪽) ---------- */
-  var toc = document.getElementById("toc");
-  if (toc) {
-    var html = "";
-    var label = function (el) {
-      var c = el.cloneNode(true);
-      c.querySelectorAll(".time, svg, button").forEach(function (x) { x.remove(); });
-      return c.textContent.replace(/\s+/g, " ").trim();
-    };
-    document.querySelectorAll("main > section.stunde").forEach(function (st) {
-      var no = st.querySelector(".stunde-no");
-      var h2 = st.querySelector(".stunde-head h2");
-      html += '<div class="toc-group" data-toc-panel="' + (st.getAttribute("data-panel") || st.id) + '"><a class="toc-head" href="#' + st.id + '">' + (no ? no.textContent + " · " : "") + (h2 ? label(h2) : "") + "</a>";
-      Array.prototype.forEach.call(st.children, function (el) {
-        if (el.classList.contains("block-head")) { html += '<div class="block">' + label(el) + "</div>"; return; }
-        if (!el.id) return;
-        var h = el.querySelector("h3, .box-title");
-        if (!h) return;
-        var t = el.querySelector(".time");
-        html += '<a class="item" href="#' + el.id + '" data-target="' + el.id + '"><span>' + label(h) + "</span>" +
-          (t ? '<span class="t">' + t.textContent.trim() + "</span>" : "") + "</a>";
-      });
-      html += "</div>";
-    });
-    toc.innerHTML = html;
-    if (currentPanel) filterToc(currentPanel);
-    if ("IntersectionObserver" in window) {
-      var links = {};
-      toc.querySelectorAll("a.item").forEach(function (a) { links[a.getAttribute("data-target")] = a; });
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) {
-          if (en.isIntersecting && links[en.target.id]) {
-            toc.querySelectorAll("a.item.on").forEach(function (a) { a.classList.remove("on"); });
-            links[en.target.id].classList.add("on");
-          }
-        });
-      }, { rootMargin: "-20% 0px -70% 0px" });
-      Object.keys(links).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
-    }
-  }
 
   /* ---------- 저장되는 입력 (사건 수첩, 자기 점검, 추리 메모) ---------- */
   document.querySelectorAll("[data-persist]").forEach(function (el) {
