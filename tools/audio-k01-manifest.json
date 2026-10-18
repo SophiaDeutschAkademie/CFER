@@ -1,0 +1,891 @@
+[
+ {
+  "id": "dlg-g1-1",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Guten Morgen, Frau Wagner!",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-g1-2",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Guten Morgen, Minjun!",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-g2-1",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Hallo, Lena!",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "dlg-g2-2",
+  "who": "Lena",
+  "lang": "de",
+  "text": "Hi, Jonas! Wie geht's?",
+  "voice": "WzPl01KDMCPMOyx39EfF"
+ },
+ {
+  "id": "dlg-g2-3",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Gut, danke!",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "dlg-g3-1",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Guten Abend, Frau Schulze.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-g3-2",
+  "who": "Frau Schulze",
+  "lang": "de",
+  "text": "… Guten Abend.",
+  "voice": "gDQfVolj9RbmXgumLcOq"
+ },
+ {
+  "id": "dlg-g4-1",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Tschüss, Carlos!",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-g4-2",
+  "who": "Carlos",
+  "lang": "de",
+  "text": "Tschüss! Bis morgen!",
+  "voice": "pjvu5b1KMIka2bL61Exv"
+ },
+ {
+  "id": "dlg-g5-1",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Auf Wiedersehen, Frau Wagner!",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-g5-2",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Auf Wiedersehen!",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-1-01-1",
+  "who": "Mann",
+  "lang": "de",
+  "text": "Oh! Entschuldigung!",
+  "voice": "4tVWa6JWnwS0ZoCf6ZzP"
+ },
+ {
+  "id": "dlg-1-01-2",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Kein Problem.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-01-3",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Hallo! Bist du Minjun?",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "dlg-1-01-4",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Ja, ich bin Minjun. Und du?",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-01-5",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Ich bin Jonas. Willkommen in Leipzig!",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "dlg-1-01-6",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Danke!",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-01-7",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Wie geht's?",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "dlg-1-01-8",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Gut, danke. Ein bisschen müde.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-05-1",
+  "who": "1",
+  "lang": "de",
+  "text": "Wagner. We, A, Ge, En, E, Er.",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-1-05-2",
+  "who": "2",
+  "lang": "de",
+  "text": "Becker. Be, E, Tse, Ka, E, Er.",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-1-05-3",
+  "who": "3",
+  "lang": "de",
+  "text": "Jeong. Jott, E, O, En, Ge.",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-1-05-4",
+  "who": "4",
+  "lang": "de",
+  "text": "Schulze. Es, Tse, Ha, U, El, Tsett, E.",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-12b-1",
+  "who": "A",
+  "lang": "de",
+  "text": "Wie heißt du?",
+  "voice": "WzPl01KDMCPMOyx39EfF"
+ },
+ {
+  "id": "dlg-12b-2",
+  "who": "B",
+  "lang": "de",
+  "text": "Ich heiße Seoyeon Kim.",
+  "voice": "TJUbdtIHknxm2JTOLSmc"
+ },
+ {
+  "id": "dlg-12b-3",
+  "who": "A",
+  "lang": "de",
+  "text": "Wie bitte? Wie schreibt man das?",
+  "voice": "WzPl01KDMCPMOyx39EfF"
+ },
+ {
+  "id": "dlg-12b-4",
+  "who": "B",
+  "lang": "de",
+  "text": "Es – E – O – Üpsilon – E – O – En.",
+  "voice": "TJUbdtIHknxm2JTOLSmc"
+ },
+ {
+  "id": "dlg-7-1",
+  "who": "Lena",
+  "lang": "de",
+  "text": "Hallo! Ich bin Lena.",
+  "voice": "WzPl01KDMCPMOyx39EfF"
+ },
+ {
+  "id": "dlg-7-2",
+  "who": "Priya",
+  "lang": "de",
+  "text": "Hallo! Ich heiße Priya.",
+  "voice": "TJUbdtIHknxm2JTOLSmc"
+ },
+ {
+  "id": "dlg-7-3",
+  "who": "Lena",
+  "lang": "de",
+  "text": "Wie geht's?",
+  "voice": "WzPl01KDMCPMOyx39EfF"
+ },
+ {
+  "id": "dlg-7-4",
+  "who": "Priya",
+  "lang": "de",
+  "text": "Gut, danke! Und dir?",
+  "voice": "TJUbdtIHknxm2JTOLSmc"
+ },
+ {
+  "id": "dlg-7-5",
+  "who": "Lena",
+  "lang": "de",
+  "text": "Auch gut. Tschüss!",
+  "voice": "WzPl01KDMCPMOyx39EfF"
+ },
+ {
+  "id": "dlg-1-02-1",
+  "who": "Lena",
+  "lang": "de",
+  "text": "Moin! Ich bin Lena.",
+  "voice": "WzPl01KDMCPMOyx39EfF"
+ },
+ {
+  "id": "dlg-1-02-2",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Hallo, Lena! Ich heiße Minjun.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-02-3",
+  "who": "Lena",
+  "lang": "de",
+  "text": "Freut mich! Woher kommst du?",
+  "voice": "WzPl01KDMCPMOyx39EfF"
+ },
+ {
+  "id": "dlg-1-02-4",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Ich komme aus Südkorea. Und du?",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-02-5",
+  "who": "Lena",
+  "lang": "de",
+  "text": "Ich komme aus Hamburg. Aber ich wohne jetzt hier in Leipzig.",
+  "voice": "WzPl01KDMCPMOyx39EfF"
+ },
+ {
+  "id": "dlg-1-02-6",
+  "who": "Lena",
+  "lang": "de",
+  "text": "Sprichst du Deutsch?",
+  "voice": "WzPl01KDMCPMOyx39EfF"
+ },
+ {
+  "id": "dlg-1-02-7",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Ein bisschen. Ich spreche Koreanisch und Englisch.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-02-8",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Hä? Das ist nicht mein Koffer!",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-02-9",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Oh nein! Der Mann am Bahnhof!",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "dlg-h1-1",
+  "who": "Ahmet",
+  "lang": "de",
+  "text": "Hallo! Ich heiße Ahmet. Ich komme aus der Türkei, aus Izmir. Ich wohne in Leipzig. Ich spreche Türkisch und ein bisschen Deutsch.",
+  "voice": "KM484cOJZbUq8S0kuh14"
+ },
+ {
+  "id": "dlg-h2-1",
+  "who": "Mei",
+  "lang": "de",
+  "text": "Hi, ich bin Mei. Ich komme aus China. Ich wohne jetzt in Halle. Ich spreche Chinesisch und Englisch.",
+  "voice": "JudZUClAOU1jP3wA2eDG"
+ },
+ {
+  "id": "dlg-h3-1",
+  "who": "Olena",
+  "lang": "de",
+  "text": "Guten Tag! Mein Name ist Olena. Ich komme aus der Ukraine, aus Kyjiw. Ich wohne in Leipzig. Ich spreche Ukrainisch und Russisch.",
+  "voice": "prhcTCMZO2tEReVq7XuJ"
+ },
+ {
+  "id": "dlg-h4-1",
+  "who": "Lucas",
+  "lang": "de",
+  "text": "Hallo! Ich heiße Lucas. Ich komme aus Brasilien. Ich wohne in Dresden. Ich spreche Portugiesisch, Spanisch und Englisch.",
+  "voice": "5qxnhLWq1rPhIVOrGuRh"
+ },
+ {
+  "id": "dlg-1-03-1",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Guten Morgen! Ich bin Petra Wagner. Wie heißen Sie?",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-1-03-2",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Ich heiße Minjun Park.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-03-3",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Wie schreibt man das?",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-1-03-4",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Pe, A, Er, Ka.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-03-5",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Danke, Herr Park. Woher kommen Sie?",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-1-03-6",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Ich komme aus Südkorea.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-03-7",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Und wo wohnen Sie?",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-1-03-8",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Ich wohne in Leipzig, in einer WG.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-fundbuero-1",
+  "who": "Frau",
+  "lang": "de",
+  "text": "Guten Tag!",
+  "voice": "XJWHuOvSoCriK1Q4wPAN"
+ },
+ {
+  "id": "dlg-fundbuero-2",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Guten Tag. Das ist nicht mein Koffer!",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-fundbuero-3",
+  "who": "Frau",
+  "lang": "de",
+  "text": "Oh. Wie heißen Sie?",
+  "voice": "XJWHuOvSoCriK1Q4wPAN"
+ },
+ {
+  "id": "dlg-fundbuero-4",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Ich heiße Park. Minjun Park.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-fundbuero-5",
+  "who": "Frau",
+  "lang": "de",
+  "text": "Wie schreibt man das?",
+  "voice": "XJWHuOvSoCriK1Q4wPAN"
+ },
+ {
+  "id": "dlg-fundbuero-6",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Pe, A, Er, Ka.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-fundbuero-7",
+  "who": "Frau",
+  "lang": "de",
+  "text": "Woher kommen Sie? Und wo wohnen Sie?",
+  "voice": "XJWHuOvSoCriK1Q4wPAN"
+ },
+ {
+  "id": "dlg-fundbuero-8",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Ich komme aus Südkorea. Ich wohne jetzt in Leipzig.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-fundbuero-9",
+  "who": "Frau",
+  "lang": "de",
+  "text": "Und Ihr Koffer? Wie ist er?",
+  "voice": "XJWHuOvSoCriK1Q4wPAN"
+ },
+ {
+  "id": "dlg-fundbuero-10",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Er ist schwarz und groß.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-fundbuero-11",
+  "who": "Frau",
+  "lang": "de",
+  "text": "Danke. Auf Wiedersehen!",
+  "voice": "XJWHuOvSoCriK1Q4wPAN"
+ },
+ {
+  "id": "dlg-13-1",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Jonas, woher kommst du?",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-13-2",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Ich komme aus Leipzig. Ich wohne hier – in der WG mit dir!",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "dlg-13-3",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Sprichst du Englisch?",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-13-4",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Ja. Und ich spreche ein bisschen Spanisch.",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "dlg-13-5",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Wie ist deine Handynummer?",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-13-6",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Null – eins – sieben – null … zwölf, acht, fünfzehn.",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "dlg-1-04-1",
+  "who": "Carlos",
+  "lang": "de",
+  "text": "Hallo! Ich bin Carlos. Ich komme aus Spanien.",
+  "voice": "pjvu5b1KMIka2bL61Exv"
+ },
+ {
+  "id": "dlg-1-04-2",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Hallo, Carlos! Ich bin Minjun.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-04-3",
+  "who": "Carlos",
+  "lang": "de",
+  "text": "Das ist Tomasz. Er kommt aus Polen.",
+  "voice": "pjvu5b1KMIka2bL61Exv"
+ },
+ {
+  "id": "dlg-1-04-4",
+  "who": "Tomasz",
+  "lang": "de",
+  "text": "Hallo! Freut mich.",
+  "voice": "FmACKMYLGND71Mko3lVz"
+ },
+ {
+  "id": "dlg-1-04-5",
+  "who": "Carlos",
+  "lang": "de",
+  "text": "Und das ist Priya. Sie kommt aus Indien.",
+  "voice": "pjvu5b1KMIka2bL61Exv"
+ },
+ {
+  "id": "dlg-1-04-6",
+  "who": "Priya",
+  "lang": "de",
+  "text": "Hi! Ich möchte hier studieren.",
+  "voice": "TJUbdtIHknxm2JTOLSmc"
+ },
+ {
+  "id": "dlg-1-04-7",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Ich auch!",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-w1-1",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Sie kommt aus China. Sie wohnt in Halle. Sie spricht Chinesisch und Englisch.",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-w2-1",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Er kommt aus der Türkei. Er wohnt in Leipzig. Er spricht Türkisch.",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-w3-1",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Er kommt aus Brasilien. Er wohnt in Dresden. Er spricht drei Sprachen.",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-w4-1",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Sie kommt aus der Ukraine. Sie ist Ärztin. Sie spricht Ukrainisch und Russisch.",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-w5-1",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Er heißt Jonas. Er kommt aus Leipzig. Er wohnt in einer WG – mit Minjun!",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-1-07-1",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Herr Park, Ihre Nummer ist null, eins, sieben, sechs, dreizehn, null fünf, achtzehn, neun. Richtig?",
+  "voice": "rKiu7lQ4c5P3az3745s3"
+ },
+ {
+  "id": "dlg-1-07-2",
+  "who": "Minjun",
+  "lang": "de",
+  "text": "Ja, richtig.",
+  "voice": "FfvPVzUs3MSJucOhMXLy"
+ },
+ {
+  "id": "dlg-1-07-3",
+  "who": "Carlos",
+  "lang": "de",
+  "text": "Meine Nummer: null, eins, fünf, sieben, zwanzig, sechzehn, vier, zwölf.",
+  "voice": "pjvu5b1KMIka2bL61Exv"
+ },
+ {
+  "id": "dlg-1-07-4",
+  "who": "Priya",
+  "lang": "de",
+  "text": "Null, eins, fünf, zwei, siebzehn, elf, neunzehn, drei.",
+  "voice": "TJUbdtIHknxm2JTOLSmc"
+ },
+ {
+  "id": "dlg-1-09-1",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Null, vier, null … siebzehn … hm, das kann ich nicht lesen.",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "dlg-1-09-2",
+  "who": "Lena",
+  "lang": "de",
+  "text": "Null, vier, null? Das ist Hamburg! Ich komme aus Hamburg!",
+  "voice": "WzPl01KDMCPMOyx39EfF"
+ },
+ {
+  "id": "dlg-1-09-3",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Der Mann kommt aus Hamburg? Das ist ein Fall für uns!",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "dlg-1-10-1",
+  "who": "수진",
+  "lang": "ko",
+  "text": "어머, 혹시 한국 분이세요?",
+  "voice": "UvgKIGQwdeBJcpRJvb3P"
+ },
+ {
+  "id": "dlg-1-10-2",
+  "who": "민준",
+  "lang": "ko",
+  "text": "네! 저는 박민준이에요. 부산에서 왔어요. 이 건물 WG에 살아요.",
+  "voice": "zBfkllpYmUyxwRyQt8Zw"
+ },
+ {
+  "id": "dlg-1-10-3",
+  "who": "수진",
+  "lang": "ko",
+  "text": "반가워요! 저는 이수진이에요. 서울에서 왔어요. 오늘 이 건물로 이사 왔어요. 얘는 딸 하은이에요.",
+  "voice": "UvgKIGQwdeBJcpRJvb3P"
+ },
+ {
+  "id": "dlg-1-10-4",
+  "who": "하은",
+  "lang": "de",
+  "text": "Guten Tag, Frau Schulze!",
+  "voice": "vJ170fCwESgE1tjW39So"
+ },
+ {
+  "id": "dlg-1-10-5",
+  "who": "Frau Schulze",
+  "lang": "de",
+  "text": "… Guten Tag.",
+  "voice": "gDQfVolj9RbmXgumLcOq"
+ },
+ {
+  "id": "dlg-jonas-1",
+  "who": "Jonas",
+  "lang": "de",
+  "text": "Minjun, wer ist das?",
+  "voice": "A4RisuBq9GHCfbxWXH9q"
+ },
+ {
+  "id": "lis-1",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "sieben",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "sieben"
+ },
+ {
+  "id": "lis-2",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "neun",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "neun"
+ },
+ {
+  "id": "lis-3",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "zwei",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "zwei"
+ },
+ {
+  "id": "lis-4",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Leute",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "Leute"
+ },
+ {
+  "id": "lis-5",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Leipzig",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "Leipzig"
+ },
+ {
+  "id": "lis-6",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "wie",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "wie"
+ },
+ {
+  "id": "lis-7",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Be – E – Er – El – I – En.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "B, E, R, L, I, N."
+ },
+ {
+  "id": "lis-8",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "El – E – En – A.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "L, E, N, A."
+ },
+ {
+  "id": "lis-9",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Ka – O – Eff – Eff – E – Er.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "K, O, F, F, E, R."
+ },
+ {
+  "id": "lis-10",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Pe – A – Er – Ka.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "P, A, R, K."
+ },
+ {
+  "id": "lis-11",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Jott – O – En – A – Es.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "J, O, N, A, S."
+ },
+ {
+  "id": "lis-12",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "We – A – Ge – En – E – Er.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "W, A, G, N, E, R."
+ },
+ {
+  "id": "lis-13",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Ha – A – Em – Be – U – Er – Ge.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "H, A, M, B, U, R, G."
+ },
+ {
+  "id": "lis-14",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "De – Er – E – Es – De – E – En.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "D, R, E, S, D, E, N."
+ },
+ {
+  "id": "lis-15",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Ka – Ö – El – En.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "K, Ö, L, N."
+ },
+ {
+  "id": "lis-16",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Es – E – O – U – El.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "S, E, O, U, L."
+ },
+ {
+  "id": "lis-17",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Pe – E – Te – Er – A.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "P, E, T, R, A."
+ },
+ {
+  "id": "lis-18",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Es – Tse – Ha – U – El – Tsett – E.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "S, C, H, U, L, Z, E."
+ },
+ {
+  "id": "lis-19",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "Em – Ü – En – Tse – Ha – E – En.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "M, Ü, N, C, H, E, N."
+ },
+ {
+  "id": "lis-20",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "fünfzehn",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "fünfzehn"
+ },
+ {
+  "id": "lis-21",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "acht",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "acht"
+ },
+ {
+  "id": "lis-22",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "neunzehn",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "neunzehn"
+ },
+ {
+  "id": "lis-23",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "sechs",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "sechs"
+ },
+ {
+  "id": "lis-24",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "vierzehn",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "vierzehn"
+ },
+ {
+  "id": "lis-25",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "zwei",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "zwei"
+ },
+ {
+  "id": "lis-26",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "null, eins, sieben, sechs, zwölf, neunzehn, drei.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "null, eins, sieben, sechs, zwölf, neunzehn, drei."
+ },
+ {
+  "id": "lis-27",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "null, drei, vier, eins, achtzehn, null, sieben.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "null, drei, vier, eins, achtzehn, null, sieben."
+ },
+ {
+  "id": "lis-28",
+  "who": "Frau Wagner",
+  "lang": "de",
+  "text": "null, vier, null, sechzehn, elf, zwanzig.",
+  "voice": "rKiu7lQ4c5P3az3745s3",
+  "src": "null, vier, null, sechzehn, elf, zwanzig."
+ }
+]

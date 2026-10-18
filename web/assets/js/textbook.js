@@ -67,16 +67,39 @@
   function clearPlaying() {
     document.querySelectorAll(".say-btn.playing").forEach(function (b) { b.classList.remove("playing"); });
   }
-  function speakQueue(items, btn) {
-    if (!synth) return;
-    synth.cancel();
+  // 녹음 파일(data-audio)이 있으면 그 파일을, 없으면 브라우저 음성을 차례로 재생
+  var curAudio = null, playToken = 0;
+  function stopAll() {
+    playToken++;
+    if (synth) synth.cancel();
+    if (curAudio) { curAudio.pause(); curAudio = null; }
     clearPlaying();
+  }
+  function speakTTS(it, done) {
+    if (!synth) { done(); return; }
+    var u = utter(it.text, it.lang, it.who);
+    u.onend = u.onerror = function () { done(); };
+    synth.speak(u);
+  }
+  function speakQueue(items, btn) {
+    var again = btn && btn.classList.contains("playing");
+    stopAll();
+    if (again) return;                 // 재생 중인 버튼을 다시 누르면 멈춤
+    var token = playToken, i = 0;
     if (btn) btn.classList.add("playing");
-    items.forEach(function (it, i) {
-      var u = utter(it.text, it.lang, it.who);
-      if (i === items.length - 1) u.onend = u.onerror = clearPlaying;
-      synth.speak(u);
-    });
+    (function next() {
+      if (token !== playToken) return;
+      if (i >= items.length) { clearPlaying(); return; }
+      var it = items[i++];
+      var go = function () { if (token === playToken) setTimeout(next, 350); };
+      if (!it.src) { speakTTS(it, go); return; }
+      var a = new Audio(it.src);
+      curAudio = a;
+      a.onended = go;
+      a.onerror = function () { speakTTS(it, go); };
+      var p = a.play();
+      if (p && p.catch) p.catch(function () { speakTTS(it, go); });
+    })();
   }
   function textOf(el) {
     return (el.getAttribute("data-say") || el.textContent).replace(/\s+/g, " ").trim();
@@ -89,7 +112,7 @@
   // 한 줄 읽기 버튼: .line 안의 [data-text] 또는 data-say 속성
   document.querySelectorAll(".line").forEach(function (line) {
     var textEl = line.querySelector(".text");
-    if (!textEl || !synth) return;
+    if (!textEl || !(synth || textEl.hasAttribute("data-audio"))) return;
     var b = document.createElement("button");
     b.className = "say-btn";
     b.type = "button";
@@ -97,14 +120,14 @@
     b.textContent = "▶";
     b.addEventListener("click", function () {
       var who = line.querySelector(".who");
-      speakQueue([{ text: textOf(textEl), lang: langOf(textEl), who: who && who.textContent }], b);
+      speakQueue([{ text: textOf(textEl), lang: langOf(textEl), who: who && who.textContent, src: textEl.getAttribute("data-audio") }], b);
     });
     line.appendChild(b);
   });
 
   // 단어·표현 읽기: [data-say] 요소에 버튼 추가
   document.querySelectorAll("[data-say]:not(.line .text)").forEach(function (el) {
-    if (!synth) return;
+    if (!synth && !el.hasAttribute("data-audio")) return;
     var b = document.createElement("button");
     b.className = "say-btn";
     b.type = "button";
@@ -112,7 +135,7 @@
     b.textContent = "▶";
     b.style.marginLeft = ".3rem";
     b.style.width = b.style.height = "1.6rem";
-    b.addEventListener("click", function () { speakQueue([{ text: textOf(el), lang: langOf(el) }], b); });
+    b.addEventListener("click", function () { speakQueue([{ text: textOf(el), lang: langOf(el), src: el.getAttribute("data-audio") }], b); });
     // 표 칸·문단처럼 블록 요소면 안쪽 끝에, 인라인 요소면 바로 뒤에 붙인다
     if (/^(TD|TH|P|DIV|LI)$/.test(el.tagName)) el.appendChild(b);
     else el.insertAdjacentElement("afterend", b);
@@ -120,7 +143,8 @@
 
   // 트랙 재생: [data-play="대화 id"] → 대화 전체를 순서대로 읽음
   document.querySelectorAll("[data-play]").forEach(function (btn) {
-    if (!synth) { btn.disabled = true; btn.title = "이 브라우저는 음성 읽기를 지원하지 않습니다"; return; }
+    var target = document.getElementById(btn.getAttribute("data-play"));
+    if (!synth && !(target && target.querySelector("[data-audio]"))) { btn.disabled = true; btn.title = "이 브라우저는 음성 읽기를 지원하지 않습니다"; return; }
     btn.addEventListener("click", function () {
       var dlg = document.getElementById(btn.getAttribute("data-play"));
       if (!dlg) return;
@@ -128,7 +152,7 @@
       dlg.querySelectorAll(".line, [data-say-seq]").forEach(function (line) {
         var t = line.querySelector(".text") || line;
         var who = line.querySelector(".who");
-        items.push({ text: textOf(t), lang: langOf(t), who: who && who.textContent });
+        items.push({ text: textOf(t), lang: langOf(t), who: who && who.textContent, src: t.getAttribute("data-audio") });
       });
       speakQueue(items, btn);
     });

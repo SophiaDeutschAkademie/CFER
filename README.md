@@ -45,6 +45,7 @@ web/
 ├── index.html                 목차
 ├── assets/css/textbook.css    공통 스타일 (색은 :root 토큰, 다크 모드·인쇄 지원)
 ├── assets/js/textbook.js      공통 기능 (채점·음성·차시별 보기·ä ö ü ß 입력·저장)
+├── assets/audio/k01/          1과 녹음(ElevenLabs eleven_v4, 대화 95줄 + 듣기 문제 28개)
 └── A1/kapitel-01.html         챕터별 HTML
 ```
 

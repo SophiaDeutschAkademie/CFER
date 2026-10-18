@@ -10,7 +10,7 @@ js = open(os.path.join(WEB, "assets/js/textbook.js"), encoding="utf-8").read()
 
 def uri(p):
     path = os.path.normpath(os.path.join(base, p))
-    mime = "image/svg+xml" if path.endswith(".svg") else "image/png" if path.endswith(".png") else "image/webp"
+    mime = "image/svg+xml" if path.endswith(".svg") else "image/png" if path.endswith(".png") else "audio/mpeg" if path.endswith(".mp3") else "image/webp"
     return f"data:{mime};base64," + base64.b64encode(open(path, "rb").read()).decode()
 
 # 대화 아바타: 인물마다 한 번만 넣고 CSS 클래스로 재사용
@@ -23,6 +23,7 @@ extra += "".join(f".av-{n}{{background-image:var(--p-{n})}}" for _, n in people)
 s = s.replace('<link rel="stylesheet" href="../assets/css/textbook.css">', "<style>\n" + css + "\n" + extra + "\n</style>")
 s = s.replace('<script src="../assets/js/textbook.js"></script>', "<script>\n" + js + "\n</script>")
 s = re.sub(r'src="(\.\./assets/img/[^"]+)"', lambda m: 'src="' + uri(m.group(1)) + '"', s)
+s = re.sub(r'data-audio="(\.\./assets/audio/[^"]+)"', lambda m: 'data-audio="' + uri(m.group(1)) + '"', s)
 s = s.replace('href="../index.html"', 'href="#"')
 assert "../assets" not in s, "외부 파일 참조가 남아 있습니다"
 out = os.path.join(WEB, "dist", os.path.basename(rel))
