@@ -2,6 +2,7 @@
 
 > **이야기 속 시간**: 9월 말, 민준이 라이프치히에 도착한 날과 그다음 날
 > **장소**: Leipzig Hauptbahnhof(라이프치히 중앙역) → WG(공유 주택) → Sprachschule(어학원)
+> **등장**: 🎓 민준(유학생) · 👨‍👩‍👧‍👦 수진(두 아이의 엄마, 간호사) · Jonas · Lena · Frau Wagner · Carlos · Amira
 > **수업**: 3차시 (1주) · 1차시 = **1교시 50분 + 2교시 50분** · 차시마다 🏠 숙제 60분
 > **1교시** = 장면 듣기·읽기 + 문법 발견 (Input) · **2교시** = 연습 + 말하기·쓰기 (Output)
 
@@ -246,10 +247,15 @@
 >
 > **Carlos:** Hola! Äh … Hallo! Ich bin Carlos. Ich komme aus Spanien, aus Valencia. Ich bin Koch.
 > **Minjun:** Hallo, Carlos! Ich bin Minjun.
-> **Carlos:** Und das sind Amira und Tomasz. Amira ist Ärztin. Sie kommt aus Syrien.
+> **Carlos:** Und das ist Amira. Sie ist Ärztin und kommt aus Syrien.
 > **Amira:** Hallo! Freut mich.
-> **Tomasz:** Hallo. Ich bin Tomasz, aus Polen. Ich bin Ingenieur.
-> **Minjun:** Freut mich! Wir sind alle neu hier, oder?
+> **Sujin:** Hallo! Ich bin Sujin. Ich komme auch aus Südkorea, aus Seoul.
+> **Minjun:** Oh, wirklich? Ich komme aus Busan! Was machst du hier, Sujin?
+> **Sujin:** Ich bin Krankenschwester. Aber jetzt lerne ich Deutsch. Ich wohne in der Kochstraße.
+> **Minjun:** Was? Ich wohne auch in der Kochstraße! Nummer 12.
+> **Sujin:** Nummer 12? Wir auch!
+> **Carlos:** Ha! Ihr seid Nachbarn! 😄
+> **Minjun:** Wir sind alle neu hier, oder?
 > **Carlos:** Ja! Wir sind ein internationaler Kurs!
 
 | 표현 | 뜻 |
@@ -257,14 +263,18 @@
 | Wie bitte? | 뭐라고요? / 다시 말씀해 주시겠어요? |
 | Können Sie das bitte buchstabieren? | 철자를 말씀해 주시겠어요? |
 | Herr Park / Frau Wagner | 박 씨(남) / 바그너 씨(여) – **성(姓)**과 함께 |
-| Ich bin Koch / Ärztin / Ingenieur. | 나는 요리사 / 의사(여) / 엔지니어예요. |
+| Ich bin Koch / Ärztin / Krankenschwester. | 나는 요리사 / 의사(여) / 간호사(여)예요. |
+| auch | ~도 (Ich komme **auch** aus Südkorea.) |
+| in der Kochstraße | 코흐 거리에 *(통째로 외우기)* |
+| Nachbarn | 이웃들 |
 
 **C1** 누구일까요? 이름을 쓰세요.
 1. ________ ist Koch und kommt aus Spanien.
 2. ________ ist Deutschlehrerin.
-3. ________ kommt aus Polen.
+3. ________ kommt aus Seoul.
 4. ________ ist Ärztin.
 5. ________ wohnt in einer WG.
+6. ________ und ________ sind Nachbarn.
 
 > 💡 **직업 앞에는 관사가 없어요!** Ich bin **Student**. ✅ / Ich bin ~~ein~~ Student. ❌
 > 여성형은 대부분 **-in**: Student → Student**in**, Lehrer → Lehrer**in** (Arzt → **Ä**rzt**in**)
@@ -278,13 +288,13 @@
 | du | **bist** | **Bist** du Jonas? |
 | er / sie / es | **ist** | Amira **ist** Ärztin. |
 | wir | **sind** | Wir **sind** alle neu hier. |
-| ihr | **seid** | **Seid** ihr Studenten? |
-| sie / Sie | **sind** | Das **sind** Amira und Tomasz. |
+| ihr | **seid** | Ihr **seid** Nachbarn! |
+| sie / Sie | **sind** | Das **sind** Lena und Jonas. |
 
 > 📌 *sein* = 영어의 *be*. 규칙이 없으니 **통째로!** 🎵 “**빈 – 비스트 – 이스트 – 진트 – 자이트 – 진트**”
 
 **G2** 1. Ich ________ Minjun. 2. Carlos ________ Koch. 3. Wir ________ im Deutschkurs.
-4. ________ du müde? 5. Frau Wagner, ________ Sie aus Leipzig? 6. Lena und Jonas, ________ ihr Studenten?
+4. ________ du müde? 5. Frau Wagner, ________ Sie aus Leipzig? 6. Minjun und Sujin, ________ ihr Nachbarn?
 
 ---
 
@@ -459,13 +469,13 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 > **👩‍⚕️ Amira Haddad**
 > Guten Tag! Mein Name ist Amira Haddad. Ich komme aus Syrien, aus Damaskus. Jetzt wohne ich mit meiner Familie in Leipzig. Ich bin Ärztin. Ich spreche Arabisch, Englisch und Deutsch. Ich lerne Deutsch, denn ich möchte hier als Ärztin arbeiten.
 
-> **👷 Tomasz Nowak**
-> Hallo, ich bin Tomasz. Ich komme aus Polen, aus Krakau. Ich bin Ingenieur und arbeite bei einer Firma in Leipzig. Ich spreche Polnisch, Englisch und Russisch. Deutsch ist schwer, aber ich lerne gern Grammatik!
+> **👩‍⚕️ Sujin Lee**
+> Hallo, ich bin Sujin. Ich komme aus Südkorea, aus Seoul. Ich bin Krankenschwester. Mein Mann arbeitet in Leipzig. Wir haben zwei Kinder: Haeun und Doyun. Ich spreche Koreanisch und ein bisschen Englisch. Deutsch ist schwer, aber ich lerne gern Grammatik!
 
 > **🙋‍♂️ Minjun Park**
 > Hallo! Ich heiße Minjun und komme aus Südkorea, aus Busan. Ich wohne in einer WG mit Jonas und Lena. Ich spreche Koreanisch und Englisch. Ich lerne Deutsch, denn ich möchte in Leipzig studieren.
 
-*(31 Jahre alt = 31살 · von Beruf = 직업이 · denn = 왜냐하면 · schwer = 어려운 · gern = 즐겨)*
+*(31 Jahre alt = 31살 · von Beruf = 직업이 · denn = 왜냐하면 · mein Mann = 내 남편 · wir haben zwei Kinder = 우리는 아이가 둘 있다 · schwer = 어려운 · gern = 즐겨)*
 
 **L1** 맞으면 r, 틀리면 f.
 
@@ -473,11 +483,11 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 |---|---|---|---|
 | 1 | Carlos kommt aus Spanien. | ☐ | ☐ |
 | 2 | Amira wohnt allein (혼자) in Leipzig. | ☐ | ☐ |
-| 3 | Tomasz spricht Russisch. | ☐ | ☐ |
-| 4 | Tomasz lernt nicht gern Grammatik. | ☐ | ☐ |
+| 3 | Sujin hat zwei Kinder. | ☐ | ☐ |
+| 4 | Sujin lernt nicht gern Grammatik. | ☐ | ☐ |
 | 5 | Minjun möchte in Leipzig studieren. | ☐ | ☐ |
 
-**L2** 누가 이 언어를 말하나요? 1. Arabisch → ______ 2. Russisch → ______ 3. Spanisch → ______ 4. Koreanisch → ______
+**L2** 누가 이 언어를 말하나요? 1. Arabisch → ______ 2. Spanisch → ______ 3. Koreanisch → ______ / ______
 
 ---
 
@@ -627,6 +637,7 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 | der Arzt / die Ärztin | 의사 |
 | der Koch / die Köchin | 요리사 |
 | der Ingenieur / die Ingenieurin | 엔지니어 |
+| der Krankenpfleger / die Krankenschwester | 간호사 *(공식 직업명은 Pflegefachmann / Pflegefachfrau)* |
 | Herr … / Frau … | ~씨(남) / ~씨(여) |
 
 ---
@@ -637,14 +648,15 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 >
 > Ich bin in Leipzig! 🥳
 > Der Bahnhof ist sehr groß. Jonas ist nett. Lena ist lustig – sie sagt immer „Moin“. 😄
-> Heute ist mein erster Tag im Deutschkurs. Frau Wagner ist meine Lehrerin. Carlos, Amira und Tomasz sind auch im Kurs. Wir sind alle neu hier.
+> Heute ist mein erster Tag im Deutschkurs. Frau Wagner ist meine Lehrerin. Carlos, Amira und Sujin sind auch im Kurs. Sujin kommt auch aus Korea – und sie wohnt in meinem Haus! 😮
+> Unten wohnt Frau Schulze. Sie sagt nicht „Hallo“. Sie sagt nur „Guten Tag“. Sie lacht nicht. Hmm … 🤔
 > Mein Zimmer in der WG ist klein, aber … hmm, da ist kein Tisch! Und kein Stuhl! 😱
 > Morgen zeigt mir Jonas die Wohnung. ✨
 
-*(nett = 친절한 · lustig = 재미있는 · sagt = 말한다 · klein = 작은 · da ist kein Tisch = 책상이 없다 · zeigt mir … die Wohnung = 나에게 집을 보여 준다)*
+*(nett = 친절한 · lustig = 재미있는 · sagt = 말한다 · in meinem Haus = 우리 건물에 · unten = 아래층에 · lacht = 웃는다 · klein = 작은 · da ist kein Tisch = 책상이 없다 · zeigt mir … die Wohnung = 나에게 집을 보여 준다)*
 
 ➡️ **다음 과 예고 · Kapitel 2: Meine WG, meine Familie**
-민준의 방에는 무엇이 있고, 무엇이 없을까요? 그리고 민준의 가족은 어떤 사람들일까요?
+민준의 방에는 무엇이 있고, 무엇이 없을까요? 같은 건물 3층에 사는 수진의 가족은 어떤 사람들일까요?
 
 ---
 

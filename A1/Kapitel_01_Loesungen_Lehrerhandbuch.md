@@ -62,7 +62,9 @@
 - **문법은 설명보다 발견 먼저**: 4번 규칙 표를 바로 보여 주지 말고, 대화문에서 동사를 찾아 형광펜으로 표시하게 한 뒤 “ich일 때 끝이 뭐로 끝나요?”라고 질문하세요.
 - **동사 2번째 자리 시각화**: 문장 카드를 잘라 배열하게 하고, 동사 카드만 빨간색으로 만들어 항상 두 번째 칸에 놓게 하면 효과적입니다.
 - **du/Sie**: 교실에서 학생끼리는 du, 교사에게는 Sie를 쓰도록 첫날부터 규칙을 정하면 자연스럽게 익힙니다.
-- **이야기 몰입**: 수업 시작 때마다 “민준는 지금 어디에 있죠? 누구를 만났죠?”로 복습하면 다음 과로 이어지는 흐름이 생깁니다.
+- **두 주인공**: 민준(유학 준비생)과 수진(아이를 둔 이민 가정)은 우리 학원의 두 학습자 그룹입니다. 활동 예시를 고를 때 학생이 자기와 가까운 주인공을 골라 역할을 맡게 하면 몰입도가 높아집니다.
+- **수수께끼 씨앗**: 일기 마지막의 Frau Schulze 이야기는 B1 27과까지 이어지는 수수께끼의 시작입니다. “Frau Schulze는 왜 웃지 않을까요?” 한마디만 던지고 답은 주지 마세요.
+- **이야기 몰입**: 수업 시작 때마다 “민준은 지금 어디에 있죠? 누구를 만났죠?”로 복습하면 다음 과로 이어지는 흐름이 생깁니다.
 
 ---
 
@@ -80,7 +82,7 @@
 
 **G1** 1 wohne · 2 kommt · 3 kommst · 4 lernen · 5 studiert · 6 macht · 7 spricht · 8 heißt
 
-**C1** 1 Carlos · 2 Frau Wagner · 3 Tomasz · 4 Amira · 5 Minjun
+**C1** 1 Carlos · 2 Frau Wagner · 3 Sujin · 4 Amira · 5 Minjun · 6 Minjun, Sujin
 
 **G2** 1 bin · 2 ist · 3 sind · 4 Bist · 5 sind · 6 seid
 
@@ -116,9 +118,9 @@
 
 **14a** Minjun 0176 – 13 05 18 9 · Carlos 0157 – 20 16 4 12 · Amira 0152 – 17 11 19 3
 
-**L1** 1 r · 2 f (mit ihrer Familie – 가족과 함께) · 3 r · 4 f (er lernt *gern* Grammatik) · 5 r
+**L1** 1 r · 2 f (mit ihrer Familie – 가족과 함께) · 3 r · 4 f (sie lernt *gern* Grammatik) · 5 r
 
-**L2** 1 Amira · 2 Tomasz · 3 Carlos · 4 Minjun
+**L2** 1 Amira · 2 Carlos · 3 Minjun, Sujin
 
 **6a** dr**ei** · v**ie**r · h**ei**ßen · W**ie** · S**ie** · fr**ei**
 
