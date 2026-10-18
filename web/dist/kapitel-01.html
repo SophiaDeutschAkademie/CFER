@@ -293,7 +293,7 @@ img.mood-s { height: 34px; width: 34px; object-fit: cover; object-position: 50% 
   border-radius: 6px; padding: 0 .45rem; margin-right: .4rem; font-size: .85rem;
 }
 .ex ol, .ex ul { padding-left: 1.4rem; margin: .4rem 0; }
-.ex li { margin: .35rem 0; }
+.ex li { margin: .6rem 0; }
 .hw-only { font-size: .8rem; color: var(--text-muted); }
 
 input.blank {
@@ -501,11 +501,9 @@ details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600
 .wgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 0 2.5rem; }
 @media (max-width: 520px) { .wgrid { grid-template-columns: 1fr; } }
 
-/* 넓은 화면: 연습문제 문항을 두 단으로 */
+/* 넓은 화면: 학습 목표 3단 */
 @media (min-width: 900px) {
   .goal-grid { grid-template-columns: repeat(3, 1fr); }
-  .ex > ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3rem; row-gap: .45rem; padding-left: 1.4rem; }
-  .ex > ol > li { padding-left: .2rem; }
 }
 
 /* ---------- 표지 (책 첫 화면) ---------- */
