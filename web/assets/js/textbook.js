@@ -286,6 +286,20 @@
   });
 
 
+  /* ---------- 표지: 화면 크기에 맞게 축소 (A4 비율 유지) ---------- */
+  var coverSheet = document.querySelector(".cover-sheet");
+  function fitCover() {
+    if (!coverSheet) return;
+    var w = 794, h = 1123;   // 210 × 297 mm
+    var z = Math.min(1, (window.innerWidth - 24) / w, (window.innerHeight - 24) / h);
+    coverSheet.style.zoom = z < 1 ? z : "";
+  }
+  if (coverSheet) {
+    window.addEventListener("resize", fitCover);
+    window.addEventListener("beforeprint", function () { coverSheet.style.zoom = ""; });
+    window.addEventListener("afterprint", fitCover);
+  }
+
   /* ---------- 차시별로 나눠 보기 (상단 버튼 = 탭) ---------- */
   var panelEls = Array.prototype.slice.call(document.querySelectorAll("[data-panel]"));
   if (panelEls.length) {
@@ -304,6 +318,8 @@
         else a.removeAttribute("aria-current");
       });
       store.set("panel", name);
+      document.body.setAttribute("data-current", name);
+      if (name === "cover") fitCover();
       var tab = document.querySelector('[data-tab="' + name + '"]');
       if (tab) { try { history.replaceState(null, "", tab.getAttribute("href")); } catch (err) { /* 무시 */ } }
     };
@@ -314,7 +330,7 @@
     var goTo = function (hash) {
       var id = (hash || "").replace(/^#/, "");
       var target = id ? document.getElementById(id) : null;
-      if (!target) { showPanel(store.get("panel") || names[0]); return; }
+      if (!target) { showPanel(names[0]); return; }   // 처음 열면 맨 앞(표지)부터
       var owner = target.closest("[data-panel]");
       var name = owner ? owner.getAttribute("data-panel") : names[0];
       showPanel(name);
@@ -335,12 +351,17 @@
       else { goTo(h); try { history.replaceState(null, "", h); } catch (err) { /* 무시 */ } }
     });
     // 각 부분 끝에 이전 / 다음 버튼
+    var navOff = function (n) {
+      return panelEls.some(function (e) { return e.getAttribute("data-panel") === n && e.getAttribute("data-nav") === "off"; });
+    };
     names.forEach(function (n, i) {
+      if (navOff(n)) return;                       // 표지에는 이전/다음 없음
+      var prevOff = i > 0 && navOff(names[i - 1]);
       var own = panelEls.filter(function (e) { return e.getAttribute("data-panel") === n; });
       var last = own[own.length - 1];
       var nav = document.createElement("div");
       nav.className = "panel-nav";
-      if (i > 0) nav.innerHTML += '<button type="button" class="btn ghost" data-go="' + names[i - 1] + '">← ' + tabLabel(names[i - 1]) + "</button>";
+      if (i > 0 && !prevOff) nav.innerHTML += '<button type="button" class="btn ghost" data-go="' + names[i - 1] + '">← ' + tabLabel(names[i - 1]) + "</button>";
       if (i < names.length - 1) nav.innerHTML += '<button type="button" class="btn" data-go="' + names[i + 1] + '">' + tabLabel(names[i + 1]) + " →</button>";
       nav.setAttribute("data-panel", n);
       last.insertAdjacentElement("afterend", nav);

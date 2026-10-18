@@ -10,7 +10,8 @@ js = open(os.path.join(WEB, "assets/js/textbook.js"), encoding="utf-8").read()
 
 def uri(p):
     path = os.path.normpath(os.path.join(base, p))
-    return "data:image/webp;base64," + base64.b64encode(open(path, "rb").read()).decode()
+    mime = "image/svg+xml" if path.endswith(".svg") else "image/png" if path.endswith(".png") else "image/webp"
+    return f"data:{mime};base64," + base64.b64encode(open(path, "rb").read()).decode()
 
 # 대화 아바타: 인물마다 한 번만 넣고 CSS 클래스로 재사용
 pat = r'class="avatar" style="background-image:url\(\.\./assets/img/([^/]+)/person-([a-z]+)\.webp\)"'

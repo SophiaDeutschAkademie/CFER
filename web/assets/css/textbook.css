@@ -430,7 +430,76 @@ details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600
 .panel-nav .btn:only-child { margin-left: auto; }
 .panel-nav .btn { padding: .55rem 1.2rem; font-size: .95rem; }
 
+
+/* ---------- 표지 (책 첫 화면) ---------- */
+body[data-current="cover"] { background: #e6e3dc; }
+body[data-current="cover"] .topbar, body[data-current="cover"] footer { display: none; }
+.book-cover { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 12px 0; }
+.cover-sheet {
+  width: 210mm; height: 297mm; position: relative; overflow: hidden; flex: none;
+  background: #F6F4EF; color: #1F2A44; box-shadow: 0 10px 40px rgba(31, 42, 68, .18);
+  font-family: "Inter Tight", "Noto Sans KR", system-ui, sans-serif;
+}
+.cover-art { position: absolute; inset: 0; width: 100%; height: 100%; }
+.cover-top {
+  position: absolute; left: 18mm; right: 18mm; top: 18mm; display: flex; justify-content: space-between; align-items: center;
+  font-size: 3mm; letter-spacing: .22em; text-transform: uppercase; color: #8A8F99;
+}
+.cover-brand { display: flex; align-items: center; gap: 3mm; }
+.cover-brand img { height: 8mm; width: auto; }
+.cover-brand b { color: #1F2A44; font-weight: 700; letter-spacing: .18em; }
+.cover-level { font-weight: 300; }
+.cover-level strong { font-weight: 700; color: #1F2A44; font-size: 5.5mm; letter-spacing: .02em; margin-left: 2mm; vertical-align: -.4mm; }
+.cover-title { position: absolute; left: 18mm; right: 18mm; bottom: 30mm; }
+.cover-title h1 { margin: 0; font-weight: 700; font-size: 17.5mm; line-height: .98; letter-spacing: -.035em; color: #1F2A44; font-family: inherit; }
+.cover-title h1 span { font-weight: 300; }
+.cover-sub { margin: 5mm 0 0; font-family: "Noto Sans KR", sans-serif; font-size: 4.4mm; color: #1F2A44; }
+.cover-sub i { font-style: normal; color: #8A8F99; margin: 0 2mm; }
+.cover-start {
+  display: inline-flex; align-items: center; gap: 2.5mm; margin-top: 8mm; padding: 3.2mm 7mm;
+  background: #1F2A44; color: #F6F4EF; border-radius: 999px; text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif; font-weight: 700; font-size: 4.4mm; letter-spacing: .02em;
+  transition: transform .15s ease, background .15s ease;
+}
+.cover-start:hover { background: #ED1C24; transform: translateX(1mm); }
+.cover-start:focus-visible { outline: .8mm solid #F3C811; outline-offset: 1mm; }
+@media (max-width: 600px) { .cover-start { font-size: 7.5mm; padding: 5mm 11mm; margin-top: 6mm; } }
+.cover-foot {
+  position: absolute; left: 18mm; right: 18mm; bottom: 14mm; padding-top: 4mm; border-top: .25mm solid #D9D6CE;
+  display: flex; justify-content: space-between; font-size: 2.8mm; letter-spacing: .16em; text-transform: uppercase; color: #8A8F99;
+}
+
+/* ---------- 목차 ---------- */
+.contents { padding: 2.5rem 0 1rem; }
+.contents .series { color: var(--accent-2); font-weight: 600; letter-spacing: .08em; font-size: .85rem; margin: 0; }
+.contents-title { font-size: clamp(1.9rem, 5vw, 2.6rem); margin: .2rem 0 .3rem; color: var(--accent); letter-spacing: -.02em; }
+.contents-title span { font-weight: 300; color: var(--text-muted); margin-left: .4rem; }
+.toc-list { list-style: none; padding: 0; margin: 1.5rem 0; display: grid; gap: .6rem; }
+.toc-ch {
+  display: grid; grid-template-columns: 3rem 1fr auto; gap: .9rem; align-items: center;
+  padding: 1rem 1.1rem; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border);
+  text-decoration: none; color: var(--text);
+}
+a.toc-ch { border: 2px solid var(--accent); box-shadow: var(--shadow); }
+a.toc-ch:hover { transform: translateY(-1px); }
+.toc-ch.soon { opacity: .55; }
+.toc-no { font-size: 1.5rem; font-weight: 300; color: var(--accent-2); font-variant-numeric: tabular-nums; }
+.toc-no .ic { width: 1.4rem; height: 1.4rem; }
+.toc-main { display: grid; gap: .1rem; }
+.toc-main b { font-size: 1.1rem; color: var(--accent); }
+.toc-main span { font-size: .9rem; color: var(--text-muted); }
+.toc-main small { font-size: .8rem; color: var(--mystery); }
+.toc-main small .ic { width: 1em; height: 1em; margin-right: .2em; }
+.toc-go { font-size: .85rem; font-weight: 700; color: var(--accent); white-space: nowrap; }
+a.toc-ch .toc-go { background: var(--accent); color: var(--surface); padding: .35rem .8rem; border-radius: 999px; }
+.seasons { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .5rem; }
+.seasons div { border: 1px dashed var(--border); border-radius: var(--radius-sm); padding: .6rem .8rem; font-size: .9rem; color: var(--text-muted); }
+.seasons b { color: var(--accent); margin-right: .3rem; }
+@media (max-width: 560px) { .toc-ch { grid-template-columns: 2.2rem 1fr; } .toc-go { grid-column: 2; justify-self: start; } }
+
 @media print {
+  .book-cover { min-height: 0; padding: 0; break-after: page; }
+  .cover-sheet { box-shadow: none; zoom: 1 !important; }
   .panel-off { display: block !important; }
   .panel-nav { display: none !important; }
   .topbar, .say-btn, .ex-actions, .toggle, .keypad { display: none !important; }
