@@ -252,8 +252,8 @@ figure.scene figcaption, .strip figcaption { font-size: .9rem; color: var(--text
 img.thing { display: block; height: 96px; width: auto; max-width: 100%; margin: 0 auto .4rem; border-radius: 8px; background: #fff; }
 img.person { display: block; height: 150px; width: auto; margin: 0 auto .4rem; border-radius: 8px; background: #fff; }
 img.mini { height: 44px; width: auto; vertical-align: middle; margin-right: .5rem; border-radius: 6px; background: #fff; }
-img.mood { height: 64px; width: auto; border-radius: 50%; background: #fff; }
-img.mood-s { height: 34px; width: auto; border-radius: 50%; background: #fff; vertical-align: middle; }
+img.mood { height: 64px; width: 64px; object-fit: cover; object-position: 50% 30%; border-radius: 50%; background: #fff; border: 1px solid var(--border); }
+img.mood-s { height: 34px; width: 34px; object-fit: cover; object-position: 50% 30%; border-radius: 50%; background: #fff; vertical-align: middle; }
 .profile img.person { height: 170px; }
 .cast { display: flex; gap: .5rem; overflow-x: auto; padding: .75rem 0 .25rem; scrollbar-width: thin; }
 .cast figure { margin: 0; flex: none; width: 78px; text-align: center; }
