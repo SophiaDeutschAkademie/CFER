@@ -291,7 +291,7 @@ input.blank {
   border: none; border-bottom: 2px solid var(--accent-2); background: transparent; color: var(--text);
   min-width: 5rem; width: auto; padding: 0 .2rem; text-align: center;
 }
-input.blank.wide { min-width: 14rem; text-align: left; }
+input.blank.wide { min-width: min(14rem, 100%); max-width: 100%; text-align: left; }
 input.blank.full { width: 100%; text-align: left; }
 input.blank:focus { outline: none; border-bottom-color: var(--accent); background: var(--highlight); }
 input.blank.ok, select.ok { border-color: var(--ok); background: var(--ok-bg); }
@@ -395,7 +395,7 @@ footer { max-width: var(--maxw); margin: 4rem auto 2rem; padding: 0 16px; color:
 .plan small { color: var(--accent-2); font-weight: 700; margin-right: .3rem; }
 
 /* ---------- 문법 총정리 ---------- */
-.sum-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: .75rem; }
+.sum-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: .75rem; }
 .sum { background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .75rem .9rem; }
 .sum-title { font-weight: 700; color: var(--accent); margin: .2rem 0 .4rem; }
 .sum table { background: var(--surface); font-size: .9rem; }
@@ -403,8 +403,6 @@ footer { max-width: var(--maxw); margin: 4rem auto 2rem; padding: 0 16px; color:
 
 /* ---------- 초보자 지원: 뜻 · 발음 도우미 · 문장 카드 ---------- */
 .ko { display: block; font-size: .86rem; color: var(--text-muted); line-height: 1.45; margin-top: .05rem; }
-.pr { font-size: .78rem; color: var(--accent-2); margin-left: .35rem; white-space: nowrap; }
-.pr::before { content: "["; } .pr::after { content: "]"; }
 .line .tx { display: block; }
 
 .today { background: var(--surface); border: 2px solid var(--accent); border-radius: var(--radius); padding: .9rem 1rem; margin: 1rem 0; }
@@ -412,7 +410,38 @@ footer { max-width: var(--maxw); margin: 4rem auto 2rem; padding: 0 16px; color:
 .chunks { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .5rem; margin: .5rem 0; }
 .chunk { background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .55rem .75rem; }
 .chunk b[lang="de"] { font-size: 1.05rem; }
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(112px, 1fr)); gap: .5rem; margin: .6rem 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .6rem; margin: .6rem 0; }
+.cards-4 { grid-template-columns: repeat(4, 1fr); }
+.cards-3 { grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 1000px) { .cards-3 { grid-template-columns: repeat(6, 1fr); } }
+@media (max-width: 600px) { .cards-4, .cards-3 { grid-template-columns: repeat(2, 1fr); } }
+.card-word { min-width: 0; }
+.card-word b { overflow-wrap: anywhere; }
+
+/* 알파벳·숫자: 화면 폭에 맞춰 줄바꿈되는 칸 */
+.say-grid { display: grid; gap: .4rem; margin: .75rem 0; }
+.say-grid.alphabet { grid-template-columns: repeat(auto-fill, minmax(4.4rem, 1fr)); }
+@media (min-width: 900px) { .say-grid.alphabet { grid-template-columns: repeat(10, 1fr); } }
+.say-grid.numbers { grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); }
+.say-cell {
+  display: flex; align-items: center; justify-content: center; gap: .35rem; flex-wrap: wrap;
+  border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); padding: .45rem .3rem; min-width: 0;
+}
+.say-cell b { font-size: 1.15rem; color: var(--accent); }
+.say-cell span { font-size: .95rem; }
+.say-cell .say-btn { margin-left: 0 !important; }
+.numbers .say-cell b { min-width: 1.4rem; text-align: right; }
+
+/* 신고서 입력 칸 */
+.form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: .6rem 1rem; margin: .6rem 0; }
+.form-grid label { display: grid; gap: .2rem; font-weight: 600; font-size: .92rem; }
+.form-grid small { font-weight: 400; color: var(--text-muted); }
+.form-grid input.blank { width: 100%; text-align: left; }
+table.fixed { table-layout: fixed; }
+table.fixed input.blank { width: 100% !important; min-width: 0; }
+
+/* 듣기 문항 번호 */
+.ex ol .lis + .say-btn { margin: 0 .5rem 0 0 !important; }
 .card-word { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .6rem .7rem; text-align: center; }
 .card-word b { display: block; font-size: 1.05rem; word-break: keep-all; overflow-wrap: normal; hyphens: manual; }
 .card-word .when { display: block; font-size: .75rem; color: var(--accent-2); margin-bottom: .2rem; }
@@ -443,8 +472,23 @@ details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600
 .panel-nav .btn { padding: .55rem 1.2rem; font-size: .95rem; }
 
 
+/* 휴대폰: 표를 칸 안에 맞추기 */
+@media (max-width: 560px) {
+  table { font-size: .84rem; }
+  th, td { padding: .35rem .35rem; }
+  th small, td small { display: block; }
+  .gram { padding-left: .45rem; padding-right: .45rem; border-left-width: 3px; }
+  .card { padding: 1.1rem .9rem; }
+  .gram table { font-size: .76rem; }
+  .gram th, .gram td { padding: .3rem .22rem; }
+  .card-word { padding: .55rem .4rem; }
+  .card-word b { font-size: .95rem; }
+}
+
+@media (max-width: 380px) { .gram table { font-size: .7rem; } }
+
 /* 단어장: 넓은 화면에서 두 단 */
-.wgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 0 2.5rem; }
+.wgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 0 2.5rem; }
 @media (max-width: 520px) { .wgrid { grid-template-columns: 1fr; } }
 
 /* 넓은 화면: 연습문제 문항을 두 단으로 */
