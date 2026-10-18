@@ -4,129 +4,112 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Der falsche Koffer · A1 표지</title>
-<meta name="description" content="SODA Sophia Deutsch Akademie – 이야기로 배우는 독일어 A1 교재 표지">
+<meta name="description" content="SODA Sophia Deutsch Akademie – 이야기로 배우는 독일어 A1 교재 표지 (미니멀)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --navy: #2E3A55; --slate: #6C768A; --sand: #DECDB0; --ivory: #FBF8F1; --ochre: #B87830;
-    --logo-gray: #57585A; --logo-red: #ED1C24; --logo-yellow: #F3C811;
+    --ink: #1F2A44; --muted: #8A8F99; --line: #D9D6CE; --paper: #F6F4EF;
+    --red: #ED1C24; --yellow: #F3C811; --gray: #57585A;
   }
   * { box-sizing: border-box; }
-  html, body { margin: 0; background: #e9e4da; }
-  body { font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; color: var(--navy); }
+  html, body { margin: 0; background: #e6e3dc; }
+  body { font-family: "Inter Tight", "Noto Sans KR", system-ui, sans-serif; color: var(--ink); }
   @page { size: A4; margin: 0; }
-
-  /* A4 한 장 (210 × 297 mm) – 화면에서는 가운데에 축소해서 보여 줌 */
   .sheet {
     width: 210mm; height: 297mm; margin: 24px auto; position: relative; overflow: hidden;
-    background: var(--ivory); box-shadow: 0 10px 40px rgba(46, 58, 85, .25);
+    background: var(--paper); box-shadow: 0 10px 40px rgba(31, 42, 68, .18);
   }
   @media print { html, body { background: none; } .sheet { margin: 0; box-shadow: none; } }
 
-  /* 로고에서 가져온 기울어진 면 – 표지 장식 */
-  .planes { position: absolute; inset: 0; pointer-events: none; }
-
   .top {
-    position: absolute; left: 16mm; right: 16mm; top: 14mm;
+    position: absolute; left: 18mm; right: 18mm; top: 18mm;
     display: flex; justify-content: space-between; align-items: center;
-    font-size: 3.1mm; letter-spacing: .14em; font-weight: 700; color: var(--slate);
+    font-size: 3mm; letter-spacing: .22em; text-transform: uppercase; color: var(--muted);
   }
-  .level {
-    display: inline-flex; align-items: center; justify-content: center;
-    width: 19mm; height: 19mm; border-radius: 50%; background: var(--navy); color: var(--ivory);
-    font-family: "DM Serif Display", serif; font-size: 9mm; letter-spacing: 0;
-  }
+  .brand { display: flex; align-items: center; gap: 3mm; }
+  .brand img { height: 8mm; width: auto; }
+  .brand b { color: var(--ink); font-weight: 700; letter-spacing: .18em; }
+  .level { font-weight: 300; font-size: 3mm; }
+  .level strong { font-weight: 700; color: var(--ink); font-size: 5.5mm; letter-spacing: .02em; margin-left: 2mm; vertical-align: -.4mm; }
 
-  .title { position: absolute; left: 16mm; right: 16mm; top: 36mm; }
-  .kicker { font-size: 4mm; font-weight: 700; color: var(--logo-red); letter-spacing: .08em; margin: 0 0 3mm; }
+  .art { position: absolute; left: 0; top: 0; width: 210mm; height: 297mm; }
+
+  .title { position: absolute; left: 18mm; right: 18mm; bottom: 34mm; }
   h1 {
-    margin: 0; font-family: "DM Serif Display", Georgia, serif; font-weight: 400;
-    font-size: 23mm; line-height: .92; letter-spacing: -.01em; color: var(--navy);
+    margin: 0; font-weight: 700; font-size: 17.5mm; line-height: .98; letter-spacing: -.035em; color: var(--ink);
   }
-  h1 em { font-style: italic; color: var(--navy); }
+  h1 span { font-weight: 300; }
   .sub {
-    margin: 5mm 0 0; font-family: "Noto Serif KR", serif; font-weight: 700; font-size: 7.2mm; color: var(--navy);
+    margin: 6mm 0 0; font-family: "Noto Sans KR", sans-serif; font-weight: 400; font-size: 4.4mm; color: var(--ink);
+    letter-spacing: -.01em;
   }
-  .sub span { color: var(--ochre); }
-  .tagline { margin: 3mm 0 0; font-size: 4mm; color: var(--slate); line-height: 1.6; }
+  .sub i { font-style: normal; color: var(--muted); margin: 0 2mm; }
 
-  .art {
-    position: absolute; left: 16mm; right: 16mm; top: 122mm; height: 118mm;
-    border-radius: 3mm; overflow: hidden; background: #fff;
-    box-shadow: 0 2mm 8mm rgba(46, 58, 85, .18);
+  .foot {
+    position: absolute; left: 18mm; right: 18mm; bottom: 16mm; padding-top: 4mm;
+    border-top: .25mm solid var(--line);
+    display: flex; justify-content: space-between;
+    font-size: 2.8mm; letter-spacing: .16em; text-transform: uppercase; color: var(--muted);
   }
-  .art img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%; display: block; }
-  .tag {
-    position: absolute; right: 9mm; top: 115mm; z-index: 2; transform: rotate(-4deg);
-    background: #fff; border: .5mm solid var(--navy); border-radius: 2mm; padding: 2mm 4mm;
-    font-family: "DM Serif Display", serif; font-size: 5.2mm; color: var(--navy);
-    box-shadow: 0 1.5mm 4mm rgba(46, 58, 85, .2);
-  }
-  .tag::before {
-    content: ""; position: absolute; left: -6mm; top: 50%; width: 6mm; height: .5mm; background: var(--navy);
-  }
-
-  .bottom {
-    position: absolute; left: 16mm; right: 16mm; bottom: 13mm;
-    display: flex; justify-content: space-between; align-items: flex-end; gap: 6mm;
-  }
-  .brand { display: flex; align-items: center; gap: 4mm; }
-  .brand img { height: 17mm; width: auto; }
-  .brand b { display: block; font-size: 7mm; font-weight: 900; letter-spacing: .04em; color: var(--navy); line-height: 1; }
-  .brand span { display: block; font-size: 3.4mm; color: var(--slate); letter-spacing: .06em; margin-top: 1.4mm; }
-  .meta { text-align: right; font-size: 3.1mm; color: var(--slate); line-height: 1.7; }
-  .meta strong { color: var(--navy); }
 </style>
 </head>
 <body>
 <div class="sheet">
 
-  <!-- 로고와 같은 각도(약 27°)의 기울어진 세 면 -->
-  <svg class="planes" viewBox="0 0 210 297" preserveAspectRatio="none" aria-hidden="true">
-    <polygon points="150,96 210,65 210,132 150,163" fill="#57585A" opacity=".10"/>
-    <polygon points="164,108 210,84.5 210,160 164,183.5" fill="#ED1C24" opacity=".85"/>
-    <polygon points="178,121 210,104.7 210,190 178,206.3" fill="#F3C811"/>
-    <polygon points="0,236 34,218.6 34,262 0,279.4" fill="#DECDB0" opacity=".7"/>
+  <!-- 똑같은 가방 두 개, 하나에만 이름표 -->
+  <svg class="art" viewBox="0 0 210 297" aria-hidden="true">
+    <!-- 바닥선 -->
+    <line x1="18" y1="171" x2="192" y2="171" stroke="#D9D6CE" stroke-width=".35"/>
+
+    <!-- 가방 1 -->
+    <g>
+      <path d="M53 104 v-6 a3 3 0 0 1 3 -3 h14 a3 3 0 0 1 3 3 v6" fill="none" stroke="#1F2A44" stroke-width="2.2"/>
+      <rect x="38" y="104" width="50" height="64" rx="4" fill="#1F2A44"/>
+      <line x1="50" y1="106" x2="50" y2="166" stroke="#33405e" stroke-width="1.2"/>
+      <line x1="76" y1="106" x2="76" y2="166" stroke="#33405e" stroke-width="1.2"/>
+      <rect x="44" y="168" width="4" height="3" rx="1" fill="#1F2A44"/>
+      <rect x="78" y="168" width="4" height="3" rx="1" fill="#1F2A44"/>
+    </g>
+
+    <!-- 가방 2 (똑같은 모양) -->
+    <g>
+      <path d="M115 104 v-6 a3 3 0 0 1 3 -3 h14 a3 3 0 0 1 3 3 v6" fill="none" stroke="#1F2A44" stroke-width="2.2"/>
+      <rect x="100" y="104" width="50" height="64" rx="4" fill="#1F2A44"/>
+      <line x1="112" y1="106" x2="112" y2="166" stroke="#33405e" stroke-width="1.2"/>
+      <line x1="138" y1="106" x2="138" y2="166" stroke="#33405e" stroke-width="1.2"/>
+      <rect x="106" y="168" width="4" height="3" rx="1" fill="#1F2A44"/>
+      <rect x="140" y="168" width="4" height="3" rx="1" fill="#1F2A44"/>
+      <!-- 이름표: 끈은 빨강, 표는 노랑 -->
+      <path d="M134 97 C 146 99, 152 106, 156 114" fill="none" stroke="#ED1C24" stroke-width=".7"/>
+      <g transform="rotate(14 160 124)">
+        <rect x="151" y="113" width="18" height="24" rx="2" fill="#F3C811"/>
+        <circle cx="160" cy="117" r="1.3" fill="#F6F4EF"/>
+        <text x="160" y="129.5" text-anchor="middle" font-family="Inter Tight, sans-serif" font-weight="700" font-size="5" fill="#1F2A44">T.S.</text>
+      </g>
+    </g>
   </svg>
 
   <div class="top">
-    <span>SODA LEHRWERK · DEUTSCH FÜR KOREANISCHE LERNENDE</span>
-    <span class="level">A1</span>
+    <span class="brand"><img src="assets/img/brand/soda-logo.svg" alt="SODA 로고"><b>SODA</b><span>Sophia Deutsch Akademie</span></span>
+    <span class="level">Deutsch<strong>A1</strong></span>
   </div>
 
   <div class="title">
-    <p class="kicker">이야기로 배우는 독일어</p>
-    <h1 lang="de">Der falsche<br><em>Koffer</em></h1>
-    <p class="sub">바뀐 여행가방 <span>·</span> 독일어 첫걸음</p>
-    <p class="tagline">라이프치히 중앙역에서 가방 하나가 바뀌었다.<br>그날, 나의 독일어가 시작됐다.</p>
+    <h1 lang="de">Der falsche<br><span>Koffer</span></h1>
+    <p class="sub">바뀐 여행가방<i>/</i>이야기로 배우는 독일어</p>
   </div>
 
-  <div class="tag" lang="de">T. S. – Für E.</div>
-  <div class="art">
-    <img src="assets/img/k01/story-1-bahnhof.webp" alt="라이프치히 중앙역에서 똑같은 검은 가방 두 개가 바뀌는 장면">
-  </div>
-
-  <div class="bottom">
-    <div class="brand">
-      <img src="assets/img/brand/soda-logo.svg" alt="SODA 로고">
-      <div><b>SODA</b><span>Sophia Deutsch Akademie</span></div>
-    </div>
-    <div class="meta">
-      <strong>CEFR A1</strong> · Kapitel 1–8<br>
-      문법 · 말하기 · 쓰기 · 읽기 · 듣기 통합<br>
-      Goethe-Zertifikat A1: Start Deutsch 1 대비
-    </div>
+  <div class="foot">
+    <span>CEFR A1 · Kapitel 1–8</span>
+    <span>Lehrwerk für koreanische Lernende</span>
   </div>
 </div>
 <script>
   // 화면이 A4보다 좁으면 표지 전체를 화면 너비에 맞게 축소 (인쇄에는 영향 없음)
   (function () {
     var sheet = document.querySelector(".sheet");
-    function fit() {
-      var w = sheet.offsetWidth + 48, z = Math.min(1, window.innerWidth / w);
-      sheet.style.zoom = z < 1 ? z : "";
-    }
+    function fit() { var z = Math.min(1, window.innerWidth / (sheet.offsetWidth + 48)); sheet.style.zoom = z < 1 ? z : ""; }
     fit(); window.addEventListener("resize", fit);
     window.addEventListener("beforeprint", function () { sheet.style.zoom = ""; });
     window.addEventListener("afterprint", fit);

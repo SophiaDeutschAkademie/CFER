@@ -21,7 +21,8 @@
 | [`curriculum/03_B1_챕터구성.md`](curriculum/03_B1_챕터구성.md) | B1 · 21–32과 핵심 학습 내용 (약 5.5개월) |
 | [`curriculum/04_B2_챕터구성.md`](curriculum/04_B2_챕터구성.md) | B2 · 33–44과 핵심 학습 내용 (약 6.7개월) |
 | [`web/index.html`](web/index.html) | **HTML 교재 목차** (웹앱 원형) |
-| [`web/cover-a1.html`](web/cover-a1.html) · [`web/dist/cover-a1.pdf`](web/dist/cover-a1.pdf) | **A1 표지** (A4 인쇄용, SODA 로고 포함) |
+| [`web/cover-a1.html`](web/cover-a1.html) · [`web/dist/cover-a1.pdf`](web/dist/cover-a1.pdf) | **A1 표지 – 미니멀** (A4 인쇄용, SODA 로고 포함) |
+| [`web/cover-a1-illustrated.html`](web/cover-a1-illustrated.html) · [`web/dist/cover-a1-illustrated.pdf`](web/dist/cover-a1-illustrated.pdf) | A1 표지 – 삽화형 (이전 안) |
 | [`web/A1/kapitel-01.html`](web/A1/kapitel-01.html) | **1과 HTML 교재** – 자동 채점, 음성 듣기, 차시별 보기, 사건 수첩 저장 |
 | [`A1/Kapitel_01_Hallo_ich_bin_Minjun.md`](A1/Kapitel_01_Hallo_ich_bin_Minjun.md) | **1과 시범 원고 (학생용)** |
 | [`A1/Kapitel_01_Loesungen_Lehrerhandbuch.md`](A1/Kapitel_01_Loesungen_Lehrerhandbuch.md) | 1과 정답 · 수업 운영안 · 첨삭 가이드 (교사용) |
