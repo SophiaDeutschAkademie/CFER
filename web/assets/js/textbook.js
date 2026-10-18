@@ -2,7 +2,7 @@
    Der falsche Koffer – 공통 교재 스크립트
    - 연습 문제 채점 (data-answer 기반)
    - 독일어/한국어 음성 읽기 (Web Speech API)
-   - 교사 모드, 활동 타이머, 사건 수첩 저장
+   - 차시별 보기, 사건 수첩 저장
    모든 기능은 HTML의 data- 속성만 보고 동작하므로,
    웹앱으로 옮길 때 같은 마크업을 그대로 쓸 수 있다.
    ========================================================= */
@@ -27,19 +27,6 @@
     }
   };
 
-  /* ---------- 교사 모드 ---------- */
-  var teacherBtn = document.getElementById("teacher-toggle");
-  function setTeacher(on) {
-    document.body.classList.toggle("teacher-on", on);
-    if (teacherBtn) teacherBtn.setAttribute("aria-pressed", on ? "true" : "false");
-    store.setGlobal("teacher", on ? "1" : "0");
-  }
-  if (teacherBtn) {
-    setTeacher(store.getGlobal("teacher") === "1");
-    teacherBtn.addEventListener("click", function () {
-      setTeacher(!document.body.classList.contains("teacher-on"));
-    });
-  }
 
   /* ---------- 테마 (자동 → 밝게 → 어둡게) ---------- */
   var themeBtn = document.getElementById("theme-toggle");
@@ -263,38 +250,6 @@
       answer.textContent = subjects[current.n] + " " + verbs[current.v][current.n];
     });
   }
-
-  /* ---------- 활동 타이머 (교사 모드에서 시간 배지를 누르면 시작) ---------- */
-  var timer = document.createElement("div");
-  timer.className = "timer";
-  timer.setAttribute("role", "timer");
-  timer.innerHTML = '<span class="t-label"></span><span class="t-time"></span><button type="button" aria-label="타이머 닫기">✕</button>';
-  document.body.appendChild(timer);
-  var tId = null;
-  function stopTimer() { clearInterval(tId); tId = null; timer.className = "timer"; }
-  timer.querySelector("button").addEventListener("click", stopTimer);
-  document.querySelectorAll(".time[data-min]").forEach(function (badge) {
-    badge.setAttribute("title", "교사 모드에서 누르면 타이머 시작");
-    badge.addEventListener("click", function () {
-      if (!document.body.classList.contains("teacher-on")) return;
-      stopTimer();
-      var left = parseInt(badge.getAttribute("data-min"), 10) * 60;
-      var h = badge.closest(".activity");
-      var title = h && h.querySelector("h3");
-      timer.querySelector(".t-label").textContent = title ? title.firstChild.textContent.trim().slice(0, 24) : "";
-      function tick() {
-        var m = Math.floor(left / 60), s = left % 60;
-        timer.querySelector(".t-time").textContent = m + ":" + (s < 10 ? "0" : "") + s;
-        if (left <= 0) { clearInterval(tId); timer.classList.add("done"); }
-        left--;
-      }
-      timer.className = "timer show";
-      tick();
-      tId = setInterval(tick, 1000);
-    });
-  });
-
-
 
 
   /* ---------- ä ö ü ß 입력 버튼 ---------- */

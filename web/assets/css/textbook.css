@@ -126,7 +126,6 @@ small, .muted { color: var(--text-muted); }
   font: inherit; font-size: .8rem; padding: .3rem .7rem; border-radius: 999px;
   border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer;
 }
-.toggle[aria-pressed="true"] { background: var(--teacher); color: var(--surface); border-color: var(--teacher); }
 @media (max-width: 560px) {
   .topbar-inner { flex-wrap: nowrap; gap: .35rem; }
   .topbar .brand .lbl, .toggle .lbl { display: none; }
@@ -176,8 +175,6 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 16px 6rem; }
   border: 1px solid var(--border); border-radius: 999px; padding: .05rem .55rem;
   background: var(--surface-2); cursor: default;
 }
-.teacher-on .time { cursor: pointer; }
-.teacher-on .time:hover { border-color: var(--teacher); color: var(--teacher); }
 
 /* 표 */
 .table-wrap { overflow-x: auto; margin: .75rem 0; -webkit-overflow-scrolling: touch; }
@@ -318,25 +315,9 @@ tr.bad td { background: var(--bad-bg); }
 .dice-result { font-size: 1.1rem; }
 .dice-result b { color: var(--accent); }
 
-/* 교사용 */
-.teacher-note { display: none; }
-.teacher-on .teacher-note {
-  display: block; background: var(--teacher-bg); border-left: 4px solid var(--teacher);
-  border-radius: var(--radius-sm); padding: .7rem 1rem; margin: .8rem 0; font-size: .92rem;
-}
-.teacher-note .box-title { color: var(--teacher); }
 details.transcript { margin: .5rem 0; }
 details.transcript summary { cursor: pointer; color: var(--accent-2); font-size: .9rem; }
 
-/* 타이머 */
-.timer {
-  position: fixed; right: 16px; bottom: 16px; z-index: 30; display: none;
-  background: var(--teacher); color: var(--surface); border-radius: 999px;
-  padding: .5rem 1rem; font-weight: 700; box-shadow: var(--shadow); font-variant-numeric: tabular-nums;
-}
-.timer.show { display: flex; gap: .75rem; align-items: center; }
-.timer button { font: inherit; background: transparent; color: inherit; border: 1px solid currentColor; border-radius: 999px; padding: 0 .5rem; cursor: pointer; }
-.timer.done { background: var(--bad); }
 
 /* 일기 */
 .diary {
@@ -452,7 +433,7 @@ details.more summary { cursor: pointer; color: var(--accent-2); font-weight: 600
 @media print {
   .panel-off { display: block !important; }
   .panel-nav { display: none !important; }
-  .topbar, .say-btn, .ex-actions, .timer, .toggle, .keypad { display: none !important; }
+  .topbar, .say-btn, .ex-actions, .toggle, .keypad { display: none !important; }
   body { background: #fff; color: #000; font-size: 11pt; }
   .card { box-shadow: none; break-inside: avoid; }
   .stunde { break-before: page; }

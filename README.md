@@ -21,7 +21,8 @@
 | [`curriculum/03_B1_챕터구성.md`](curriculum/03_B1_챕터구성.md) | B1 · 21–32과 핵심 학습 내용 (약 5.5개월) |
 | [`curriculum/04_B2_챕터구성.md`](curriculum/04_B2_챕터구성.md) | B2 · 33–44과 핵심 학습 내용 (약 6.7개월) |
 | [`web/index.html`](web/index.html) | **HTML 교재 목차** (웹앱 원형) |
-| [`web/A1/kapitel-01.html`](web/A1/kapitel-01.html) | **1과 HTML 교재** – 자동 채점, 음성 듣기, 교사 모드(운영안·정답·대본), 사건 수첩 저장 |
+| [`web/cover-a1.html`](web/cover-a1.html) · [`web/dist/cover-a1.pdf`](web/dist/cover-a1.pdf) | **A1 표지** (A4 인쇄용, SODA 로고 포함) |
+| [`web/A1/kapitel-01.html`](web/A1/kapitel-01.html) | **1과 HTML 교재** – 자동 채점, 음성 듣기, 차시별 보기, 사건 수첩 저장 |
 | [`A1/Kapitel_01_Hallo_ich_bin_Minjun.md`](A1/Kapitel_01_Hallo_ich_bin_Minjun.md) | **1과 시범 원고 (학생용)** |
 | [`A1/Kapitel_01_Loesungen_Lehrerhandbuch.md`](A1/Kapitel_01_Loesungen_Lehrerhandbuch.md) | 1과 정답 · 수업 운영안 · 첨삭 가이드 (교사용) |
 
@@ -36,7 +37,7 @@
 
 ## HTML 교재 구조 (웹앱 전환 대비)
 
-> 1과는 **HTML이 원본**입니다. `A1/Kapitel_01_*.md`(원고·교사용 별책)는 초기 초안이며, 최신 내용(초보자용 재설계, 교사용 운영안·정답·대본)은 HTML의 교사 모드에 있습니다.
+> 1과는 **HTML이 원본**입니다. `A1/Kapitel_01_*.md`(원고·교사용 별책)는 초기 초안이며, 최신 내용(초보자용 재설계)은 HTML에 있습니다. 교사 모드는 삭제했으며, 교사용 운영안·첨삭 기준은 Markdown 교사용 별책(초안)을 참고하세요.
 
 ```
 web/
@@ -56,7 +57,6 @@ web/
 | `.dialog > .line > .who + .text[lang]` | 대화문 – 줄마다 ▶ 듣기 버튼 자동 생성 |
 | `[data-play="대화 id"]` | 대화 전체 듣기 (원어민 녹음 전까지 브라우저 TTS 사용) |
 | `[data-say]` | 단어·표현 듣기 버튼 |
-| `.teacher-note` | 교사 모드에서만 보임 |
-| `.time[data-min]` | 활동 시간 – 교사 모드에서 누르면 타이머 |
+| `.time[data-min]` | 활동 시간 표시 |
 | `[data-persist]` | 학생 입력을 브라우저에 저장 (사건 수첩, 자기 점검) |
 | `section[data-stunde]`, `[data-block="input\|output"]` | 차시·교시 구분 |
