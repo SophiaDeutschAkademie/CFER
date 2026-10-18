@@ -10,7 +10,7 @@
   "id": "dlg-g1-2",
   "who": "Frau Wagner",
   "lang": "de",
-  "text": "Guten Morgen, Minjun!",
+  "text": "Guten Morgen, /ˈmɪndʒuːn/!",
   "voice": "rKiu7lQ4c5P3az3745s3"
  },
  {
@@ -94,14 +94,14 @@
   "id": "dlg-1-01-3",
   "who": "Jonas",
   "lang": "de",
-  "text": "Hallo! Bist du Minjun?",
+  "text": "Hallo! Bist du /ˈmɪndʒuːn/?",
   "voice": "A4RisuBq9GHCfbxWXH9q"
  },
  {
   "id": "dlg-1-01-4",
   "who": "Minjun",
   "lang": "de",
-  "text": "Ja, ich bin Minjun. Und du?",
+  "text": "Ja, ich bin /ˈmɪndʒuːn/. Und du?",
   "voice": "FfvPVzUs3MSJucOhMXLy"
  },
  {
@@ -234,7 +234,7 @@
   "id": "dlg-1-02-2",
   "who": "Minjun",
   "lang": "de",
-  "text": "Hallo, Lena! Ich heiße Minjun.",
+  "text": "Hallo, Lena! Ich heiße /ˈmɪndʒuːn/.",
   "voice": "FfvPVzUs3MSJucOhMXLy"
  },
  {
@@ -325,7 +325,7 @@
   "id": "dlg-1-03-2",
   "who": "Minjun",
   "lang": "de",
-  "text": "Ich heiße Minjun Park.",
+  "text": "Ich heiße /ˈmɪndʒuːn/ Park.",
   "voice": "FfvPVzUs3MSJucOhMXLy"
  },
  {
@@ -395,7 +395,7 @@
   "id": "dlg-fundbuero-4",
   "who": "Minjun",
   "lang": "de",
-  "text": "Ich heiße Park. Minjun Park.",
+  "text": "Ich heiße Park. /ˈmɪndʒuːn/ Park.",
   "voice": "FfvPVzUs3MSJucOhMXLy"
  },
  {
@@ -500,7 +500,7 @@
   "id": "dlg-1-04-2",
   "who": "Minjun",
   "lang": "de",
-  "text": "Hallo, Carlos! Ich bin Minjun.",
+  "text": "Hallo, Carlos! Ich bin /ˈmɪndʒuːn/.",
   "voice": "FfvPVzUs3MSJucOhMXLy"
  },
  {
@@ -570,7 +570,7 @@
   "id": "dlg-w5-1",
   "who": "Frau Wagner",
   "lang": "de",
-  "text": "Er heißt Jonas. Er kommt aus Leipzig. Er wohnt in einer WG – mit Minjun!",
+  "text": "Er heißt Jonas. Er kommt aus Leipzig. Er wohnt in einer WG – mit /ˈmɪndʒuːn/!",
   "voice": "rKiu7lQ4c5P3az3745s3"
  },
  {
@@ -661,7 +661,7 @@
   "id": "dlg-jonas-1",
   "who": "Jonas",
   "lang": "de",
-  "text": "Minjun, wer ist das?",
+  "text": "/ˈmɪndʒuːn/, wer ist das?",
   "voice": "A4RisuBq9GHCfbxWXH9q"
  },
  {
@@ -887,5 +887,33 @@
   "text": "null, vier, null, sechzehn, elf, zwanzig.",
   "voice": "rKiu7lQ4c5P3az3745s3",
   "src": "null, vier, null, sechzehn, elf, zwanzig."
+ },
+ {
+  "id": "say-minjun-1",
+  "who": "Minjun",
+  "lang": "de",
+  "voice": "FfvPVzUs3MSJucOhMXLy",
+  "text": "Hallo! Ich heiße /ˈmɪndʒuːn/. Ich komme aus Südkorea. Ich wohne in Leipzig."
+ },
+ {
+  "id": "say-minjun-2",
+  "who": "Minjun",
+  "lang": "de",
+  "voice": "FfvPVzUs3MSJucOhMXLy",
+  "text": "Ich bin /ˈmɪndʒuːn/."
+ },
+ {
+  "id": "say-minjun-3",
+  "who": "Minjun",
+  "lang": "de",
+  "voice": "FfvPVzUs3MSJucOhMXLy",
+  "text": "Ich heiße /ˈmɪndʒuːn/."
+ },
+ {
+  "id": "say-minjun-4",
+  "who": "Minjun",
+  "lang": "de",
+  "voice": "FfvPVzUs3MSJucOhMXLy",
+  "text": "Ich heiße /ˈmɪndʒuːn/. … Ich bin /ˈmɪndʒuːn/."
  }
 ]

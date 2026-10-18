@@ -58,6 +58,8 @@
     return speakerPitch[who];
   }
   function utter(text, lang, who) {
+    // 이름 Minjun은 영어식(민준, Min-joon)으로 읽게 함
+    if (lang !== "ko") text = text.replace(/Minjun/g, "Mindschuun");
     var u = new SpeechSynthesisUtterance(text);
     u.lang = lang === "ko" ? "ko-KR" : "de-DE";
     u.rate = lang === "ko" ? 1 : 0.85;
