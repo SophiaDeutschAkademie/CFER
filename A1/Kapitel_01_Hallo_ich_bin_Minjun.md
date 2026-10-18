@@ -2,7 +2,8 @@
 
 > **이야기 속 시간**: 9월 말, 민준이 라이프치히에 도착한 날과 그다음 날
 > **장소**: Leipzig Hauptbahnhof(라이프치히 중앙역) → WG(공유 주택) → Sprachschule(어학원)
-> **수업**: 80분 × 3차시 (1주) · 차시마다 🏠 숙제 60분
+> **수업**: 3차시 (1주) · 1차시 = **1교시 50분 + 2교시 50분** · 차시마다 🏠 숙제 60분
+> **1교시** = 장면 듣기·읽기 + 문법 발견 (Input) · **2교시** = 연습 + 말하기·쓰기 (Output)
 
 ---
 
@@ -17,18 +18,20 @@
 | 🔢 | Zahlen von 0 bis 20 und eine Telefonnummer verstehen und sagen. | 0–20 숫자와 전화번호를 듣고 말할 수 있다. |
 | ✍️ | einen kurzen Text über mich schreiben. | 나에 대한 짧은 글을 쓸 수 있다. |
 
-| 차시 | 제목 | 핵심 |
-|---|---|---|
-| **1차시** | Willkommen in Leipzig! | 인사 · 자기소개 · 동사 현재형 |
-| **2차시** | Der erste Kurstag | *sein* · 동사 2번째 자리 · du/Sie · 알파벳 |
-| **3차시** | Unser Kurs | 숫자 · 읽기 · 말하기 · 쓰기 |
+| 차시 | 제목 | 1교시 (Input) | 2교시 (Output) |
+|---|---|---|---|
+| **1차시** | Willkommen in Leipzig! | 역·WG 장면 · 동사 현재형 발견 | 동사 연습 · 발음 · 자기소개 대화 |
+| **2차시** | Der erste Kurstag | 어학원 장면 · *sein* · 동사 2번째 자리 | du/Sie · 알파벳 · 등록 롤플레이 |
+| **3차시** | Unser Kurs | 숫자 · 읽기 · 교실 인터뷰 | 친구 소개 · 자기소개 글쓰기 · 짝 첨삭 |
 
 ---
 ---
 
 # 1차시 · Willkommen in Leipzig! 🚉
 
-## 1 · Einstieg · 시작해 볼까요? ⏱ 5분
+## ▶ 1교시 (50분)
+
+### 1 · Einstieg · 시작해 볼까요? ⏱ 5분
 
 > 🖼️ **[그림]** 라이프치히 중앙역 플랫폼. 큰 캐리어 두 개를 든 젊은 남자(민준)가 주위를 두리번거린다.
 > 그 앞에서 다른 남자가 “**Willkommen, Minjun!**”이라고 쓴 종이를 들고 손을 흔든다.
@@ -41,7 +44,7 @@
 
 ---
 
-## 2 · Teil A · Am Bahnhof ⏱ 15분
+### 2 · Teil A · Am Bahnhof ⏱ 15분
 
 🎧 **Track 1-01** · 민준이 기차에서 내립니다.
 
@@ -77,7 +80,7 @@
 
 ---
 
-## 3 · Teil B · In der WG 🏠 ⏱ 15분
+### 3 · Teil B · In der WG 🏠 ⏱ 15분
 
 🎧 **Track 1-02** · WG에 도착하자 Lena가 부엌에서 나옵니다.
 
@@ -108,9 +111,18 @@
 | Woher? (어디 출신?) | | | |
 | Was macht er/sie? (무엇을 하나?) | | | |
 
+**B2** 질문과 대답을 연결하세요.
+
+| 질문 | | 대답 |
+|---|---|---|
+| 1. Wie heißt du? | | a. Aus Hamburg. |
+| 2. Woher kommst du? | | b. Ich studiere Medizin. |
+| 3. Was machst du hier? | | c. Koreanisch und Englisch. |
+| 4. Welche Sprachen sprichst du? | | d. Ich heiße Minjun. |
+
 ---
 
-## 4 · 🔍 Grammatik ① · 동사는 주어에 따라 모양이 바뀐다! ⏱ 25분
+### 4 · 🔍 Grammatik ① · 동사는 주어에 따라 모양이 바뀐다! ⏱ 15분
 
 **① 찾아보기** — Teil B 대화에서 동사를 찾아 빈칸을 채우세요.
 
@@ -140,7 +152,13 @@
 > - **arbeiten** (일하다): du arbeit**e**st, er arbeit**e**t – 어간이 -t로 끝나면 e를 넣어요.
 > - **sprechen** (말하다): du spr**i**chst, er spr**i**cht – e가 i로 바뀌어요. *(3과에서 더!)*
 
-**③ 연습 G1** — 알맞은 형태를 쓰세요. *(1–4번 수업 중, 5–8번 숙제)*
+---
+
+## ▶ 2교시 (50분)
+
+### 5 · Übungen · 동사 연습 ⏱ 20분
+
+**G1** 알맞은 형태를 쓰세요. (10분)
 1. Ich ________ (wohnen) in Leipzig.
 2. Lena ________ (kommen) aus Hamburg.
 3. Woher ________ (kommen) du?
@@ -150,9 +168,19 @@
 7. Amira ________ (sprechen) Arabisch.
 8. Wie ________ (heißen) du?
 
+**G1+ 🎲 Verb-Würfel · 동사 주사위 게임** (10분, 3–4명 그룹)
+주사위를 던져 나온 숫자의 주어로 카드의 동사를 바꿔 문장을 말하세요. 맞으면 1점!
+
+| 🎲 1 | 🎲 2 | 🎲 3 | 🎲 4 | 🎲 5 | 🎲 6 |
+|---|---|---|---|---|---|
+| ich | du | er / sie | wir | ihr | sie / Sie |
+
+> 동사 카드: wohnen · kommen · lernen · machen · heißen · arbeiten · sprechen
+> 예: 🎲 2 + *kommen* → „**Du kommst** aus Korea.“
+
 ---
 
-## 5 · Aussprache · 발음 🎵 ⏱ 10분
+### 6 · Aussprache · 발음 🎵 ⏱ 15분
 
 🎧 **Track 1-08** · 한국어 화자가 특히 조심해야 할 소리
 
@@ -165,26 +193,26 @@
 | **ie** | [iː] | W**ie**, v**ie**r | 길게 “이—” |
 | **-er** (끝) | [ɐ] | Lehr**er**, Leipzig**er** | 약하게 “어/아”. “르”를 굴리지 마세요. |
 
-**5a** ei 일까요, ie 일까요? 듣고 표시하세요. → dr__ · v__r · h__ßen · W__ · S__ · fr__
+**6a** ei 일까요, ie 일까요? 듣고 표시하세요. → dr__ · v__r · h__ßen · W__ · S__ · fr__
 
-**5b** 🗣️ 빠르게 세 번! *Zwei Zwerge zählen zwanzig Zebras.*
+**6b** 🗣️ 빠르게 세 번! *Zwei Zwerge zählen zwanzig Zebras.*
 
 ---
 
-## ⏱ 10분 · 1차시 정리
-짝과 함께 Teil B를 보지 않고 자기소개 대화를 해 보세요: *Wie heißt du? – Woher kommst du? – Was machst du?*
+### 7 · Sprechen · 첫 만남 대화 ⏱ 15분
+
+**7a** (8분) 책을 덮고 짝과 Teil B 같은 첫 만남 대화를 하세요. 짝을 두 번 바꿔서 해 보세요.
+> Hallo! Ich bin … – Wie heißt du? – Woher kommst du? – Was machst du? – Sprichst du …?
+
+**7b** (7분) 두세 팀이 반 앞에서 발표 → 들은 사람은 동사 어미가 틀린 곳을 찾아 주세요. 🕵️
 
 > ### 🏠 1차시 숙제 (60분)
 > | | 할 일 | 시간 |
 > |---|---|---|
-> | 1 | **G1** 5–8번 | 10분 |
-> | 2 | **B2** 질문과 대답 연결하기 (아래) | 5분 |
-> | 3 | **H1** 동사 변화표 직접 쓰기 (아래) | 15분 |
-> | 4 | 🎧 Track 1-01, 1-02 **따라 읽기(Shadowing)** – 들으며 3번, 혼자 2번 | 15분 |
-> | 5 | 단어장(16번)의 **인사와 작별 · 동사** 외우기 | 15분 |
->
-> **B2** 1. Wie heißt du? · 2. Woher kommst du? · 3. Was machst du hier? · 4. Welche Sprachen sprichst du?
-> → a. Aus Hamburg. · b. Ich studiere Medizin. · c. Koreanisch und Englisch. · d. Ich heiße Minjun.
+> | 1 | **H1** 동사 변화표 직접 쓰기 (아래) | 15분 |
+> | 2 | **H1+** Teil B 대화를 공책에 옮겨 쓰고, 이름·출신·하는 일을 바꿔 **나만의 대화** 만들기 | 15분 |
+> | 3 | 🎧 Track 1-01, 1-02 **따라 읽기(Shadowing)** – 들으며 3번, 혼자 2번 | 15분 |
+> | 4 | 단어장(20번)의 **인사와 작별 · 동사** 외우기 | 15분 |
 >
 > **H1** 표를 보지 않고 **machen · heißen · arbeiten · sprechen**의 변화표(ich ~ sie/Sie)를 공책에 쓰세요. 다 쓴 다음 4번 규칙 표와 ⚠️ 상자를 보고 빨간 펜으로 스스로 고치세요.
 
@@ -193,12 +221,14 @@
 
 # 2차시 · Der erste Kurstag 🏫
 
-## ⏱ 5분 · 복습
-**이름 릴레이**: 원으로 앉아 “Ich heiße … Und wie heißt du?”를 차례로 이어 가기.
+## ▶ 1교시 (50분)
+
+### ⏱ 5분 · 복습
+숙제 H1 확인 + **이름 릴레이**: 원으로 앉아 “Ich heiße … Und wie heißt du?”를 차례로 이어 가기.
 
 ---
 
-## 6 · Teil C · In der Sprachschule ⏱ 15분
+### 8 · Teil C · In der Sprachschule ⏱ 15분
 
 🎧 **Track 1-03** · 다음 날 아침, 어학원 *Sprachschule Leipzig*. 첫 수업입니다.
 
@@ -241,7 +271,7 @@
 
 ---
 
-## 7 · 🔍 Grammatik ② · 특별한 동사 *sein* ⏱ 10분
+### 9 · 🔍 Grammatik ② · 특별한 동사 *sein* ⏱ 10분
 
 | ich | **bin** | Ich **bin** Minjun. |
 |---|---|---|
@@ -253,13 +283,12 @@
 
 > 📌 *sein* = 영어의 *be*. 규칙이 없으니 **통째로!** 🎵 “**빈 – 비스트 – 이스트 – 진트 – 자이트 – 진트**”
 
-**연습 G2** *(수업 중 1–3번, 숙제 4–6번)*
-1. Ich ________ Minjun. 2. Carlos ________ Koch. 3. Wir ________ im Deutschkurs.
+**G2** 1. Ich ________ Minjun. 2. Carlos ________ Koch. 3. Wir ________ im Deutschkurs.
 4. ________ du müde? 5. Frau Wagner, ________ Sie aus Leipzig? 6. Lena und Jonas, ________ ihr Studenten?
 
 ---
 
-## 8 · 🔍 Grammatik ③ · W-의문문과 “동사는 두 번째!” ⏱ 20분
+### 10 · 🔍 Grammatik ③ · W-의문문과 “동사는 두 번째!” ⏱ 20분
 
 **① 찾아보기** — 대화 속 문장을 표에 넣어 보면:
 
@@ -291,13 +320,15 @@
 
 **④ 예/아니요 의문문은 동사가 맨 앞!** — **Bist** du Minjun? – Ja. / **Sprichst** du Englisch? – Ja, ein bisschen.
 
-**연습 G3** — 바른 순서로 배열하세요. *(수업 중 1–3번, 숙제 4–6번)*
+**G3** 바른 순서로 배열하세요. *(1–3번 수업 중, 4–6번 숙제)*
 1. du / wohnst / wo / ? 2. aus / ich / Busan / komme / . 3. Sie / heißen / wie / ?
 4. Jonas / Informatik / studiert / . 5. Deutsch / du / sprichst / ? 6. kommt / woher / Amira / ?
 
 ---
 
-## 9 · du oder Sie? · 반말? 존댓말? ⏱ 10분
+## ▶ 2교시 (50분)
+
+### 11 · du oder Sie? · 반말? 존댓말? ⏱ 15분
 
 | | **du** (친근) | **Sie** (공손) |
 |---|---|---|
@@ -309,13 +340,15 @@
 
 > 📌 **Sie**는 항상 **대문자 S**, 동사는 **-en**. 부를 때는 **Herr / Frau + 성**: Herr **Park** (✗ Herr Minjun)
 
-**연습 G4** — du와 Sie 중 무엇을 쓸까요?
+**G4** du와 Sie 중 무엇을 쓸까요?
 1. 선생님께 출신을 물을 때 → Woher kommen ____? 2. 룸메이트에게 → Wie heißt ____?
 3. 관청 직원에게 → Wo wohnen ____? 4. 반 친구에게 → Sprichst ____ Englisch?
 
+**G4+ 🃏 역할 카드** — 교사가 카드(👨‍🏫 선생님 / 👫 친구 / 🏢 관청 직원)를 들면, 그 사람에게 맞는 질문을 빨리 말하기!
+
 ---
 
-## 10 · Das Alphabet · 알파벳과 철자 말하기 🔤 ⏱ 20분
+### 12 · Das Alphabet · 알파벳과 철자 말하기 🔤 ⏱ 20분
 
 🎧 **Track 1-04** · 듣고 따라 하세요.
 
@@ -334,20 +367,40 @@
 > ⚠️ 영어와 헷갈리는 알파벳: **J** = *jot*, **V** = *fau*, **W** = *we*, **Z** = *tset*, **E** = *e*(에), **I** = *i*(이)
 > 한국 이름에 자주 나오는 철자를 연습하세요: **J**(Jun), **Y**(Young), **E**(Eun), **U**(Sung)
 
-**10a** 🎧 **Track 1-05** · 이름을 듣고 쓰세요. 1. ________ 2. ________ 3. ________ 4. ________
+**12a** 🎧 **Track 1-05** · 이름을 듣고 쓰세요. 1. ________ 2. ________ 3. ________ 4. ________
 
-**10b** 💬 짝 활동 · 자기 이름(성 + 이름)을 철자로 말해 주세요. 짝은 받아 적으세요.
+**12b** 💬 짝 활동 · 자기 이름(성 + 이름)을 철자로 말해 주세요. 짝은 받아 적으세요.
 > **A:** Wie heißt du? — **B:** Ich heiße Seo-yeon Kim.
 > **A:** Wie bitte? Kannst du das buchstabieren? — **B:** S – E – O – Y – E – O – N. Und Kim: K – I – M.
+
+---
+
+### 13 · Rollenspiel · 어학원 등록하기 (Sie) 🎭 ⏱ 15분
+
+**A**: 어학원 직원 / **B**: 새 학생. 역할을 바꿔 두 번 하세요. (B는 상상의 이름·출신·도시를 써도 좋아요.)
+
+> **A:** Guten Tag! Wie heißen Sie, bitte?
+> **B:** …
+> **A:** Wie schreibt man das?
+> **B:** …
+> **A:** Woher kommen Sie? / Wo wohnen Sie?
+> **B:** …
+> **A:** Vielen Dank. Auf Wiedersehen!
+
+**A의 등록 카드**
+| Nachname (성) | Vorname (이름) | Land (나라) | Wohnort (사는 곳) |
+|---|---|---|---|
+| | | | |
 
 > ### 🏠 2차시 숙제 (60분)
 > | | 할 일 | 시간 |
 > |---|---|---|
-> | 1 | **G2** 4–6번 · **G3** 4–6번 · **G4** | 15분 |
+> | 1 | **G3** 4–6번 | 5분 |
 > | 2 | **H2** 대답에 맞는 질문 쓰기 (아래) | 10분 |
-> | 3 | 🎙️ **철자 녹음**: 내 이름 + 가족 2명의 이름을 철자로 말해 녹음해서 제출 | 10분 |
-> | 4 | **Landeskunde**(15번) 읽기 | 10분 |
-> | 5 | 단어장의 **나라와 언어 · 사람과 직업** 외우기 | 15분 |
+> | 3 | **H3** 13번 롤플레이를 **대본으로 쓰기** (직원 ↔ 내 정보, 8줄 이상) | 10분 |
+> | 4 | 🎙️ **철자 녹음**: 내 이름 + 가족 2명의 이름을 철자로 말해 녹음해서 제출 | 10분 |
+> | 5 | **Landeskunde**(19번) 읽기 | 10분 |
+> | 6 | 단어장의 **나라와 언어 · 사람과 직업** 외우기 | 15분 |
 >
 > **H2** 질문을 쓰세요. (du 또는 Sie에 주의!)
 > 1. ______________________? – Ich heiße Carlos.
@@ -362,12 +415,14 @@
 
 # 3차시 · Unser Kurs 👥
 
-## ⏱ 5분 · 복습
-**동사 퀴즈**: 교사가 “wohnen – du!”라고 하면 → “du wohnst!” (sein 포함)
+## ▶ 1교시 (50분)
+
+### ⏱ 5분 · 복습
+숙제 확인 + **동사 퀴즈**: 교사가 “wohnen – du!”라고 하면 → “du wohnst!” (sein 포함)
 
 ---
 
-## 11 · Die Zahlen 0–20 · 숫자 🔢 ⏱ 15분
+### 14 · Die Zahlen 0–20 · 숫자 🔢 ⏱ 15분
 
 🎧 **Track 1-06** · 듣고 따라 하세요.
 
@@ -381,7 +436,7 @@
 > 🔍 **규칙**: 13–19 = 숫자 + **zehn** · ⚠️ 예외: **sech**zehn, **sieb**zehn
 > 💡 전화할 때는 2(zwei)를 3(drei)과 구별하려고 **zwo**라고도 해요.
 
-**11a** 🎧 **Track 1-07** · Frau Wagner가 전화번호를 확인합니다. 듣고 쓰세요.
+**14a** 🎧 **Track 1-07** · Frau Wagner가 전화번호를 확인합니다. 듣고 쓰세요.
 
 | 이름 | Handynummer |
 |---|---|
@@ -389,12 +444,12 @@
 | Carlos Ruiz | 0157 – ___ ___ ___ ___ |
 | Amira Haddad | 0152 – ___ ___ ___ ___ |
 
-**11b** 💬 짝 활동 · 상상의 전화번호를 만들어 서로 받아 적으세요.
+**14b** 💬 짝 활동 · 상상의 전화번호를 만들어 서로 받아 적으세요.
 > **A:** Wie ist deine Handynummer? — **B:** Null – eins – sieben – sechs, vierzehn, zwanzig, elf, sieben.
 
 ---
 
-## 12 · Lesen · 우리 반 친구들 📖 ⏱ 15분
+### 15 · Lesen · 우리 반 친구들 📖 ⏱ 15분
 
 Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙였습니다.
 
@@ -426,20 +481,16 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 
 ---
 
-## 13 · Sprechen · 말해 봐요 🗣️ ⏱ 20분
+### 16 · Sprechen ① · 교실 인터뷰 🗣️ ⏱ 15분
 
-**13a · 교실 인터뷰** (12분) — 교실을 돌아다니며 최소 **3명**에게 묻고 표를 채우세요. (du 사용!)
+교실을 돌아다니며 최소 **4명**에게 묻고 표를 채우세요. (du 사용!)
 
 | Name | Woher? | Wo wohnt er/sie? | Sprachen? |
 |---|---|---|---|
 | | | | |
 | | | | |
 | | | | |
-
-**13b · 친구 소개하기** (8분) — 인터뷰한 사람 한 명을 반 전체에 소개하세요.
-> Das ist **Jiwoo**. **Sie** kommt aus Daegu. **Sie** wohnt in Seoul. **Sie** spricht Koreanisch und Englisch.
-
-> ⚠️ 소개할 때는 **er/sie** 형태! → er/sie komm**t**, wohn**t**, spr**i**ch**t**
+| | | | |
 
 ### 📋 Redemittel · 꼭 필요한 표현
 
@@ -452,17 +503,30 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 
 ---
 
-## 14 · Schreiben · 나를 소개하는 글 ✍️ ⏱ 20분
+## ▶ 2교시 (50분)
+
+### 17 · Sprechen ② · 친구 소개하기 ⏱ 10분
+
+인터뷰한 사람 한 명을 반 전체에 소개하세요.
+> Das ist **Jiwoo**. **Sie** kommt aus Daegu. **Sie** wohnt in Seoul. **Sie** spricht Koreanisch und Englisch.
+
+> ⚠️ 소개할 때는 **er/sie** 형태! → er/sie komm**t**, wohn**t**, spr**i**ch**t**
+
+---
+
+### 18 · Schreiben · 나를 소개하는 글 ✍️ ⏱ 35분
 
 **과제** — 민준처럼 반 벽에 붙일 **Steckbrief**를 쓰세요. (**5–6문장**)
 ① 이름 ② 출신 ③ 사는 곳 ④ 하는 일 ⑤ 언어 ⑥ (선택) 독일어를 배우는 이유
 
-**모범 답안** (5분 · 함께 분석: 동사에 동그라미, 명사에 밑줄)
+**① 모범 답안 분석** (5분) — 동사에 동그라미, 명사에 밑줄을 그어 보세요.
 > Hallo! Ich heiße Jiwoo Kim. Ich komme aus Südkorea, aus Incheon. Ich wohne jetzt in Seoul. Ich bin Studentin und studiere Informatik. Ich spreche Koreanisch, Englisch und ein bisschen Deutsch. Ich lerne Deutsch, denn ich möchte in Deutschland arbeiten.
 
-**직접 쓰기** (15분 · 끝내지 못한 부분은 숙제)
+**② 직접 쓰기** (20분)
 
-### ✅ 제출 전 스스로 첨삭 체크리스트
+**③ 짝 첨삭** (10분) — 짝과 글을 바꿔 아래 체크리스트로 확인하고, 틀린 곳에 연필로 표시해 주세요. 돌려받으면 스스로 고치기!
+
+### ✅ 첨삭 체크리스트
 
 | | 체크 | 확인할 것 |
 |---|---|---|
@@ -485,14 +549,14 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 
 ---
 
-## ⏱ 5분 · 마무리 — 민준의 일기 읽기(17번) + 자기 점검(18번)
+### ⏱ 5분 · 마무리 — 민준의 일기 읽기(21번) + 자기 점검(22번)
 
 > ### 🏠 3차시 숙제 (60분)
 > | | 할 일 | 시간 |
 > |---|---|---|
-> | 1 | **Steckbrief 완성** → 체크리스트로 스스로 점검 후 제출 *(첨삭본은 2과 1차시 시작 때 돌려받아요)* | 25분 |
-> | 2 | **L2** (못 했다면) | 5분 |
-> | 3 | 🎙️ **1분 자기소개 녹음**: 쓴 Steckbrief를 보지 않고 말해서 녹음 제출 | 15분 |
+> | 1 | **Steckbrief 다시 쓰기** – 짝 첨삭을 반영해 깨끗하게 써서 제출 *(교사 첨삭본은 2과 1차시 시작 때 돌려받아요)* | 15분 |
+> | 2 | 🎙️ **1분 자기소개 녹음**: Steckbrief를 보지 않고 말해서 녹음 제출 | 15분 |
+> | 3 | **H4** 민준의 일기(21번)를 읽고, 나의 **독일어 수업 첫날 일기** 쓰기 (3–4문장) | 15분 |
 > | 4 | 단어장 전체 + 숫자 0–20 복습 – 2과 1차시에 단어 퀴즈! | 15분 |
 
 ---
@@ -500,7 +564,7 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 
 # 📚 부록 · 숙제와 복습용
 
-## 15 · Landeskunde · 독일 생활 팁 🇩🇪 *(2차시 숙제)*
+## 19 · Landeskunde · 독일 생활 팁 🇩🇪 *(2차시 숙제)*
 
 **1. “안녕하세요”는 지역마다 달라요**
 | 지역 | 인사 |
@@ -523,7 +587,7 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 
 ---
 
-## 16 · Wortschatz · 단어장 📝
+## 20 · Wortschatz · 단어장 📝
 
 **인사와 작별**
 | Deutsch | 한국어 |
@@ -567,7 +631,7 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 
 ---
 
-## 17 · 📔 Minjuns Tagebuch · 민준의 일기
+## 21 · 📔 Minjuns Tagebuch · 민준의 일기
 
 > **30. September**
 >
@@ -580,11 +644,11 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 *(nett = 친절한 · lustig = 재미있는 · sagt = 말한다 · klein = 작은 · da ist kein Tisch = 책상이 없다 · zeigt mir … die Wohnung = 나에게 집을 보여 준다)*
 
 ➡️ **다음 과 예고 · Kapitel 2: Meine WG, meine Familie**
-민준의 방에는 무엇이 있고, 무엇이 없을까요? Jonas가 보여 줄 WG는 어떤 모습일까요?
+민준의 방에는 무엇이 있고, 무엇이 없을까요? 그리고 민준의 가족은 어떤 사람들일까요?
 
 ---
 
-## 18 · ✅ Das kann ich! · 자기 점검
+## 22 · ✅ Das kann ich! · 자기 점검
 
 | Ich kann … | 😊 잘해요 | 🙂 괜찮아요 | 😟 연습 필요 |
 |---|---|---|---|
