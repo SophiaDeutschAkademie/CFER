@@ -153,12 +153,13 @@
       </ol>
     </div>
     <div class="ex" data-check data-ex="A0b">
-      <div class="ex-head"><span class="tag">A1b</span>이럴 때 뭐라고 할까요? 알맞은 말을 고르세요.</div>
+      <div class="ex-head"><span class="tag">A1b</span>이럴 때 뭐라고 할까요? 보기 없이 <b>직접 쓰세요</b>.</div>
       <ol>
-        <li>누가 길을 비켜 줬어요. → <select data-answer="Danke!" aria-label="고르기"><option value=""></option><option>Danke!</option><option>Entschuldigung!</option><option>Hallo!</option></select></li>
-        <li>실수로 다른 사람과 부딪쳤어요. → <select data-answer="Entschuldigung!" aria-label="고르기"><option value=""></option><option>Danke!</option><option>Entschuldigung!</option><option>Tschüss!</option></select></li>
-        <li>친구를 만났어요. → <select data-answer="Hallo!" aria-label="고르기"><option value=""></option><option>Hallo!</option><option>Auf Wiedersehen!</option><option>Danke!</option></select></li>
-        <li>수업이 끝나고 선생님께 → <select data-answer="Auf Wiedersehen!" aria-label="고르기"><option value=""></option><option>Tschüss!</option><option>Auf Wiedersehen!</option><option>Guten Morgen!</option></select></li>
+        <li>누가 문을 잡아 줬어요. → <span lang="de"><input class="blank" data-answer="Danke!|Danke" aria-label="말"></span></li>
+        <li>지하철에서 다른 사람의 발을 밟았어요. → <span lang="de"><input class="blank wide" data-answer="Entschuldigung!|Entschuldigung" aria-label="말"></span></li>
+        <li>저녁 8시, 처음 보는 이웃을 만났어요. → <span lang="de"><input class="blank wide" data-answer="Guten Abend!|Guten Abend" aria-label="말"></span></li>
+        <li>면접이 끝나고 면접관에게 → <span lang="de"><input class="blank wide" data-answer="Auf Wiedersehen!|Auf Wiedersehen" aria-label="말"></span></li>
+        <li>누가 “Entschuldigung!” 하고 사과했어요. → <span lang="de"><input class="blank wide" data-answer="Kein Problem.|Kein Problem" aria-label="말"></span></li>
       </ol>
     </div>
   </section>
@@ -178,11 +179,14 @@
       <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-minjun.webp)" aria-hidden="true"></span>Minjun</span><span class="tx"><span class="text" lang="de">Gut, danke. Ein bisschen müde.</span><span class="ko">좋아, 고마워. 조금 피곤해.</span></span></div>
     </div>
     <div class="ex" data-check data-ex="A1">
-      <div class="ex-head"><span class="tag">A2</span>맞으면 <b>r</b>(richtig), 틀리면 <b>f</b>(falsch)</div>
+      <div class="ex-head"><span class="tag">A2</span>대화를 다시 듣고, 맞으면 <b>r</b>(richtig), 틀리면 <b>f</b>(falsch). 해석 없이 풀어 보세요!</div>
       <div class="table-wrap"><table class="rf"><thead><tr><th>#</th><th>문장</th><th class="c">r</th><th class="c">f</th></tr></thead><tbody>
-        <tr data-answer="r"><td>1</td><td><span lang="de">Der Mann sagt: „Entschuldigung!“</span> <small>(남자가 “죄송합니다!”라고 말한다)</small></td><td class="c"><input type="radio" name="a1-1" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="a1-1" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="r"><td>2</td><td><span lang="de">Jonas sagt: „Willkommen in Leipzig!“</span> <small>(요나스가 “라이프치히에 온 걸 환영해!”라고 말한다)</small></td><td class="c"><input type="radio" name="a1-2" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="a1-2" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="f"><td>3</td><td><span lang="de">Minjun sagt: „Tschüss!“</span> <small>(민준이 “안녕(작별)!”이라고 말한다)</small></td><td class="c"><input type="radio" name="a1-3" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="a1-3" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="f"><td>1</td><td><span lang="de">Der Mann sagt: „Danke!“</span></td><td class="c"><input type="radio" name="a1-1" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="a1-1" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="r"><td>2</td><td><span lang="de">Minjun sagt zum Mann: „Kein Problem.“</span></td><td class="c"><input type="radio" name="a1-2" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="a1-2" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="f"><td>3</td><td><span lang="de">Jonas fragt: „Wie heißt du?“</span></td><td class="c"><input type="radio" name="a1-3" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="a1-3" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="r"><td>4</td><td><span lang="de">Jonas wartet am Bahnhof.</span> <small>(warten = 기다리다)</small></td><td class="c"><input type="radio" name="a1-4" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="a1-4" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="f"><td>5</td><td><span lang="de">Minjun ist sehr gut.</span> <small>(sehr = 아주)</small></td><td class="c"><input type="radio" name="a1-5" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="a1-5" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="r"><td>6</td><td><span lang="de">Minjun ist ein bisschen müde.</span></td><td class="c"><input type="radio" name="a1-6" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="a1-6" value="f" aria-label="falsch"></td></tr>
       </tbody></table></div>
     </div>
     <div class="ex" data-check data-ex="A1c">
@@ -194,7 +198,7 @@
         <li>Willkommen in Leipzig! – <select data-answer="Danke!" aria-label="고르기"><option value=""></option><option>Kein Problem.</option><option>Gut, danke.</option><option>Ja, ich bin Minjun.</option><option>Danke!</option></select></li>
       </ol>
     </div>
-    <p><b>A4</b> 짝과 대화를 읽어 보세요. 그다음 자기 이름으로 바꿔서!</p>
+    <p><b>A4</b> 혼자 소리 내어 읽기 · ▶로 한 줄씩 듣고 <b>민준 역할</b>을 따라 하세요. 두 번째는 Minjun 대신 <b>내 이름</b>을 넣어서!</p>
   </section>
   <section class="activity card" id="s1-satz1" data-block="input">
     <h3>4 · 오늘의 문장 틀 ① · 나는 ○○이에요 <span class="time" data-min="15"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg>15분</span></h3>
@@ -215,14 +219,14 @@
       <p>질문할 때 동사를 <b>맨 앞</b>에: <span lang="de"><b>Bist</b> du Jonas?</span> (네가 요나스야?)</p>
     </aside>
     <div class="ex" data-check data-ex="G1">
-      <div class="ex-head"><span class="tag">G1</span>알맞은 말을 고르세요.</div>
+      <div class="ex-head"><span class="tag">G1</span>알맞은 말을 고르세요. (<i lang="de">oder?</i> = 그렇지?)</div>
       <ol lang="de">
-        <li>Ich <select data-answer="bin" aria-label="고르기"><option value=""></option><option>bin</option><option>bist</option></select> Minjun.</li>
-        <li><select data-answer="Bist" aria-label="고르기"><option value=""></option><option>Bin</option><option>Bist</option></select> du Jonas?</li>
-        <li>Wie <select data-answer="heißt" aria-label="고르기"><option value=""></option><option>heiße</option><option>heißt</option></select> du?</li>
-        <li>Ich <select data-answer="heiße" aria-label="고르기"><option value=""></option><option>heiße</option><option>heißt</option></select> Lena.</li>
-        <li><select data-answer="Heißt" aria-label="고르기"><option value=""></option><option>Heiße</option><option>Heißt</option></select> du Jonas?</li>
-        <li>Du <select data-answer="bist" aria-label="고르기"><option value=""></option><option>bin</option><option>bist</option></select> Lena.</li>
+        <li>Ich <select data-answer="bin" aria-label="고르기"><option value=""></option><option>bin</option><option>bist</option><option>heiße</option><option>heißt</option></select> Minjun.</li>
+        <li><select data-answer="Bist" aria-label="고르기"><option value=""></option><option>Bin</option><option>Bist</option><option>Heiße</option><option>Heißt</option></select> du Jonas?</li>
+        <li>Wie <select data-answer="heißt" aria-label="고르기"><option value=""></option><option>bin</option><option>bist</option><option>heiße</option><option>heißt</option></select> du?</li>
+        <li>Ich <select data-answer="heiße" aria-label="고르기"><option value=""></option><option>bin</option><option>bist</option><option>heiße</option><option>heißt</option></select> Lena.</li>
+        <li><select data-answer="Heißt" aria-label="고르기"><option value=""></option><option>Bin</option><option>Bist</option><option>Heiße</option><option>Heißt</option></select> du Jonas?</li>
+        <li>Du <select data-answer="bist" aria-label="고르기"><option value=""></option><option>bin</option><option>bist</option><option>heiße</option><option>heißt</option></select> Lena, oder?</li>
       </ol>
     </div>
     <div class="ex" data-check data-ex="G1b">
@@ -295,27 +299,46 @@
         <button type="button" class="btn ghost" data-play="dlg-1-05">▶ 전체 듣기</button>
       </details>
     </div>
-    <p><b>6b</b> 짝 활동 · 내 이름(성 + 이름)을 철자로 말하고, 짝은 받아 적어요.</p>
+    <p><b>6b</b> 아래 대화를 보고, B 자리에 <b>내 이름</b>을 넣어 혼자 소리 내어 말하세요. 철자는 한 글자씩 또박또박!</p>
     <div class="dialog" id="dlg-12b">
       <div class="line"><span class="who">A</span><span class="tx"><span class="text" lang="de">Wie heißt du?</span><span class="ko">이름이 뭐야?</span></span></div>
       <div class="line"><span class="who">B</span><span class="tx"><span class="text" lang="de">Ich heiße Seoyeon Kim.</span><span class="ko">내 이름은 김서연이야.</span></span></div>
       <div class="line"><span class="who">A</span><span class="tx"><span class="text" lang="de">Wie bitte? Wie schreibt man das?</span><span class="ko">뭐라고? 어떻게 써?</span></span></div>
       <div class="line"><span class="who">B</span><span class="tx"><span class="text" lang="de">S – E – O – Y – E – O – N.</span></span></div>
     </div>
+    <div class="ex" data-check data-ex="6c">
+      <div class="ex-head"><span class="tag">6c</span>철자를 보고 이름을 쓰세요. 대문자로 시작!</div>
+      <ol lang="de">
+        <li>P – R – I – Y – A → <input class="blank" data-answer="Priya" aria-label="이름"></li>
+        <li>T – O – M – A – S – Z → <input class="blank" data-answer="Tomasz" aria-label="이름"></li>
+        <li>C – A – R – L – O – S → <input class="blank" data-answer="Carlos" aria-label="이름"></li>
+        <li>N – O – W – A – K → <input class="blank" data-answer="Nowak" aria-label="이름"></li>
+      </ol>
+    </div>
     <div class="box warn"><svg class="ic" aria-hidden="true"><use href="#i-warn"/></svg>영어와 헷갈려요: <b>J</b> = <i lang="de">jot</i>, <b>V</b> = <i lang="de">fau</i>, <b>W</b> = <i lang="de">we</i>, <b>Z</b> = <i lang="de">tset</i>, <b>E</b> = <i lang="de">e</i>(에), <b>I</b> = <i lang="de">i</i>(이)</div>
 
   </section>
   <section class="activity card" id="s1-sprechen" data-block="output">
     <h3>7 · <span lang="de">Sprechen</span> · 첫 만남 대화 <span class="time" data-min="15"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg>15분</span></h3>
-    <p><b>7a</b> (8분) 일어나서 반 친구 3명과 대화하세요. 끝나면 <span lang="de">Tschüss!</span></p>
+    <p><span class="track"><svg class="ic" aria-hidden="true"><use href="#i-listen"/></svg>Track 1-06 <button type="button" class="say-btn" data-play="dlg-7" aria-label="대화 전체 듣기">▶</button></span> 어학원 첫날, Lena가 복도에서 Priya를 만나요.</p>
     <div class="dialog" id="dlg-7">
-      <div class="line"><span class="who">A</span><span class="tx"><span class="text" lang="de">Hallo! Ich bin …</span><span class="ko">안녕! 나는 …야.</span></span></div>
-      <div class="line"><span class="who">B</span><span class="tx"><span class="text" lang="de">Hallo! Ich heiße …</span><span class="ko">안녕! 내 이름은 …야.</span></span></div>
-      <div class="line"><span class="who">A</span><span class="tx"><span class="text" lang="de">Wie geht's?</span><span class="ko">잘 지내?</span></span></div>
-      <div class="line"><span class="who">B</span><span class="tx"><span class="text" lang="de">Gut, danke! Und dir?</span><span class="ko">좋아, 고마워! 너는?</span></span></div>
-      <div class="line"><span class="who">A</span><span class="tx"><span class="text" lang="de">Auch gut. Tschüss!</span><span class="ko">나도 좋아. 안녕!</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-lena.webp)" aria-hidden="true"></span>Lena</span><span class="tx"><span class="text" lang="de">Hallo! Ich bin Lena.</span><span class="ko">안녕! 나는 레나야.</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-priya.webp)" aria-hidden="true"></span>Priya</span><span class="tx"><span class="text" lang="de">Hallo! Ich heiße Priya.</span><span class="ko">안녕! 내 이름은 프리야야.</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-lena.webp)" aria-hidden="true"></span>Lena</span><span class="tx"><span class="text" lang="de">Wie geht's?</span><span class="ko">잘 지내?</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-priya.webp)" aria-hidden="true"></span>Priya</span><span class="tx"><span class="text" lang="de">Gut, danke! Und dir?</span><span class="ko">좋아, 고마워! 너는?</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-lena.webp)" aria-hidden="true"></span>Lena</span><span class="tx"><span class="text" lang="de">Auch gut. Tschüss!</span><span class="ko">나도 좋아. 안녕!</span></span></div>
     </div>
-    <p><b>7b</b> (7분) 두세 팀이 반 앞에서 발표하기.</p>
+    <div class="ex" data-check data-ex="7a">
+      <div class="ex-head"><span class="tag">7a</span>대화를 보지 말고 빈칸을 채우세요.</div>
+      <div class="dialog" lang="de">
+        <div class="line"><span class="who">A</span><span class="tx"><span>Hallo! Ich <input class="blank" data-answer="bin|heiße" aria-label="동사"> Lena.</span></span></div>
+        <div class="line"><span class="who">B</span><span class="tx"><span>Hallo! Ich <input class="blank" data-answer="heiße|bin" aria-label="동사"> Priya.</span></span></div>
+        <div class="line"><span class="who">A</span><span class="tx"><span>Wie <input class="blank" data-answer="geht's|gehts|geht es" aria-label="말">?</span></span></div>
+        <div class="line"><span class="who">B</span><span class="tx"><span>Gut, <input class="blank" data-answer="danke" aria-label="말">! Und <input class="blank" data-answer="dir" aria-label="말">?</span></span></div>
+        <div class="line"><span class="who">A</span><span class="tx"><span><input class="blank" data-answer="Auch" aria-label="말"> gut. <input class="blank" data-answer="Tschüss" aria-label="인사">!</span></span></div>
+      </div>
+    </div>
+    <p><b>7b</b> 혼자 말하기 · ▶로 A 줄만 듣고, 멈춘 뒤 B를 <b>내 이름</b>으로 소리 내어 대답하세요. 휴대폰으로 녹음해서 들어 보면 더 좋아요!</p>
 
   </section>
   <section class="box homework" id="hw-1">
@@ -382,12 +405,14 @@
       </ol>
     </div>
     <div class="ex" data-check data-ex="B1b">
-      <div class="ex-head"><span class="tag">B1b</span>맞으면 <b>r</b>, 틀리면 <b>f</b></div>
+      <div class="ex-head"><span class="tag">B1b</span>맞으면 <b>r</b>, 틀리면 <b>f</b>. 해석 없이!</div>
       <div class="table-wrap"><table class="rf"><thead><tr><th>#</th><th>문장</th><th class="c">r</th><th class="c">f</th></tr></thead><tbody>
-        <tr data-answer="r"><td>1</td><td><span lang="de">Lena sagt: „Moin!“</span> <small>(레나가 “Moin!”이라고 말한다)</small></td><td class="c"><input type="radio" name="b1b-1" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="b1b-1" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="f"><td>2</td><td><span lang="de">Minjun spricht sehr gut Deutsch.</span> <small>(민준은 독일어를 아주 잘한다)</small></td><td class="c"><input type="radio" name="b1b-2" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="b1b-2" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="r"><td>3</td><td><span lang="de">Der Koffer ist nicht von Minjun.</span> <small>(그 가방은 민준의 것이 아니다)</small></td><td class="c"><input type="radio" name="b1b-3" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="b1b-3" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="f"><td>4</td><td><span lang="de">Lena wohnt jetzt in Hamburg.</span> <small>(레나는 지금 함부르크에 산다)</small></td><td class="c"><input type="radio" name="b1b-4" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="b1b-4" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="f"><td>1</td><td><span lang="de">Lena kommt aus Leipzig.</span></td><td class="c"><input type="radio" name="b1b-1" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="b1b-1" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="f"><td>2</td><td><span lang="de">Minjun spricht sehr gut Deutsch.</span></td><td class="c"><input type="radio" name="b1b-2" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="b1b-2" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="r"><td>3</td><td><span lang="de">Minjun spricht zwei Sprachen: Koreanisch und Englisch.</span> <small>(Sprachen = 언어들)</small></td><td class="c"><input type="radio" name="b1b-3" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="b1b-3" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="r"><td>4</td><td><span lang="de">Lena und Minjun wohnen jetzt in Leipzig.</span></td><td class="c"><input type="radio" name="b1b-4" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="b1b-4" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="f"><td>5</td><td><span lang="de">Das ist Minjuns Koffer.</span></td><td class="c"><input type="radio" name="b1b-5" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="b1b-5" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="r"><td>6</td><td><span lang="de">Jonas denkt an den Mann am Bahnhof.</span> <small>(denken an = ~을 떠올리다)</small></td><td class="c"><input type="radio" name="b1b-6" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="b1b-6" value="f" aria-label="falsch"></td></tr>
       </tbody></table></div>
     </div>
     <div class="box mystery">
@@ -407,17 +432,17 @@
   </section>
   <section class="activity card" id="s2-laender" data-block="input">
     <h3>9 · 나라와 언어 <span class="time" data-min="10"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg>10분</span></h3>
-    <p>카드를 눌러 듣고 따라 하세요. <b>나라 → 언어</b> 짝으로!</p>
+    <p>카드를 눌러 듣고 따라 하세요. <b>나라 → 언어</b> 한 쌍으로!</p>
     <div class="cards cards-3"><div class="card-word"><b lang="de" data-say>Südkorea</b><span class="ko">한국 – 한국어</span><b lang="de" data-say style="margin-top:.35rem">Koreanisch</b></div><div class="card-word"><b lang="de" data-say>Deutschland</b><span class="ko">독일 – 독일어</span><b lang="de" data-say style="margin-top:.35rem">Deutsch</b></div><div class="card-word"><b lang="de" data-say>Spanien</b><span class="ko">스페인 – 스페인어</span><b lang="de" data-say style="margin-top:.35rem">Spanisch</b></div><div class="card-word"><b lang="de" data-say>Polen</b><span class="ko">폴란드 – 폴란드어</span><b lang="de" data-say style="margin-top:.35rem">Polnisch</b></div><div class="card-word"><b lang="de" data-say>Indien</b><span class="ko">인도 – 힌디어</span><b lang="de" data-say style="margin-top:.35rem">Hindi</b></div><div class="card-word"><b lang="de" data-say>England</b><span class="ko">영국 – 영어</span><b lang="de" data-say style="margin-top:.35rem">Englisch</b></div></div>
     <div class="box tip"><svg class="ic" aria-hidden="true"><use href="#i-tip"/></svg>나라와 언어 이름은 항상 <b>대문자</b>로 시작해요: <span lang="de">Koreanisch</span> ✓ · <span lang="de"><s>koreanisch</s></span> ✗</div>
     <div class="ex" data-check data-ex="B3">
-      <div class="ex-head"><span class="tag">B3</span>나라와 언어를 연결하세요.</div>
+      <div class="ex-head"><span class="tag">B3</span>문장을 완성하세요. 나라나 언어를 쓰세요.</div>
       <ol lang="de">
-        <li>Südkorea → <select data-answer="Koreanisch" aria-label="고르기"><option value=""></option><option>Koreanisch</option><option>Deutsch</option><option>Spanisch</option><option>Polnisch</option><option>Hindi</option></select></li>
-        <li>Polen → <select data-answer="Polnisch" aria-label="고르기"><option value=""></option><option>Koreanisch</option><option>Deutsch</option><option>Spanisch</option><option>Polnisch</option><option>Hindi</option></select></li>
-        <li>Spanien → <select data-answer="Spanisch" aria-label="고르기"><option value=""></option><option>Koreanisch</option><option>Deutsch</option><option>Spanisch</option><option>Polnisch</option><option>Hindi</option></select></li>
-        <li>Indien → <select data-answer="Hindi" aria-label="고르기"><option value=""></option><option>Koreanisch</option><option>Deutsch</option><option>Spanisch</option><option>Polnisch</option><option>Hindi</option></select></li>
-        <li>Deutschland → <select data-answer="Deutsch" aria-label="고르기"><option value=""></option><option>Koreanisch</option><option>Deutsch</option><option>Spanisch</option><option>Polnisch</option><option>Hindi</option></select></li>
+        <li>Ich komme aus Polen. Ich spreche <input class="blank" data-answer="Polnisch" aria-label="언어">.</li>
+        <li>Ich komme aus <input class="blank" data-answer="Spanien" aria-label="나라">. Ich spreche Spanisch.</li>
+        <li>Ich komme aus Deutschland. Ich spreche <input class="blank" data-answer="Deutsch" aria-label="언어">.</li>
+        <li>Ich komme aus <input class="blank" data-answer="Südkorea|Korea" aria-label="나라">. Ich spreche Koreanisch.</li>
+        <li>Ich komme aus Indien. Ich spreche Hindi und <input class="blank" data-answer="Englisch" aria-label="언어">.</li>
       </ol>
     </div>
     <div class="ex" data-check data-ex="B3b">
@@ -455,7 +480,7 @@
       <div class="slots" lang="de"><span class="slot">Woher</span><span class="slot v">kommst</span><span class="slot subj">du?</span></div>
       <p>예/아니요 질문은 동사가 <b>맨 앞</b>: </p>
       <div class="slots" lang="de"><span class="slot v">Sprichst</span><span class="slot subj">du</span><span class="slot">Deutsch?</span></div>
-      <p><b lang="de">Woher?</b>(어디에서?) → <b lang="de">aus</b> · <b lang="de">Wo?</b>(어디에?) → <b lang="de">in</b> – 짝으로 외우세요!</p>
+      <p><b lang="de">Woher?</b>(어디에서?) → <b lang="de">aus</b> · <b lang="de">Wo?</b>(어디에?) → <b lang="de">in</b> – 한 쌍으로 외우세요!</p>
     </aside>
     <div class="ex" data-check data-ex="G2">
       <div class="ex-head"><span class="tag">G2</span>알맞은 형태를 쓰세요.</div>
@@ -469,14 +494,13 @@
       </ol>
     </div>
     <div class="ex" data-check data-ex="G3">
-      <div class="ex-head"><span class="tag">G3</span>woher, wo, aus, in 중에서 고르세요.</div>
+      <div class="ex-head"><span class="tag">G3</span>woher · wo · wie, aus · in 중에서 고르세요. 한 문항에 빈칸이 두 개!</div>
       <ol lang="de">
-        <li><select data-answer="Woher" aria-label="고르기"><option value=""></option><option>Woher</option><option>Wo</option></select> kommst du? – Aus Hamburg.</li>
-        <li><select data-answer="Wo" aria-label="고르기"><option value=""></option><option>Woher</option><option>Wo</option></select> wohnst du? – In Leipzig.</li>
-        <li>Ich komme <select data-answer="aus" aria-label="고르기"><option value=""></option><option>aus</option><option>in</option></select> Südkorea.</li>
-        <li>Ich wohne <select data-answer="in" aria-label="고르기"><option value=""></option><option>aus</option><option>in</option></select> Leipzig.</li>
-        <li>Lena kommt <select data-answer="aus" aria-label="고르기"><option value=""></option><option>aus</option><option>in</option></select> Hamburg.</li>
-        <li><select data-answer="Wo" aria-label="고르기"><option value=""></option><option>Woher</option><option>Wo</option></select> wohnst du jetzt? – Hier in Leipzig.</li>
+        <li><select data-answer="Woher" aria-label="고르기"><option value=""></option><option>Woher</option><option>Wo</option><option>Wie</option></select> kommst du? – <select data-answer="Aus" aria-label="고르기"><option value=""></option><option>Aus</option><option>In</option></select> Hamburg.</li>
+        <li><select data-answer="Wo" aria-label="고르기"><option value=""></option><option>Woher</option><option>Wo</option><option>Wie</option></select> wohnst du? – <select data-answer="In" aria-label="고르기"><option value=""></option><option>Aus</option><option>In</option></select> Leipzig.</li>
+        <li>Ich komme <select data-answer="aus" aria-label="고르기"><option value=""></option><option>aus</option><option>in</option></select> Südkorea, aber ich wohne <select data-answer="in" aria-label="고르기"><option value=""></option><option>aus</option><option>in</option></select> Leipzig.</li>
+        <li><select data-answer="Woher" aria-label="고르기"><option value=""></option><option>Woher</option><option>Wo</option><option>Wie</option></select> kommt Lena? Sie kommt <select data-answer="aus" aria-label="고르기"><option value=""></option><option>aus</option><option>in</option></select> Hamburg.</li>
+        <li><select data-answer="Wie" aria-label="고르기"><option value=""></option><option>Woher</option><option>Wo</option><option>Wie</option></select> heißt du? – Lena.</li>
       </ol>
     </div>
     <div class="ex" data-check data-ex="G3b">
@@ -562,31 +586,49 @@
   </section>
   <section class="activity card" id="s2-fundbuero" data-block="output">
     <h3>12 · <span lang="de">Im Fundbüro</span> · 분실물 센터에서 (Sie) <span class="time" data-min="20"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg>20분</span></h3>
-    <p>오후, 민준은 중앙역의 <b lang="de">Fundbüro</b>(분실물 센터)에 가요. <b>A</b>: 직원 / <b>B</b>: 민준(또는 나). 역할을 바꿔 두 번!</p>
+    <p>오후, 민준은 중앙역의 <b lang="de">Fundbüro</b>(분실물 센터)에 가요. 대화를 듣고 직원이 쓰는 분실 신고서를 완성하세요.</p>
+    <p><span class="track"><svg class="ic" aria-hidden="true"><use href="#i-listen"/></svg>Track 1-08 <button type="button" class="say-btn" data-play="dlg-fundbuero" aria-label="대화 전체 듣기">▶</button></span> 분실물 센터 창구에서.</p>
+    <details class="transcript"><summary>대본 보기 (문제를 다 푼 뒤에!)</summary>
     <div class="dialog" id="dlg-fundbuero">
-      <div class="line"><span class="who">A</span><span class="tx"><span class="text" lang="de">Guten Tag!</span><span class="ko">안녕하세요!</span></span></div>
-      <div class="line"><span class="who">B</span><span class="tx"><span class="text" lang="de">Guten Tag. Das ist nicht mein Koffer!</span><span class="ko">안녕하세요. 이건 제 가방이 아니에요!</span></span></div>
-      <div class="line"><span class="who">A</span><span class="tx"><span class="text" lang="de">Oh. Wie heißen Sie?</span><span class="ko">아. 성함이 어떻게 되세요?</span></span></div>
-      <p class="stage">(B: Ich heiße …)</p>
-      <div class="line"><span class="who">A</span><span class="tx"><span class="text" lang="de">Wie schreibt man das?</span><span class="ko">어떻게 쓰죠?</span></span></div>
-      <p class="stage">(B: 철자를 말한다)</p>
-      <div class="line"><span class="who">A</span><span class="tx"><span class="text" lang="de">Woher kommen Sie? Und wo wohnen Sie?</span><span class="ko">어디에서 오셨어요? 그리고 어디에 사세요?</span></span></div>
-      <p class="stage">(B: Ich komme aus … Ich wohne in …)</p>
-      <div class="line"><span class="who">A</span><span class="tx"><span class="text" lang="de">Und Ihr Koffer? Wie ist er?</span><span class="ko">그럼 손님 가방은요? 어떻게 생겼어요?</span></span></div>
-      <div class="line"><span class="who">B</span><span class="tx"><span class="text" lang="de">Er ist schwarz und groß.</span><span class="ko">검은색이고 커요.</span></span></div>
-      <div class="line"><span class="who">A</span><span class="tx"><span class="text" lang="de">Danke. Auf Wiedersehen!</span><span class="ko">감사합니다. 안녕히 가세요!</span></span></div>
+      <div class="line"><span class="who">Frau</span><span class="tx"><span class="text" lang="de">Guten Tag!</span><span class="ko">안녕하세요!</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-minjun.webp)" aria-hidden="true"></span>Minjun</span><span class="tx"><span class="text" lang="de">Guten Tag. Das ist nicht mein Koffer!</span><span class="ko">안녕하세요. 이건 제 가방이 아니에요!</span></span></div>
+      <div class="line"><span class="who">Frau</span><span class="tx"><span class="text" lang="de">Oh. Wie heißen Sie?</span><span class="ko">아. 성함이 어떻게 되세요?</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-minjun.webp)" aria-hidden="true"></span>Minjun</span><span class="tx"><span class="text" lang="de">Ich heiße Park. Minjun Park.</span><span class="ko">박이에요. 박민준.</span></span></div>
+      <div class="line"><span class="who">Frau</span><span class="tx"><span class="text" lang="de">Wie schreibt man das?</span><span class="ko">어떻게 쓰죠?</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-minjun.webp)" aria-hidden="true"></span>Minjun</span><span class="tx"><span class="text" lang="de" data-say="P, A, R, K.">P – A – R – K.</span></span></div>
+      <div class="line"><span class="who">Frau</span><span class="tx"><span class="text" lang="de">Woher kommen Sie? Und wo wohnen Sie?</span><span class="ko">어디에서 오셨어요? 그리고 어디에 사세요?</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-minjun.webp)" aria-hidden="true"></span>Minjun</span><span class="tx"><span class="text" lang="de">Ich komme aus Südkorea. Ich wohne jetzt in Leipzig.</span><span class="ko">한국에서 왔어요. 지금 라이프치히에 살아요.</span></span></div>
+      <div class="line"><span class="who">Frau</span><span class="tx"><span class="text" lang="de">Und Ihr Koffer? Wie ist er?</span><span class="ko">그럼 손님 가방은요? 어떻게 생겼어요?</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-minjun.webp)" aria-hidden="true"></span>Minjun</span><span class="tx"><span class="text" lang="de">Er ist schwarz und groß.</span><span class="ko">검은색이고 커요.</span></span></div>
+      <div class="line"><span class="who">Frau</span><span class="tx"><span class="text" lang="de">Danke. Auf Wiedersehen!</span><span class="ko">감사합니다. 안녕히 가세요!</span></span></div>
     </div>
-    <p class="muted"><span lang="de">schwarz</span> = 검은 · <span lang="de">groß</span> = 큰 · <span lang="de">Er ist …</span> = (가방은) …해요 <small>(통째로!)</small></p>
-    <p><b>A의 분실 신고서</b> <span lang="de">(Verlustmeldung)</span></p>
-    <div class="form-grid" lang="de"><label><span>Nachname <small lang="ko">성</small></span><input class="blank" aria-label="Nachname"></label><label><span>Vorname <small lang="ko">이름</small></span><input class="blank" aria-label="Vorname"></label><label><span>Land <small lang="ko">나라</small></span><input class="blank" aria-label="Land"></label><label><span>Wohnort <small lang="ko">사는 곳</small></span><input class="blank" aria-label="Wohnort"></label><label><span>Koffer <small lang="ko">가방</small></span><input class="blank" aria-label="Koffer"></label></div>
+    </details>
+    <p class="muted">새 단어: <span lang="de">schwarz</span> = 검은 · <span lang="de">groß</span> = 큰 · <span lang="de">Er ist …</span> = (가방은) …해요</p>
+    <div class="ex" data-check data-ex="F1">
+      <div class="ex-head"><span class="tag">12a</span>분실 신고서 <span lang="de">(Verlustmeldung)</span>를 채우세요.</div>
+      <div class="form-grid" lang="de"><label><span>Nachname <small lang="ko">성</small></span><input class="blank" data-answer="Park" aria-label="Nachname"></label><label><span>Vorname <small lang="ko">이름</small></span><input class="blank" data-answer="Minjun" aria-label="Vorname"></label><label><span>Land <small lang="ko">나라</small></span><input class="blank" data-answer="Südkorea|Korea" aria-label="Land"></label><label><span>Wohnort <small lang="ko">사는 곳</small></span><input class="blank" data-answer="Leipzig" aria-label="Wohnort"></label><label><span>Koffer <small lang="ko">가방</small></span><input class="blank" data-answer="schwarz und groß|groß und schwarz|schwarz, groß" aria-label="Koffer"></label></div>
+    </div>
+    <p><b>12b</b> 이번에는 <b>내가 손님</b>이에요. ▶로 직원 줄만 듣고, 멈춘 뒤 내 정보로 소리 내어 대답하세요.</p>
   </section>
   <section class="activity card" id="s2-interview" data-block="output">
-    <h3>13 · <span lang="de">Sprechen</span> · 교실 인터뷰 (du) <span class="time" data-min="15"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg>15분</span></h3>
-    <p>교실을 돌아다니며 최소 <b>3명</b>에게 묻고 표를 채우세요.</p>
-    <div class="table-wrap"><table lang="de" class="fixed">
-      <thead><tr><th>Wie heißt du?</th><th>Woher kommst du?</th><th>Wo wohnst du?</th><th>Sprichst du …?</th></tr></thead>
-      <tbody><tr><td><input class="blank" style="width:100%" aria-label="Name"></td><td><input class="blank" style="width:100%" aria-label="Woher"></td><td><input class="blank" style="width:100%" aria-label="Wo"></td><td><input class="blank" style="width:100%" aria-label="Sprachen"></td></tr><tr><td><input class="blank" style="width:100%" aria-label="Name"></td><td><input class="blank" style="width:100%" aria-label="Woher"></td><td><input class="blank" style="width:100%" aria-label="Wo"></td><td><input class="blank" style="width:100%" aria-label="Sprachen"></td></tr><tr><td><input class="blank" style="width:100%" aria-label="Name"></td><td><input class="blank" style="width:100%" aria-label="Woher"></td><td><input class="blank" style="width:100%" aria-label="Wo"></td><td><input class="blank" style="width:100%" aria-label="Sprachen"></td></tr></tbody>
-    </table></div>
+    <h3>13 · <span lang="de">Hören</span> · Jonas 인터뷰 (du) <span class="time" data-min="15"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg>15분</span></h3>
+    <p><span class="track"><svg class="ic" aria-hidden="true"><use href="#i-listen"/></svg>Track 1-11 <button type="button" class="say-btn" data-play="dlg-13" aria-label="대화 전체 듣기">▶</button></span> 저녁, WG 부엌. 민준이 Jonas에게 이것저것 물어봐요.</p>
+    <details class="transcript"><summary>대본 보기 (문제를 다 푼 뒤에!)</summary>
+    <div class="dialog" id="dlg-13">
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-minjun.webp)" aria-hidden="true"></span>Minjun</span><span class="tx"><span class="text" lang="de">Jonas, woher kommst du?</span><span class="ko">요나스, 너는 어디에서 왔어?</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-jonas.webp)" aria-hidden="true"></span>Jonas</span><span class="tx"><span class="text" lang="de">Ich komme aus Leipzig. Ich wohne hier – in der WG mit dir!</span><span class="ko">라이프치히 출신이야. 여기 살지 – 너랑 같은 WG에!</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-minjun.webp)" aria-hidden="true"></span>Minjun</span><span class="tx"><span class="text" lang="de">Sprichst du Englisch?</span><span class="ko">영어 해?</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-jonas.webp)" aria-hidden="true"></span>Jonas</span><span class="tx"><span class="text" lang="de">Ja. Und ich spreche ein bisschen Spanisch.</span><span class="ko">응. 그리고 스페인어도 조금 해.</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-minjun.webp)" aria-hidden="true"></span>Minjun</span><span class="tx"><span class="text" lang="de">Wie ist deine Handynummer?</span><span class="ko">네 휴대폰 번호는 뭐야?</span></span></div>
+      <div class="line"><span class="who"><span class="avatar" style="background-image:url(../assets/img/k01/person-jonas.webp)" aria-hidden="true"></span>Jonas</span><span class="tx"><span class="text" lang="de">Null – eins – sieben – null … zwölf, acht, fünfzehn.</span><span class="ko">0170 … 12 8 15</span></span></div>
+    </div>
+    </details>
+    <div class="ex" data-check data-ex="13a">
+      <div class="ex-head"><span class="tag">13a</span>Jonas의 프로필을 완성하세요.</div>
+      <div class="form-grid" lang="de"><label><span>Woher? <small lang="ko">출신</small></span><input class="blank" data-answer="Leipzig|aus Leipzig" aria-label="Woher?"></label><label><span>Wo? <small lang="ko">사는 곳</small></span><input class="blank" data-answer="in der WG|WG|in einer WG|hier" aria-label="Wo?"></label><label><span>Sprachen: Deutsch, Englisch und … <small lang="ko">언어</small></span><input class="blank" data-answer="Spanisch" aria-label="Sprachen: Deutsch, Englisch und …"></label><label><span>Handy <small lang="ko">번호</small></span><input class="blank wide" data-digits data-answer="0170 12 8 15" aria-label="Handy"></label></div>
+    </div>
+    <p><b>13b</b> 이제 나에 대해 써 보세요. 대답은 완전한 문장으로!</p>
+    <div class="form-grid" lang="de"><label><span>Wie heißt du?</span><input class="blank" aria-label="Wie heißt du?" placeholder="Ich …"></label><label><span>Woher kommst du?</span><input class="blank" aria-label="Woher kommst du?" placeholder="Ich …"></label><label><span>Wo wohnst du?</span><input class="blank" aria-label="Wo wohnst du?" placeholder="Ich …"></label><label><span>Sprichst du Englisch?</span><input class="blank" aria-label="Sprichst du Englisch?" placeholder="Ich …"></label></div>
 
   </section>
   <section class="box homework" id="hw-2">
@@ -680,14 +722,14 @@
       </ol>
     </div>
     <div class="ex" data-check data-ex="G5b">
-      <div class="ex-head"><span class="tag">G5b</span>er일까요, sie일까요?</div>
+      <div class="ex-head"><span class="tag">G5b</span>er/sie와 동사를 <b>둘 다</b> 쓰세요. (괄호 = 사전형)</div>
       <ol lang="de">
-        <li>Das ist Lena. <select data-answer="Sie" aria-label="고르기"><option value=""></option><option>Er</option><option>Sie</option></select> kommt aus Hamburg.</li>
-        <li>Das ist Jonas. <select data-answer="Er" aria-label="고르기"><option value=""></option><option>Er</option><option>Sie</option></select> wohnt in einer WG.</li>
-        <li>Das ist Carlos. <select data-answer="Er" aria-label="고르기"><option value=""></option><option>Er</option><option>Sie</option></select> ist Koch.</li>
-        <li>Das ist Haeun. <select data-answer="Sie" aria-label="고르기"><option value=""></option><option>Er</option><option>Sie</option></select> spricht Deutsch.</li>
-        <li>Das ist Herr Park. <select data-answer="Er" aria-label="고르기"><option value=""></option><option>Er</option><option>Sie</option></select> kommt aus Südkorea.</li>
-        <li>Das ist Frau Schulze. <select data-answer="Sie" aria-label="고르기"><option value=""></option><option>Er</option><option>Sie</option></select> wohnt unten.</li>
+        <li>Das ist Lena. <input class="blank wide" data-answer="Sie kommt" aria-label="er/sie + 동사"> aus Hamburg. (kommen)</li>
+        <li>Das ist Jonas. <input class="blank wide" data-answer="Er wohnt" aria-label="er/sie + 동사"> in einer WG. (wohnen)</li>
+        <li>Das ist Carlos. <input class="blank wide" data-answer="Er ist" aria-label="er/sie + 동사"> Koch. (sein)</li>
+        <li>Das ist Haeun. <input class="blank wide" data-answer="Sie spricht" aria-label="er/sie + 동사"> Deutsch. (sprechen)</li>
+        <li>Das ist Herr Park. <input class="blank wide" data-answer="Er heißt" aria-label="er/sie + 동사"> Minjun. (heißen)</li>
+        <li>Das ist Frau Schulze. <input class="blank wide" data-answer="Sie wohnt" aria-label="er/sie + 동사"> unten. (wohnen)</li>
       </ol>
     </div>
     <div class="ex" data-check data-ex="G6">
@@ -783,16 +825,15 @@
     <p>Frau Wagner가 교실 벽에 붙인 <b lang="de">Steckbrief</b>(프로필)예요. 먼저 <b>한국어 뜻을 손으로 가리고</b> 읽어 보세요!</p>
     <div class="profiles"><div class="profile"><img class="person" src="../assets/img/k01/person-carlos.webp" alt="Carlos Ruiz" loading="lazy"><b>Carlos Ruiz</b><span lang="de">Hallo! Ich heiße Carlos. Ich komme aus Spanien. Ich wohne in Leipzig. Ich spreche Spanisch und Englisch.</span><span class="ko">안녕! 내 이름은 카를로스야. 스페인에서 왔어. 라이프치히에 살아. 스페인어와 영어를 해.</span></div><div class="profile"><img class="person" src="../assets/img/k01/person-tomasz.webp" alt="Tomasz Nowak" loading="lazy"><b>Tomasz Nowak</b><span lang="de">Hallo, ich bin Tomasz. Ich komme aus Polen. Ich bin Ingenieur. Ich spreche Polnisch, Englisch und Russisch.</span><span class="ko">안녕, 나는 토마스야. 폴란드에서 왔어. 엔지니어야. 폴란드어, 영어, 러시아어를 해.</span></div><div class="profile"><img class="person" src="../assets/img/k01/person-priya.webp" alt="Priya Sharma" loading="lazy"><b>Priya Sharma</b><span lang="de">Hi! Ich heiße Priya. Ich komme aus Indien. Ich spreche Hindi und Englisch. Ich möchte in Leipzig studieren.</span><span class="ko">안녕! 내 이름은 프리야야. 인도에서 왔어. 힌디어와 영어를 해. 라이프치히에서 대학에 다니고 싶어.</span></div><div class="profile"><img class="person" src="../assets/img/k01/person-minjun.webp" alt="Minjun Park" loading="lazy"><b>Minjun Park</b><span lang="de">Hallo! Ich heiße Minjun. Ich komme aus Südkorea. Ich wohne in einer WG. Ich spreche Koreanisch und Englisch.</span><span class="ko">안녕! 내 이름은 민준이야. 한국에서 왔어. WG에 살아. 한국어와 영어를 해.</span></div></div>
     <div class="ex" data-check data-ex="L1">
-      <div class="ex-head"><span class="tag">L1</span>맞으면 r, 틀리면 f</div>
+      <div class="ex-head"><span class="tag">L1</span>네 프로필을 <b>모두</b> 보고 판단하세요. 맞으면 r, 틀리면 f</div>
       <div class="table-wrap"><table class="rf"><thead><tr><th>#</th><th>문장</th><th class="c">r</th><th class="c">f</th></tr></thead><tbody>
-        <tr data-answer="r"><td>1</td><td><span lang="de">Carlos kommt aus Spanien.</span></td><td class="c"><input type="radio" name="l1-1" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-1" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="f"><td>2</td><td><span lang="de">Priya kommt aus Polen.</span></td><td class="c"><input type="radio" name="l1-2" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-2" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="r"><td>3</td><td><span lang="de">Tomasz spricht Russisch.</span></td><td class="c"><input type="radio" name="l1-3" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-3" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="r"><td>4</td><td><span lang="de">Minjun wohnt in einer WG.</span></td><td class="c"><input type="radio" name="l1-4" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-4" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="f"><td>5</td><td><span lang="de">Tomasz ist Koch.</span></td><td class="c"><input type="radio" name="l1-5" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-5" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="r"><td>6</td><td><span lang="de">Priya möchte in Leipzig studieren.</span></td><td class="c"><input type="radio" name="l1-6" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-6" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="f"><td>7</td><td><span lang="de">Carlos spricht Polnisch.</span></td><td class="c"><input type="radio" name="l1-7" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-7" value="f" aria-label="falsch"></td></tr>
-        <tr data-answer="r"><td>8</td><td><span lang="de">Minjun spricht Koreanisch und Englisch.</span></td><td class="c"><input type="radio" name="l1-8" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-8" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="r"><td>1</td><td><span lang="de">Tomasz spricht drei Sprachen.</span> <small>(drei Sprachen = 3개 언어)</small></td><td class="c"><input type="radio" name="l1-1" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-1" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="r"><td>2</td><td><span lang="de">Alle vier sprechen Englisch.</span> <small>(alle vier = 네 명 모두)</small></td><td class="c"><input type="radio" name="l1-2" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-2" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="r"><td>3</td><td><span lang="de">Carlos kommt aus Spanien und wohnt jetzt in Leipzig.</span></td><td class="c"><input type="radio" name="l1-3" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-3" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="f"><td>4</td><td><span lang="de">Priya spricht Hindi und Spanisch.</span></td><td class="c"><input type="radio" name="l1-4" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-4" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="f"><td>5</td><td><span lang="de">Priya studiert schon in Leipzig.</span> <small>(studieren = 대학에 다니다 · schon = 이미)</small></td><td class="c"><input type="radio" name="l1-5" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-5" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="f"><td>6</td><td><span lang="de">Zwei Personen sprechen Spanisch.</span> <small>(zwei Personen = 두 사람)</small></td><td class="c"><input type="radio" name="l1-6" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-6" value="f" aria-label="falsch"></td></tr>
+        <tr data-answer="r"><td>7</td><td><span lang="de">Tomasz kommt aus Polen und ist Ingenieur.</span></td><td class="c"><input type="radio" name="l1-7" value="r" aria-label="richtig"></td><td class="c"><input type="radio" name="l1-7" value="f" aria-label="falsch"></td></tr>
       </tbody></table></div>
     </div>
     <div class="ex" data-check data-ex="L2">
@@ -836,7 +877,7 @@
     <p lang="de" class="template">Hallo! Ich heiße <input class="blank" aria-label="이름">. Ich komme aus <input class="blank" aria-label="나라">. Ich wohne in <input class="blank" aria-label="도시">. Ich spreche <input class="blank" aria-label="언어">.</p>
     <p><b>19b</b> (5분) 공책에 옮겨 쓰고, <b>한 문장 더</b> 붙여 보세요. 예: <span lang="de">Ich bin Student / Studentin.</span> · <span lang="de">Ich lerne Deutsch.</span></p>
     <textarea lang="de" data-persist="steckbrief" rows="5" placeholder="Hallo! Ich heiße …" aria-label="나의 자기소개"></textarea>
-    <p><b>19c</b> (5분) 짝과 바꿔 읽고 아래 세 가지를 확인해 주세요.</p>
+    <p><b>19c</b> (5분) 다 쓴 글을 소리 내어 읽고 <b>스스로</b> 아래 세 가지를 확인하세요.</p>
     <div class="table-wrap"><table><tbody>
       <tr><td>☐</td><td>동사가 <b>두 번째</b>에 있나요? (<span lang="de">Ich <b>komme</b> aus …</span>)</td></tr>
       <tr><td>☐</td><td>ich 다음 동사가 <b>-e</b>로 끝나나요? (<span lang="de">ich wohn<b>e</b></span>)</td></tr>
@@ -955,7 +996,7 @@
       <figure class="cut"><img src="../assets/img/k01/story-2-wg.webp" alt="WG에서 가방을 열어 보는 장면" loading="lazy"><figcaption><b>2</b> <span lang="de">In der WG: Das ist nicht mein Koffer!</span><span class="ko">WG에서: 이건 내 가방이 아니야!</span></figcaption></figure>
       <figure class="cut"><img src="../assets/img/k01/story-3-treppenhaus.webp" alt="계단에서 새 이웃을 만나는 장면" loading="lazy"><figcaption><b>3</b> <span lang="de">Im Treppenhaus: neue Nachbarn.</span><span class="ko">계단에서: 새 이웃.</span></figcaption></figure>
     </div>
-    <p><b>말해 보기</b> 그림을 보며 짝에게 이야기를 독일어로 말해 보세요. <span lang="de">(Minjun kommt aus … · Das ist nicht … · Das ist Sujin. Sie …)</span></p>
+    <p><b>말해 보기</b> 그림을 보며 혼자 이야기를 독일어로 말하고 녹음해 보세요. <span lang="de">(Minjun kommt aus … · Das ist nicht … · Das ist Sujin. Sie …)</span></p>
   </section>
 
   <section class="card" id="tagebuch">
