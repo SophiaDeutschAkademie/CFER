@@ -20,6 +20,8 @@
 | [`curriculum/02_A2_챕터구성.md`](curriculum/02_A2_챕터구성.md) | A2 · 9–20과 핵심 학습 내용 (약 4.4개월) |
 | [`curriculum/03_B1_챕터구성.md`](curriculum/03_B1_챕터구성.md) | B1 · 21–32과 핵심 학습 내용 (약 5.5개월) |
 | [`curriculum/04_B2_챕터구성.md`](curriculum/04_B2_챕터구성.md) | B2 · 33–44과 핵심 학습 내용 (약 6.7개월) |
+| [`web/index.html`](web/index.html) | **HTML 교재 목차** (웹앱 원형) |
+| [`web/A1/kapitel-01.html`](web/A1/kapitel-01.html) | **1과 HTML 교재** – 자동 채점, 음성 듣기, 교사 모드(운영안·정답·대본), 사건 수첩 저장 |
 | [`A1/Kapitel_01_Hallo_ich_bin_Minjun.md`](A1/Kapitel_01_Hallo_ich_bin_Minjun.md) | **1과 시범 원고 (학생용)** |
 | [`A1/Kapitel_01_Loesungen_Lehrerhandbuch.md`](A1/Kapitel_01_Loesungen_Lehrerhandbuch.md) | 1과 정답 · 수업 운영안 · 첨삭 가이드 (교사용) |
 
@@ -31,3 +33,28 @@
 | 문법 규칙 → 예문 → 연습 | 이야기 속 장면 → 문법 **발견** → 규칙 정리 → 말하기·쓰기에 바로 사용 |
 | 과마다 따로 떨어진 주제 | 한 인물의 정착 과정이 이어짐 → 다음 과가 궁금해지는 구조 |
 | 시험 대비는 마지막에 따로 | 레벨마다 마지막 과에서 Goethe 시험(Start Deutsch 1, A2, B1, B2) 형식 연습 |
+
+## HTML 교재 구조 (웹앱 전환 대비)
+
+```
+web/
+├── index.html                 목차
+├── assets/css/textbook.css    공통 스타일 (색은 :root 토큰, 다크 모드·인쇄 지원)
+├── assets/js/textbook.js      공통 기능 (채점·음성·교사 모드·타이머·저장)
+└── A1/kapitel-01.html         챕터별 HTML
+```
+
+새 챕터는 `kapitel-01.html`을 복사해 내용만 바꾸면 됩니다. 기능은 모두 `data-` 속성으로 동작합니다.
+
+| 속성 / 클래스 | 역할 |
+|---|---|
+| `.ex[data-check]` | 채점 가능한 연습 문제 (정답 확인 / 정답 보기 / 다시 하기 버튼 자동 생성) |
+| `input.blank[data-answer="a\|b"]` | 빈칸 – `\|`로 여러 정답 허용, `data-ci` 대소문자 무시, `data-digits` 숫자만 비교 |
+| `select[data-answer]`, `tr[data-answer="r"]` | 선택형 / richtig-falsch |
+| `.dialog > .line > .who + .text[lang]` | 대화문 – 줄마다 ▶ 듣기 버튼 자동 생성 |
+| `[data-play="대화 id"]` | 대화 전체 듣기 (원어민 녹음 전까지 브라우저 TTS 사용) |
+| `[data-say]` | 단어·표현 듣기 버튼 |
+| `.teacher-note` | 교사 모드에서만 보임 |
+| `.time[data-min]` | 활동 시간 – 교사 모드에서 누르면 타이머 |
+| `[data-persist]` | 학생 입력을 브라우저에 저장 (사건 수첩, 자기 점검) |
+| `section[data-stunde]`, `[data-block="input\|output"]` | 차시·교시 구분 |
