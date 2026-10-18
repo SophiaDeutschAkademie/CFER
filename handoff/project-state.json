@@ -1,0 +1,881 @@
+{
+  "schema": "der-falsche-koffer/handoff@1",
+  "updated": "2026-10-18",
+  "read_first": "handoff/HANDOFF.md",
+  "repo": {
+    "name": "sophiadeutschakademie/CFER",
+    "branch": "claude/cfer-german-textbook-qtcgcu",
+    "last_commit_before_handoff": "e315977",
+    "push": "git push -u origin claude/cfer-german-textbook-qtcgcu",
+    "pr": "요청이 있을 때만",
+    "commit_trailer": [
+      "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "Claude-Session: <현재 세션 URL>"
+    ],
+    "no_model_names_in_commits": true
+  },
+  "user": {
+    "role": "SODA(Sophia Deutsch Akademie) 독일어 학원 선생님",
+    "goal": "학생에게 최대한 쉽게 설명·첨삭",
+    "reply_language": "ko"
+  },
+  "book": {
+    "title": "Der falsche Koffer",
+    "subtitle": "바뀐 여행가방 – 이야기로 배우는 독일어",
+    "levels": [
+      "A1",
+      "A2",
+      "B1",
+      "B2"
+    ],
+    "learners": "한국인",
+    "genre": "코지 미스터리",
+    "seasons": {
+      "A1": "이 가방은 누구 것일까?",
+      "A2": "편지 속 E.는 누구일까?",
+      "B1": "1984년에 무슨 일이 있었을까?",
+      "B2": "누가 밀고했을까?"
+    },
+    "design_docs": [
+      "curriculum/00_교재_설계_개요.md",
+      "curriculum/01_A1_챕터구성.md",
+      "curriculum/02_A2_챕터구성.md",
+      "curriculum/03_B1_챕터구성.md",
+      "curriculum/04_B2_챕터구성.md"
+    ]
+  },
+  "output": {
+    "main_file": "web/A1/kapitel-01.html",
+    "contains": [
+      "cover",
+      "contents",
+      "Kapitel 1",
+      "Kapitel 2"
+    ],
+    "single_file_build": "web/dist/kapitel-01.html",
+    "regenerate": [
+      "python3 tools/gen_k02.py",
+      "python3 tools/build-single.py A1/kapitel-01.html"
+    ],
+    "edit_rule": "HTML 직접 수정 금지 – 생성기 수정 후 재생성",
+    "verified": {
+      "checked_exercises_all_correct": "129/129",
+      "overflow_widths": [
+        1440,
+        1100,
+        820,
+        600,
+        390,
+        360
+      ],
+      "overflow": 0,
+      "js_errors": 0,
+      "duplicate_ids": 0
+    }
+  },
+  "format_rules": {
+    "layout": [
+      "넓은 지면 --maxw:1240px",
+      "html font-size 19px(모바일 17.5px), 문장 간격 넓게",
+      "빈칸으로 구역 구분",
+      "문제·문장 틀·목표·이번 주 수업·가방 속 물건·문법 목록 모두 세로 정렬",
+      "6가지 폭에서 칸 넘침 0"
+    ],
+    "lesson": {
+      "per_chapter": "3차시(1주)",
+      "per_stunde": "1교시 50분 Input + 2교시 50분 Output (활동 분 합계 정확히 50/50)",
+      "homework": "차시마다 60분, 문제 7개 H1–H7"
+    },
+    "exercises": [
+      "짝·모둠 활동 금지 – 말하기는 혼자 소리 내기/녹음",
+      "너무 쉽지 않게, 많이",
+      "고르기 + 빈칸 + 문장 전체 쓰기 + 틀린 문장 고치기 섞기",
+      "대본은 details.transcript로 숨김(문제 먼저)"
+    ],
+    "grammar": [
+      "문법이 쓰이는 곳마다 gram() 상자",
+      "목표 페이지에 '이번 과에서 배우는 문법' 목록(gram-row, 해당 활동 링크)"
+    ],
+    "forbidden": [
+      "한글 발음 표기(음차)",
+      "이 교재 사용법",
+      "교사 모드 상자",
+      "짝 활동",
+      "이모지 힌트"
+    ],
+    "article_colors": {
+      "der": "g-m 파랑",
+      "die": "g-f 빨강",
+      "das": "g-n 초록",
+      "die(복수)": "g-p 갈색"
+    },
+    "chapter_parts": [
+      "hero(제목·이야기·수업·인물)",
+      "ziele(목표·문법 목록·3차시 계획)",
+      "stunde-1..3",
+      "anhang: 핵심 문장 10 / 문법 한눈에 / Landeskunde / Wortschatz / 3컷 / 민준의 일기 / Fallakte / 자기 점검"
+    ]
+  },
+  "page_structure": {
+    "panels_in_order": [
+      "cover(data-nav=off)",
+      "contents",
+      "start",
+      "stunde-1",
+      "stunde-2",
+      "stunde-3",
+      "anhang",
+      "k2-start",
+      "k2-stunde-1",
+      "k2-stunde-2",
+      "k2-stunde-3",
+      "k2-anhang"
+    ],
+    "chapter_prefix": {
+      "1": "",
+      "2": "k2-",
+      "next": "k3-"
+    },
+    "prefixed_attributes": [
+      "id",
+      "href=#…(아이콘 #i- 제외)",
+      "data-tab",
+      "data-panel",
+      "data-play",
+      "data-ex",
+      "input[type=radio] name"
+    ],
+    "topbar": "목차 + <span class=tabs data-ch=N><b class=ch-badge>N과</b> 목표·1차시·2차시·3차시·부록</span>; 보고 있는 과 묶음만 표시(CSS body[data-current^=kN-]); data-label='N과 1차시'가 이전/다음 버튼 이름",
+    "toc_link": "href=#k2-kapitel-2 data-tab=k2-start",
+    "persist_keys": {
+      "ch1": [
+        "fall-*",
+        "sc1..8"
+      ],
+      "ch2": [
+        "mein-zimmer",
+        "meine-familie",
+        "fall2-*",
+        "k2sc1..9"
+      ]
+    }
+  },
+  "helpers": {
+    "file": "tools/kapitel_lib.py",
+    "functions": [
+      "act(id,no,title,minutes,body,block)",
+      "block(t)",
+      "stunde(id,no,title,plan,body)",
+      "homework(id,title,rows,extra)",
+      "ex(id,tag,head,body,check)",
+      "blank(ans,label,cls,ci,digits)",
+      "sel(ans,opts)",
+      "rf(name,rows,lang)",
+      "gram(title,body)",
+      "today(items,title,paired)",
+      "dialog(id,rows,cls,lang)",
+      "line(who,de,ko,lang)",
+      "stage(t)",
+      "track(no,id,text)",
+      "fig(n,alt,cap)",
+      "pic(n,alt,cls)",
+      "ic(name)",
+      "g(word,c)",
+      "slots(*parts)"
+    ],
+    "notes": [
+      "act()는 번호 자동 재부여 + 본문 '{no}[a-h]' 하위 번호도 변경",
+      "blank 정답 여러 개는 'a|b'",
+      "K.IMG로 과별 그림 폴더, 이름에 '/'가 있으면 assets/img 기준",
+      "K.AV: 인물 이름 → 얼굴 그림"
+    ],
+    "icons": [
+      "listen",
+      "speak",
+      "abc",
+      "123",
+      "mediate",
+      "write",
+      "target",
+      "search",
+      "tip",
+      "warn",
+      "pin",
+      "music",
+      "home",
+      "book",
+      "diary",
+      "check",
+      "flag",
+      "dice",
+      "teacher",
+      "suitcase",
+      "timer",
+      "study",
+      "family",
+      "mic",
+      "die-1..6",
+      "cross"
+    ]
+  },
+  "images": {
+    "tool": "ElevenLabs creative_generate_image",
+    "model": "recraft-v4.1-flash",
+    "credits_per_image": 48.48,
+    "flow_id": "UJBSwwDvHHFi9ZMS0yED",
+    "style_suffix": "Modern minimalist editorial illustration, calm and refined, simplified geometric forms, flat matte colors with a very fine subtle grain, restrained palette of deep navy, slate gray, warm sand and ivory with one muted ochre accent, natural muted skin tones, minimal facial features, soft subtle shadows. Plain white background, wordless.",
+    "scene_prefix": "The whole scene sits fully inside the frame, centered, with even generous white margins on all four sides.",
+    "sheet_prefix": "Every item is complete, separated from the others by wide empty white space, and does not touch the edges of the image.",
+    "aspect": {
+      "scene": "16:9 또는 4:3",
+      "sheet_of_5": "16:9(2:1)"
+    },
+    "processing": {
+      "scene": "잉크 bbox + 여백 30px, 가로≤1280, webp q80",
+      "sheet": "위쪽 88% 열 잉크 합으로 분할, 붙으면 최소 잉크 열에서 분할",
+      "person_height": 560,
+      "object_height": 300,
+      "person_crop": "밝기<200 기준으로 위를 꼭 맞게(아바타가 머리를 보여 줌)"
+    },
+    "text_images": "명함·프로필 카드·숫자·가격표 등 글자 들어간 그림은 Pillow(Inter 글꼴, 잡음 질감)",
+    "palette": {
+      "navy": "#2E3A55",
+      "slate": "#6C768A",
+      "sand": "#DECDB0",
+      "ivory": "#FBF8F1",
+      "ochre": "#B87830"
+    },
+    "naming": "story-N-…, person-이름, moebel-…, ding-…, karte-…, steckbrief-…, stimmung-1..5 (언더바 금지)"
+  },
+  "audio": {
+    "tool": "ElevenLabs creative_generate_speech",
+    "model": "eleven_v4",
+    "generations_count": 1,
+    "normalize": "ffmpeg -af loudnorm=I=-18:TP=-1.5:LRA=11 -ac 1 -b:a 64k",
+    "naming": {
+      "dialog": "web/assets/audio/kNN/{dialog-id}-{줄번호}.mp3 (span.text 순서, stage 제외)",
+      "listening": "lis-{n}.mp3 (그 과의 span.lis 순서)"
+    },
+    "auto_link": "생성기 _attach_audio가 파일이 있으면 data-audio를 붙임",
+    "manifest": "tools/audio-kNN-manifest.json [{id, who, lang, text, voice}]",
+    "minjun": "남자, 영어식 Min-joon. 독일어 텍스트에서 /ˈmɪndʒuːn/, TTS 대체 'Mindschuun'",
+    "voices": {
+      "Minjun": "FfvPVzUs3MSJucOhMXLy",
+      "Frau Wagner": "rKiu7lQ4c5P3az3745s3",
+      "Jonas": "A4RisuBq9GHCfbxWXH9q",
+      "Lena": "WzPl01KDMCPMOyx39EfF",
+      "Frau Schulze": "gDQfVolj9RbmXgumLcOq",
+      "Carlos": "pjvu5b1KMIka2bL61Exv",
+      "Mann": "4tVWa6JWnwS0ZoCf6ZzP",
+      "A": "WzPl01KDMCPMOyx39EfF",
+      "B": "TJUbdtIHknxm2JTOLSmc",
+      "Priya": "TJUbdtIHknxm2JTOLSmc",
+      "Ahmet": "KM484cOJZbUq8S0kuh14",
+      "Mei": "JudZUClAOU1jP3wA2eDG",
+      "Olena": "prhcTCMZO2tEReVq7XuJ",
+      "Lucas": "5qxnhLWq1rPhIVOrGuRh",
+      "Frau": "XJWHuOvSoCriK1Q4wPAN",
+      "Tomasz": "FmACKMYLGND71Mko3lVz",
+      "수진": "UvgKIGQwdeBJcpRJvb3P",
+      "민준": "zBfkllpYmUyxwRyQt8Zw",
+      "하은": "vJ170fCwESgE1tjW39So"
+    },
+    "voices_note": {
+      "Minjun": "독일어 문장의 민준(남, 영어식 Min-joon; 텍스트에 /ˈmɪndʒuːn/)",
+      "민준": "한국어 대사의 민준",
+      "수진": "한국어 대사의 수진",
+      "하은": "한국어 대사의 하은",
+      "Mann": "1과 단역 남자",
+      "Frau": "1과 단역 여자",
+      "A": "1과 듣기 A(=Lena 목소리)",
+      "B": "1과 듣기 B(=Priya 목소리)",
+      "번호 1–4": "1과 듣기 문제 진행자 = Frau Wagner 목소리 rKiu7lQ4c5P3az3745s3"
+    },
+    "voices_needed_for_ch2": [
+      "Herr Brandt",
+      "Amira",
+      "Oksana",
+      "태호",
+      "도윤",
+      "Sujin(독일어 대사)",
+      "Haeun(독일어 대사)"
+    ]
+  },
+  "characters": {
+    "Minjun Park(박민준)": "26, 부산, 라이프치히 대학 석사 준비, 어학원 집중반, Kochstraße 12 WG – 가방이 바뀐 사람",
+    "Jonas": "WG, 라이프치히 출신, 곱슬 갈색 머리, 탐정 놀이 좋아함",
+    "Lena": "WG, 함부르크 출신(Moin!), 금발 포니테일",
+    "Sujin Lee(이수진)": "38, 서울, 간호사(Krankenschwester), 통합 과정 수강, 같은 건물 2. Stock(한국식 3층)",
+    "Taeho Kim(김태호)": "41, 자동차 부품 회사 엔지니어, 회사에서 영어 – 독일어가 가장 느림",
+    "Haeun(하은)": "6, 독일어가 가장 빨라 통역사, Frau Schulze의 단짝, 편지 행방을 아는 아이",
+    "Doyun(도윤)": "3, 그림 그리기 좋아함 – 2과에서 편지 봉투에 그림",
+    "Erika Schulze": "74, 1층, 전직 사서, 엄격 – 1989년 사진 속 여자",
+    "Thomas Schulze": "77, 함부르크, 가방 주인(T. S.), 심장약 – 1984년 탈출 시도·체포·석방",
+    "Ingrid Krüger": "75, 카페 사장의 어머니 – 사진을 찍은 단짝, IM 'Rose'",
+    "Frau Wagner": "어학원 선생님(1과)",
+    "Carlos / Tomasz / Priya": "어학원 친구(1과)",
+    "Herr Michael Brandt": "통합 과정 선생님(2과)",
+    "Amira Haddad": "34, 시리아, 남편 Karim(약사), Omar 8 · Lina 5",
+    "Oksana": "우크라이나, 아들 Maksym 15"
+  },
+  "story_so_far": {
+    "ch1": "9월 말 라이프치히 중앙역에서 가방이 바뀜. 가방: 낡은 회색 외투, 흑백 사진(남녀·촛불), 편지 'Für E.', 약, 이름표 T. S., 전화 040(함부르크). WG 첫 만남, 어학원, 계단에서 수진·하은, 웃지 않는 Frau Schulze.",
+    "ch2": "민준 방엔 탁자·의자 없음. 저녁에 셋이 가방을 살펴봄('Wir sind Detektive!'). 수진 통합 과정 첫날('Ich habe 38' 실수). 하은이 Kita에서 가족 통역. 저녁 수진 집에서 도윤이 편지 봉투를 탁자 밑으로 가져가 크레용으로 그림 – 아무도 모름. 일기: 'Der Brief ist weg!' (정답 공개: A2 9과)",
+    "ch3_teaser": "민준과 Lena의 첫 장보기 – 외투 주머니 속 영수증이 새 단서. 수진·태호의 첫 대형 마트, 태호의 Gift(독) 착각."
+  },
+  "a1_toc": [
+    {
+      "no": 1,
+      "title": "Hallo, ich bin Minjun!",
+      "status": "완성(녹음 포함)"
+    },
+    {
+      "no": 2,
+      "title": "Meine WG, meine Familie",
+      "status": "완성(녹음 전)"
+    },
+    {
+      "no": 3,
+      "title": "Im Supermarkt",
+      "topics": "장보기 · 가격 · 4격 · möchten",
+      "story": "외투 주머니 속 영수증",
+      "status": "다음 작업"
+    },
+    {
+      "no": 4,
+      "title": "Mein Tag und meine Freizeit",
+      "topics": "시간과 하루 일과 · 분리동사 · 약속",
+      "story": "분실물 센터의 전화"
+    },
+    {
+      "no": 5,
+      "title": "Wo ist die Nikolaikirche?",
+      "topics": "길 찾기 · 교통 · 명령법",
+      "story": "사진 속 교회를 찾아서"
+    },
+    {
+      "no": 6,
+      "title": "Termine und Gesundheit",
+      "topics": "예약 · 병원 · müssen / dürfen / sollen",
+      "story": "가방 속 약의 비밀"
+    },
+    {
+      "no": 7,
+      "title": "Was trägt der Mann?",
+      "topics": "옷 · 색깔 · 날씨 · 사람 묘사",
+      "story": "‘찾습니다’ 전단"
+    },
+    {
+      "no": 8,
+      "title": "Endlich!",
+      "topics": "지난 일 말하기 · 현재완료 · A1 마무리",
+      "story": "가방의 주인이 나타나다"
+    },
+    {
+      "no": "M",
+      "title": "Modelltest",
+      "topics": "Start Deutsch 1 모의시험"
+    }
+  ],
+  "chapters": [
+    {
+      "no": 1,
+      "prefix": "",
+      "panels": [
+        "start",
+        "stunde-1",
+        "stunde-2",
+        "stunde-3",
+        "anhang"
+      ],
+      "stunden": [
+        {
+          "no": 1,
+          "title": "Hallo! Ich bin Minjun.",
+          "panel": "stunde-1",
+          "input_min": 50,
+          "output_min": 50,
+          "activities": [
+            {
+              "id": "s1-einstieg",
+              "block": "input",
+              "title": "1 · Einstieg · 그림으로 시작해요",
+              "min": 5
+            },
+            {
+              "id": "s1-hallo",
+              "block": "input",
+              "title": "2 · Hallo! · 첫 독일어 인사",
+              "min": 10
+            },
+            {
+              "id": "s1-gruss-hoeren",
+              "block": "input",
+              "title": "3 · Hören · 누가 누구에게 인사해요?",
+              "min": 10
+            },
+            {
+              "id": "s1-teil-a",
+              "block": "input",
+              "title": "4 · Teil A · Am Bahnhof · 역에서",
+              "min": 15
+            },
+            {
+              "id": "s1-satz1",
+              "block": "input",
+              "title": "5 · 오늘의 문장 틀 ① · 나는 ○○이에요",
+              "min": 10
+            },
+            {
+              "id": "s1-alphabet",
+              "block": "output",
+              "title": "6 · Das Alphabet · 소리와 글자",
+              "min": 15
+            },
+            {
+              "id": "s1-buchstabieren",
+              "block": "output",
+              "title": "7 · Buchstabieren · 이름 철자 말하기",
+              "min": 15
+            },
+            {
+              "id": "s1-kurs",
+              "block": "output",
+              "title": "8 · Im Kurs · 수업 시간에 쓰는 독일어",
+              "min": 10
+            },
+            {
+              "id": "s1-sprechen",
+              "block": "output",
+              "title": "9 · Sprechen · 첫 만남 대화",
+              "min": 10
+            }
+          ],
+          "homework": {
+            "id": "hw-1",
+            "exercises": [
+              "H1",
+              "H1c",
+              "H1d",
+              "H1e",
+              "H1f",
+              "H1g"
+            ]
+          },
+          "check": "ok"
+        },
+        {
+          "no": 2,
+          "title": "Woher kommst du?",
+          "panel": "stunde-2",
+          "input_min": 50,
+          "output_min": 50,
+          "activities": [
+            {
+              "id": "s2-wiederholung",
+              "block": "input",
+              "title": "복습",
+              "min": 5
+            },
+            {
+              "id": "s2-teil-b",
+              "block": "input",
+              "title": "10 · Teil B · In der WG · 공유 주택에서",
+              "min": 10
+            },
+            {
+              "id": "s2-laender",
+              "block": "input",
+              "title": "11 · 나라와 언어",
+              "min": 10
+            },
+            {
+              "id": "s2-herkunft",
+              "block": "input",
+              "title": "12 · Hören · 어학원 친구들은 어디에서 왔을까?",
+              "min": 10
+            },
+            {
+              "id": "s2-satz2",
+              "block": "input",
+              "title": "13 · 오늘의 문장 틀 ② · 어디에서? 어디에? 무슨 말?",
+              "min": 15
+            },
+            {
+              "id": "s2-du-sie",
+              "block": "output",
+              "title": "14 · Teil C · du oder Sie? · 반말과 존댓말",
+              "min": 15
+            },
+            {
+              "id": "s2-fundbuero",
+              "block": "output",
+              "title": "15 · Im Fundbüro · 분실물 센터에서 (Sie)",
+              "min": 15
+            },
+            {
+              "id": "s2-interview",
+              "block": "output",
+              "title": "16 · Hören · Jonas 인터뷰 (du)",
+              "min": 10
+            },
+            {
+              "id": "s2-formular",
+              "block": "output",
+              "title": "17 · Lesen · 어학원 등록 신청서",
+              "min": 10
+            }
+          ],
+          "homework": {
+            "id": "hw-2",
+            "exercises": [
+              "H2",
+              "H2b",
+              "H2c",
+              "H2d",
+              "H2e",
+              "H2f",
+              "H2g"
+            ]
+          },
+          "check": "ok"
+        },
+        {
+          "no": 3,
+          "title": "Wer ist das?",
+          "panel": "stunde-3",
+          "input_min": 50,
+          "output_min": 50,
+          "activities": [
+            {
+              "id": "s3-wiederholung",
+              "block": "input",
+              "title": "복습",
+              "min": 5
+            },
+            {
+              "id": "s3-teil-d",
+              "block": "input",
+              "title": "18 · Teil D · Wer ist das? · 반 친구 소개",
+              "min": 10
+            },
+            {
+              "id": "s3-satz3",
+              "block": "input",
+              "title": "19 · 오늘의 문장 틀 ③ · 그는 / 그녀는",
+              "min": 10
+            },
+            {
+              "id": "s3-wer",
+              "block": "input",
+              "title": "20 · Hören · 누구 이야기일까요?",
+              "min": 10
+            },
+            {
+              "id": "s3-zahlen",
+              "block": "input",
+              "title": "21 · Die Zahlen 0–20 · 숫자와 전화번호",
+              "min": 15
+            },
+            {
+              "id": "s3-lesen",
+              "block": "output",
+              "title": "22 · Lesen · 우리 반 프로필",
+              "min": 10
+            },
+            {
+              "id": "s3-sprachmittlung",
+              "block": "output",
+              "title": "23 · Sprachmittlung · 한국어로 듣고 독일어로 전하기",
+              "min": 10
+            },
+            {
+              "id": "s3-vorstellen",
+              "block": "output",
+              "title": "24 · Sprechen · 다른 사람 소개하기",
+              "min": 10
+            },
+            {
+              "id": "s3-schreiben",
+              "block": "output",
+              "title": "25 · Schreiben · 나를 소개하는 글",
+              "min": 15
+            },
+            {
+              "id": "s3-abschluss",
+              "block": "output",
+              "title": "마무리",
+              "min": 5
+            }
+          ],
+          "homework": {
+            "id": "hw-3",
+            "exercises": [
+              "H3",
+              "H3b",
+              "H3c",
+              "H3d",
+              "H3e",
+              "H3f",
+              "H3g"
+            ]
+          },
+          "check": "ok"
+        }
+      ],
+      "title": "Hallo, ich bin Minjun!",
+      "generator": "tools/gen_k01.py (자체 helper 포함)",
+      "img": "web/assets/img/k01/",
+      "audio": "web/assets/audio/k01/ (127 mp3, 완료)",
+      "hero_id": "kapitel-1"
+    },
+    {
+      "no": 2,
+      "prefix": "k2-",
+      "panels": [
+        "k2-start",
+        "k2-stunde-1",
+        "k2-stunde-2",
+        "k2-stunde-3",
+        "k2-anhang"
+      ],
+      "stunden": [
+        {
+          "no": 1,
+          "title": "Das ist mein Zimmer.",
+          "panel": "k2-stunde-1",
+          "input_min": 50,
+          "output_min": 50,
+          "activities": [
+            {
+              "id": "k2-s1-einstieg",
+              "block": "input",
+              "title": "24 · Einstieg · 민준의 새 방",
+              "min": 5
+            },
+            {
+              "id": "k2-s1-moebel",
+              "block": "input",
+              "title": "25 · Im Zimmer · 방 안의 물건",
+              "min": 10
+            },
+            {
+              "id": "k2-s1-teil-a",
+              "block": "input",
+              "title": "26 · Teil A · Das ist dein Zimmer! · 방 구경",
+              "min": 15
+            },
+            {
+              "id": "k2-s1-satz1",
+              "block": "input",
+              "title": "27 · 오늘의 문장 틀 ① · 이건 ○○예요 / ○○이 아니에요",
+              "min": 20
+            },
+            {
+              "id": "k2-s1-adjektive",
+              "block": "output",
+              "title": "28 · Wie ist das Zimmer? · 방과 물건 설명하기",
+              "min": 15
+            },
+            {
+              "id": "k2-s1-anzeige",
+              "block": "output",
+              "title": "29 · Lesen · WG-Zimmer 광고 읽기",
+              "min": 15
+            },
+            {
+              "id": "k2-s1-auf-deutsch",
+              "block": "output",
+              "title": "30 · Wie heißt das auf Deutsch? · 모르는 단어 묻기",
+              "min": 10
+            },
+            {
+              "id": "k2-s1-sprechen",
+              "block": "output",
+              "title": "31 · Sprechen · 내 방 소개하기",
+              "min": 10
+            }
+          ],
+          "homework": {
+            "id": "k2-hw-1",
+            "exercises": [
+              "k2-hw1-H1",
+              "k2-hw1-H2",
+              "k2-hw1-H3",
+              "k2-hw1-H4",
+              "k2-hw1-H5",
+              "k2-hw1-H6",
+              "k2-hw1-H7"
+            ]
+          },
+          "check": "ok"
+        },
+        {
+          "no": 2,
+          "title": "Im Koffer sind …",
+          "panel": "k2-stunde-2",
+          "input_min": 50,
+          "output_min": 50,
+          "activities": [
+            {
+              "id": "k2-s2-wiederholung",
+              "block": "input",
+              "title": "복습",
+              "min": 5
+            },
+            {
+              "id": "k2-s2-teil-b",
+              "block": "input",
+              "title": "32 · Teil B · Was ist im Koffer? · 가방 속 물건",
+              "min": 15
+            },
+            {
+              "id": "k2-s2-plural",
+              "block": "input",
+              "title": "33 · Ein Stuhl, zwei Stühle · 복수형",
+              "min": 15
+            },
+            {
+              "id": "k2-s2-satz2",
+              "block": "input",
+              "title": "34 · 오늘의 문장 틀 ② · 우리 · 너희 · 그들",
+              "min": 15
+            },
+            {
+              "id": "k2-s2-haben",
+              "block": "output",
+              "title": "35 · Ich habe … · 가지고 있어요",
+              "min": 15
+            },
+            {
+              "id": "k2-s2-lenas-zimmer",
+              "block": "output",
+              "title": "36 · Hören · Lena의 방",
+              "min": 10
+            },
+            {
+              "id": "k2-s2-schreiben",
+              "block": "output",
+              "title": "37 · Schreiben · 가족에게 방 소개 메시지",
+              "min": 15
+            },
+            {
+              "id": "k2-s2-raetsel",
+              "block": "output",
+              "title": "38 · Fallakte · Jonas의 사건 메모",
+              "min": 10
+            }
+          ],
+          "homework": {
+            "id": "k2-hw-2",
+            "exercises": [
+              "k2-hw2-H1",
+              "k2-hw2-H2",
+              "k2-hw2-H3",
+              "k2-hw2-H4",
+              "k2-hw2-H5",
+              "k2-hw2-H6",
+              "k2-hw2-H7"
+            ]
+          },
+          "check": "ok"
+        },
+        {
+          "no": 3,
+          "title": "Das ist meine Familie.",
+          "panel": "k2-stunde-3",
+          "input_min": 50,
+          "output_min": 50,
+          "activities": [
+            {
+              "id": "k2-s3-wiederholung",
+              "block": "input",
+              "title": "복습",
+              "min": 5
+            },
+            {
+              "id": "k2-s3-teil-c",
+              "block": "input",
+              "title": "39 · Teil C · Der Integrationskurs · 통합 과정 첫날",
+              "min": 15
+            },
+            {
+              "id": "k2-s3-familie",
+              "block": "input",
+              "title": "40 · Die Familie · 가족",
+              "min": 15
+            },
+            {
+              "id": "k2-s3-satz3",
+              "block": "input",
+              "title": "41 · 오늘의 문장 틀 ③ · 나의, 너의, 그의 …",
+              "min": 15
+            },
+            {
+              "id": "k2-s3-zahlen",
+              "block": "output",
+              "title": "42 · Die Zahlen 21–100 · 나이를 말하려면",
+              "min": 15
+            },
+            {
+              "id": "k2-s3-lesen",
+              "block": "output",
+              "title": "43 · Lesen · Amira의 자기소개",
+              "min": 10
+            },
+            {
+              "id": "k2-s3-sprachmittlung",
+              "block": "output",
+              "title": "44 · Sprachmittlung · 하은이의 통역",
+              "min": 10
+            },
+            {
+              "id": "k2-s3-schreiben",
+              "block": "output",
+              "title": "45 · Schreiben · 가족 사진 설명",
+              "min": 10
+            },
+            {
+              "id": "k2-s3-teil-d",
+              "block": "output",
+              "title": "46 · Teil D · 수진의 집에서 · 이야기 마무리",
+              "min": 5
+            }
+          ],
+          "homework": {
+            "id": "k2-hw-3",
+            "exercises": [
+              "k2-hw3-H1",
+              "k2-hw3-H2",
+              "k2-hw3-H3",
+              "k2-hw3-H4",
+              "k2-hw3-H5",
+              "k2-hw3-H6",
+              "k2-hw3-H7"
+            ]
+          },
+          "check": "ok"
+        }
+      ],
+      "title": "Meine WG, meine Familie",
+      "generator": "tools/gen_k02.py (kapitel_lib 사용, FRAG/NAV를 gen_k01이 이어 붙임)",
+      "img": "web/assets/img/k02/",
+      "audio": "없음 – 브라우저 TTS로 재생 중",
+      "hero_id": "k2-kapitel-2"
+    }
+  ],
+  "todo": [
+    "2과 녹음(eleven_v4): dlg-2-01..06, dlg-2-03, lis 5개, diary-2; 새 목소리 Herr Brandt·Amira·Oksana·태호·도윤",
+    "3과 Im Supermarkt (gen_k03.py, 접두사 k3-, gen_k01에 import·NAV·FRAG·목차 연결, CSS 탭 숨김 규칙 확장)",
+    "선택: 2과 인물 그림(발끝 잘림)·moebel-schreibtisch 다시 생성"
+  ],
+  "new_chapter_checklist": [
+    "curriculum 문서에서 이야기·문법·말하기·쓰기·중개하기·문화 확인",
+    "gen_k0N.py 작성(K.IMG, K.AV, 3차시×2교시 50분, 숙제 H1–H7 60분, 부록 전체)",
+    "그림 생성·자르기·검수",
+    "gen_k01.py에 import·NAV·FRAG·목차 링크·이전 과 '다음 과' 링크",
+    "CSS 탭 숨김 규칙",
+    "index.html·README 갱신",
+    "생성 → build-single → 채점 129+α 만점·6폭 넘침 0·오류 0 → 커밋·push → dist 파일 전달"
+  ]
+}

@@ -1,3 +1,5 @@
+> **다른 채팅에서 이어 작업할 때**: 먼저 [`handoff/HANDOFF.md`](handoff/HANDOFF.md)와 [`handoff/project-state.json`](handoff/project-state.json)을 읽으세요.
+
 # Der falsche Koffer – 바뀐 여행가방
 ### CEFR 기반 통합형 독일어 교재 (A1 → B2) · 코지 미스터리
 
