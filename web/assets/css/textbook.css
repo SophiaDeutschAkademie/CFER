@@ -652,3 +652,10 @@ a.toc-ch .toc-go { background: var(--accent); color: var(--surface); padding: .3
   .card { box-shadow: none; break-inside: avoid; }
   .stunde { break-before: page; }
 }
+
+/* 2과: 표에서 새로 배우는 줄 강조 · 단어 카드 보조 설명 */
+tr.hl th, tr.hl td { background: color-mix(in srgb, var(--accent, #B87830) 10%, transparent); }
+.vocab small { display: block; color: var(--text-muted); font-size: .8rem; }
+.sum .table-wrap table { font-size: .88rem; }
+.sum .table-wrap td, .sum .table-wrap th { padding: .35rem .4rem; }
+@media (max-width: 420px) { .sum .table-wrap table { font-size: .8rem; } .sum .table-wrap td, .sum .table-wrap th { padding: .3rem .25rem; } }
