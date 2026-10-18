@@ -1,7 +1,7 @@
-# Minjis Weg – 민지의 독일 이야기
+# Minjuns Weg – 민준의 독일 이야기
 ### CEFR 기반 통합형 독일어 교재 (A1 → B2)
 
-한국인 학생 **박민지**가 독일 라이프치히(Leipzig)에 도착해 어학원 → 아르바이트 → 대학 입학 → 인턴십 → 졸업까지 겪는 일이
+한국인 학생 **박민준**이 독일 라이프치히(Leipzig)에 도착해 어학원 → 아르바이트 → 대학 입학 → 인턴십 → 졸업까지 겪는 일이
 **48개 챕터에 걸쳐 하나의 이야기**로 이어집니다.
 문법 · 말하기 · 쓰기 · 읽기 · 듣기를 매 챕터 안에서 함께 다룹니다.
 
@@ -12,7 +12,7 @@
 | [`curriculum/02_A2_챕터구성.md`](curriculum/02_A2_챕터구성.md) | A2 · 13–24과 핵심 학습 내용 |
 | [`curriculum/03_B1_챕터구성.md`](curriculum/03_B1_챕터구성.md) | B1 · 25–36과 핵심 학습 내용 |
 | [`curriculum/04_B2_챕터구성.md`](curriculum/04_B2_챕터구성.md) | B2 · 37–48과 핵심 학습 내용 |
-| [`A1/Kapitel_01_Hallo_ich_bin_Minji.md`](A1/Kapitel_01_Hallo_ich_bin_Minji.md) | **1과 시범 원고 (학생용)** |
+| [`A1/Kapitel_01_Hallo_ich_bin_Minjun.md`](A1/Kapitel_01_Hallo_ich_bin_Minjun.md) | **1과 시범 원고 (학생용)** |
 | [`A1/Kapitel_01_Loesungen_Lehrerhandbuch.md`](A1/Kapitel_01_Loesungen_Lehrerhandbuch.md) | 1과 정답 · 수업 운영안 · 첨삭 가이드 (교사용) |
 
 ## 기존 방식과 무엇이 달라지나

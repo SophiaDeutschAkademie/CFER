@@ -3,32 +3,49 @@
 
 ---
 
-## 1 · 수업 운영안 (권장: 90분 × 5차시 ≈ 8시간)
+## 1 · 수업 운영안 (80분 × 3차시 = 1주)
 
-| 차시 | 섹션 | 활동 | 시간 | 기능 |
-|---|---|---|---|---|
-| **1차시** | 1 Einstieg | 그림 보고 추측, 아는 인사말 모으기 | 10분 | 말하기 |
-| | 2 Teil A | 대화 듣기 → r/f → 짝 읽기 → 기분 표현(Wie geht's?) | 30분 | 듣기·말하기 |
-| | 9 Alphabet | 알파벳 따라 하기, 이름 철자 짝 활동 | 35분 | 발음·말하기 |
-| | 마무리 | 반 전체 인사·작별 연습 | 15분 | |
-| **2차시** | 3 Teil B | 대화 듣기 → 표 완성 → 질문·대답 연결 | 25분 | 듣기·읽기 |
-| | 4 Grammatik ① | 동사 찾기 → 어미 규칙 **스스로 발견** → 표 정리 → G1 | 45분 | 문법 |
-| | 14 Aussprache | w, z, j, ei/ie | 20분 | 발음 |
-| **3차시** | 5 Teil C | 듣기 → C1 → 직업 표현 | 25분 | 듣기 |
-| | 6 Grammatik ② | *sein* 리듬 암기 → G2 | 20분 | 문법 |
-| | 7·8 Grammatik ③ | 동사 2번째 자리 · 의문사 · du/Sie → G3, G4 | 45분 | 문법 |
-| **4차시** | 10 Zahlen | 숫자 0–20, 전화번호 듣기·말하기 | 30분 | 듣기·말하기 |
-| | 11 Lesen | 반 친구 프로필 → L1, L2 | 25분 | 읽기 |
-| | 12 Sprechen | 교실 인터뷰(12a) → 친구 소개(12b) | 35분 | 말하기 |
-| **5차시** | 12c | 어학원 등록 롤플레이 (Sie) | 25분 | 말하기 |
-| | 13 Schreiben | 모범 답안 분석 → 작성 → **짝 첨삭(체크리스트)** → 제출 | 40분 | 쓰기 |
-| | 15·17·18 | Landeskunde, 민지의 일기 읽기, 자기 점검 | 25분 | 읽기·문화 |
+### 1차시 · Willkommen in Leipzig!
+| 시간 | 섹션 | 활동 | 기능 |
+|---|---|---|---|
+| 0–5분 | 1 Einstieg | 그림 보고 추측, 아는 인사말 모으기 | 말하기 |
+| 5–20분 | 2 Teil A | 듣기 → A1 r/f → 짝 읽기(기분 바꿔서) | 듣기·말하기 |
+| 20–35분 | 3 Teil B | 듣기 → B1 표 완성 | 듣기·읽기 |
+| 35–60분 | 4 Grammatik ① | 동사 형광펜 표시 → 어미 규칙 **스스로 발견** → 표 정리 → G1 1–4 | 문법 |
+| 60–70분 | 5 Aussprache | w, z, j, ei/ie, -er · 5a · 5b | 발음 |
+| 70–80분 | 정리 | 책 덮고 짝 자기소개 대화 → 숙제 안내 | 말하기 |
+
+### 2차시 · Der erste Kurstag
+| 시간 | 섹션 | 활동 | 기능 |
+|---|---|---|---|
+| 0–5분 | 복습 | 숙제 G1·B2 정답 확인 + 이름 릴레이 | 말하기 |
+| 5–20분 | 6 Teil C | 듣기 → C1 → 직업 표현(관사 없음, -in) | 듣기 |
+| 20–30분 | 7 Grammatik ② | *sein* 리듬 암기 → G2 1–3 | 문법 |
+| 30–50분 | 8 Grammatik ③ | 문장 카드로 동사 2번째 자리 체험 → 의문사 → G3 1–3 | 문법 |
+| 50–60분 | 9 du/Sie | 역할 카드(선생님/친구)로 질문 바꾸기 → G4 | 문법·말하기 |
+| 60–80분 | 10 Alphabet | 따라 하기 → 10a 듣기 → 10b 이름 철자 짝 활동 | 발음·듣기·말하기 |
+
+### 3차시 · Unser Kurs
+| 시간 | 섹션 | 활동 | 기능 |
+|---|---|---|---|
+| 0–5분 | 복습 | 숙제 확인 + 동사 퀴즈(“wohnen – du!”) | 문법 |
+| 5–20분 | 11 Zahlen | 따라 하기 → 11a 전화번호 듣기 → 11b 짝 활동 | 듣기·말하기 |
+| 20–35분 | 12 Lesen | 반 친구 프로필 → L1 (L2는 빠른 학생 / 숙제) | 읽기 |
+| 35–55분 | 13 Sprechen | 교실 인터뷰(12분) → 친구 소개(8분) | 말하기 |
+| 55–75분 | 14 Schreiben | 모범 답안 분석(5분) → 직접 쓰기(15분) | 쓰기 |
+| 75–80분 | 마무리 | 민준의 일기 읽기, 자기 점검, 숙제 안내 | 읽기 |
+
+### 다음 과(2과) 1차시 첫 10분
+첨삭한 Steckbrief 돌려주기 → 반 전체에서 많이 나온 오류 3개를 칠판에 쓰고 함께 고치기 → 단어 퀴즈
+
+> ⏱ **시간이 부족할 때 줄일 곳**: 1차시 5b(발음 놀이), 2차시 10a(듣기 → 숙제), 3차시 13b(소개는 3–4명만)
+> ⏱ **시간이 남을 때**: 6번 추가 활동 참고
 
 ### 💡 수업 팁
-- **문법은 설명보다 발견 먼저**: 4번 표를 바로 보여 주지 말고, 대화문에서 동사를 찾아 형광펜으로 표시하게 한 뒤 “ich일 때 끝이 뭐로 끝나요?”라고 질문하세요.
+- **문법은 설명보다 발견 먼저**: 4번 규칙 표를 바로 보여 주지 말고, 대화문에서 동사를 찾아 형광펜으로 표시하게 한 뒤 “ich일 때 끝이 뭐로 끝나요?”라고 질문하세요.
 - **동사 2번째 자리 시각화**: 문장 카드를 잘라 배열하게 하고, 동사 카드만 빨간색으로 만들어 항상 두 번째 칸에 놓게 하면 효과적입니다.
 - **du/Sie**: 교실에서 학생끼리는 du, 교사에게는 Sie를 쓰도록 첫날부터 규칙을 정하면 자연스럽게 익힙니다.
-- **이야기 몰입**: 수업 시작 때마다 “민지는 지금 어디에 있죠? 누구를 만났죠?”로 복습하면 다음 과로 이어지는 흐름이 생깁니다.
+- **이야기 몰입**: 수업 시작 때마다 “민준는 지금 어디에 있죠? 누구를 만났죠?”로 복습하면 다음 과로 이어지는 흐름이 생깁니다.
 
 ---
 
@@ -37,16 +54,16 @@
 **A1** 1 r · 2 f (*ein bisschen* müde – 조금 피곤함) · 3 r
 
 **B1**
-| | Minji | Lena | Jonas |
+| | Minjun | Lena | Jonas |
 |---|---|---|---|
 | Woher? | aus Südkorea (Busan) | aus Hamburg | aus Leipzig |
-| Was macht sie/er? | Sie lernt Deutsch. | Sie studiert Medizin. | Er studiert Informatik. |
+| Was macht er/sie? | Er lernt Deutsch. | Sie studiert Medizin. | Er studiert Informatik. |
 
 **B2** 1 d · 2 a · 3 b · 4 c
 
 **G1** 1 wohne · 2 kommt · 3 kommst · 4 lernen · 5 studiert · 6 macht · 7 spricht · 8 heißt
 
-**C1** 1 Carlos · 2 Frau Wagner · 3 Tomasz · 4 Amira · 5 Minji
+**C1** 1 Carlos · 2 Frau Wagner · 3 Tomasz · 4 Amira · 5 Minjun
 
 **G2** 1 bin · 2 ist · 3 sind · 4 Bist · 5 sind · 6 seid
 
@@ -60,15 +77,15 @@
 
 **G4** 1 Sie · 2 du · 3 Sie · 4 du
 
-**9a** 1 Wagner · 2 Haddad · 3 Jeong · 4 Schulze
+**10a** 1 Wagner · 2 Haddad · 3 Jeong · 4 Schulze
 
-**10a** Minji 0176 – 13 05 18 9 · Carlos 0157 – 20 16 4 12 · Amira 0152 – 17 11 19 3
+**11a** Minjun 0176 – 13 05 18 9 · Carlos 0157 – 20 16 4 12 · Amira 0152 – 17 11 19 3
 
 **L1** 1 r · 2 f (mit ihrer Familie – 가족과 함께) · 3 r · 4 f (er lernt *gern* Grammatik) · 5 r
 
-**L2** 1 Amira · 2 Tomasz · 3 Carlos · 4 Minji
+**L2** 1 Amira · 2 Tomasz · 3 Carlos · 4 Minjun
 
-**14a** dr**ei** · v**ie**r · h**ei**ßen · W**ie** · S**ie** · fr**ei**
+**5a** dr**ei** · v**ie**r · h**ei**ßen · W**ie** · S**ie** · fr**ei**
 
 ---
 
@@ -82,18 +99,18 @@
 > 1. **Frau Wagner:** Mein Name ist Wagner. W – A – G – N – E – R.
 > 2. **Amira:** Ich heiße Haddad. H – A – D – D – A – D.
 > 3. **Junge Frau:** Mein Nachname ist Jeong. J – E – O – N – G.
-> 4. **Ältere Frau:** Schulze. S – C – H – U – L – Z – E. *(→ 민지의 이웃, 11과에서 다시 등장!)*
+> 4. **Ältere Frau:** Schulze. S – C – H – U – L – Z – E. *(→ 민준의 이웃, 11과에서 다시 등장!)*
 
 **Track 1-07** · 전화번호
-> **Frau Wagner:** So, ich habe hier eine Liste. Frau Park, ist Ihre Handynummer null – eins – sieben – sechs, dreizehn, null fünf, achtzehn, neun?
-> **Minji:** Ja, richtig.
+> **Frau Wagner:** So, ich habe hier eine Liste. Herr Park, ist Ihre Handynummer null – eins – sieben – sechs, dreizehn, null fünf, achtzehn, neun?
+> **Minjun:** Ja, richtig.
 > **Frau Wagner:** Herr Ruiz, Ihre Nummer, bitte?
 > **Carlos:** Null – eins – fünf – sieben, zwanzig, sechzehn, vier, zwölf.
 > **Frau Wagner:** Und Frau Haddad?
 > **Amira:** Null – eins – fünf – zwei, siebzehn, elf, neunzehn, drei.
 > **Frau Wagner:** Vielen Dank!
 
-**Track 1-08** · 발음 (표의 예시 단어 → 14a 단어: drei, vier, heißen, Wie, Sie, frei)
+**Track 1-08** · 발음 (표의 예시 단어 → 5a 단어: drei, vier, heißen, Wie, Sie, frei)
 
 ---
 
@@ -108,7 +125,7 @@
 | **G** | 대·소문자 (Groß-/Kleinschreibung) | ~~student~~ → G |
 | **W** | 단어 선택 (Wort) | ~~von~~ Korea → W |
 | **R** | 철자 (Rechtschreibung) | ~~Deutch~~ → R |
-| **^** | 단어 빠짐 | Ich ^ Minji. (bin) |
+| **^** | 단어 빠짐 | Ich ^ Minjun. (bin) |
 | **[ ]** | 필요 없는 단어 | Ich bin [ein] Student. |
 | **✓** | 잘 쓴 표현 – 칭찬도 표시! | |
 
@@ -160,7 +177,8 @@
 
 ## 6 · 추가 활동 (시간이 남을 때)
 
+0. **어학원 등록 롤플레이 (Sie)**: A는 어학원 직원, B는 새 학생. 이름·철자·출신·사는 도시·전화번호를 묻고 답하기 (빠른 반 추천).
 1. **Namen-Bingo**: 5×5 빙고판에 반 친구 이름을 쓰고, 교사가 철자를 부르면 표시.
 2. **Zahlen-Ping-Pong**: 둘씩 짝지어 0부터 20까지 번갈아 말하기 → 거꾸로 → 짝수만.
 3. **Wer bin ich?**: 유명인 카드를 등에 붙이고 예/아니요 질문으로 맞히기. (*Kommst du aus Korea? Bist du Sängerin?*)
-4. **Minjis Instagram**: 민지의 첫날 사진에 들어갈 독일어 해시태그·짧은 캡션 쓰기 (#Leipzig #Hallo #NeuHier).
+4. **Minjuns Instagram**: 민준의 첫날 사진에 들어갈 독일어 해시태그·짧은 캡션 쓰기 (#Leipzig #Hallo #NeuHier).
