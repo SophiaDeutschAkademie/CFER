@@ -666,6 +666,20 @@ a.toc-ch .toc-go { background: var(--accent); color: var(--surface); padding: .3
 /* 2과: 표에서 새로 배우는 줄 강조 · 단어 카드 보조 설명 */
 tr.hl th, tr.hl td { background: color-mix(in srgb, var(--accent, #B87830) 10%, transparent); }
 .vocab small { display: block; color: var(--text-muted); font-size: .8rem; }
+/* 복수형 목록 – 세로 한 줄씩 */
+.plural-list { display: grid; grid-template-columns: 1fr; gap: .6rem; margin: 1rem 0 .75rem; max-width: 760px; }
+.plural-list > div { min-width: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .6rem 1rem; display: grid; grid-template-columns: minmax(0, 11.5rem) 1.6rem minmax(0, 9rem) 4.5rem minmax(0, 1fr); align-items: center; column-gap: .7rem; }
+.plural-list .sg { display: flex; align-items: center; gap: .3rem; min-width: 0; }
+.plural-list .sg > b, .plural-list b.pl { font-size: 1.05rem; white-space: nowrap; }
+.plural-list .sg .say-btn { margin-left: 0 !important; flex: 0 0 auto; }
+.plural-list .arrow { color: var(--text-muted); text-align: center; }
+.plural-list .end { font-size: .85rem; color: var(--text-muted); background: var(--bg); border: 1px solid var(--border); border-radius: 999px; padding: .1rem .5rem; text-align: center; white-space: nowrap; }
+.plural-list .ko { margin: 0; font-size: .95rem; }
+@media (max-width: 600px) {
+  .plural-list > div { grid-template-columns: minmax(0, 1fr) 1.4rem minmax(0, 1fr); row-gap: .25rem; padding: .55rem .8rem; }
+  .plural-list .end { grid-column: 1; justify-self: start; }
+  .plural-list .ko { grid-column: 2 / -1; }
+}
 .sum .table-wrap table { font-size: .88rem; }
 .sum .table-wrap td, .sum .table-wrap th { padding: .35rem .4rem; }
 @media (max-width: 420px) { .sum .table-wrap table { font-size: .8rem; } .sum .table-wrap td, .sum .table-wrap th { padding: .3rem .25rem; } }
@@ -2513,7 +2527,8 @@ body:not([data-current^="k2-"]) .topbar nav .tabs[data-ch="2"] { display: none; 
   </section>
   <section class="activity card" id="k2-s2-plural" data-block="input">
     <h3>33 · <span lang="de">Ein Stuhl, zwei Stühle</span> · 복수형 <span class="time" data-min="15"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg>15분</span></h3>
-    <div class="vocab" lang="de"><div><b data-say="der Tisch, die Tische"><b class="g-m">der</b> Tisch</b><span>→ <b class="g-p">die</b> Tische</span><span class="ko" lang="ko">-e</span></div><div><b data-say="der Stuhl, die Stühle"><b class="g-m">der</b> Stuhl</b><span>→ <b class="g-p">die</b> Stühle</span><span class="ko" lang="ko">¨-e</span></div><div><b data-say="die Lampe, die Lampen"><b class="g-f">die</b> Lampe</b><span>→ <b class="g-p">die</b> Lampen</span><span class="ko" lang="ko">-n</span></div><div><b data-say="das Bett, die Betten"><b class="g-n">das</b> Bett</b><span>→ <b class="g-p">die</b> Betten</span><span class="ko" lang="ko">-en</span></div><div><b data-say="das Buch, die Bücher"><b class="g-n">das</b> Buch</b><span>→ <b class="g-p">die</b> Bücher</span><span class="ko" lang="ko">¨-er</span></div><div><b data-say="das Foto, die Fotos"><b class="g-n">das</b> Foto</b><span>→ <b class="g-p">die</b> Fotos</span><span class="ko" lang="ko">-s</span></div><div><b data-say="der Spiegel, die Spiegel"><b class="g-m">der</b> Spiegel</b><span>→ <b class="g-p">die</b> Spiegel</span><span class="ko" lang="ko">–</span></div><div><b data-say="die Tablette, die Tabletten"><b class="g-f">die</b> Tablette</b><span>→ <b class="g-p">die</b> Tabletten</span><span class="ko" lang="ko">-n</span></div></div>
+    <p>단수 → 복수. 끝에 붙는 것을 보면서 소리 내어 읽으세요.</p>
+    <div class="plural-list" lang="de"><div><span class="sg"><b data-say="der Tisch, die Tische"><b class="g-m">der</b> Tisch</b></span><span class="arrow">→</span><b class="pl"><b class="g-p">die</b> Tische</b><span class="end">-e</span><span class="ko" lang="ko">탁자</span></div><div><span class="sg"><b data-say="der Stuhl, die Stühle"><b class="g-m">der</b> Stuhl</b></span><span class="arrow">→</span><b class="pl"><b class="g-p">die</b> Stühle</b><span class="end">¨-e</span><span class="ko" lang="ko">의자</span></div><div><span class="sg"><b data-say="die Lampe, die Lampen"><b class="g-f">die</b> Lampe</b></span><span class="arrow">→</span><b class="pl"><b class="g-p">die</b> Lampen</b><span class="end">-n</span><span class="ko" lang="ko">전등</span></div><div><span class="sg"><b data-say="das Bett, die Betten"><b class="g-n">das</b> Bett</b></span><span class="arrow">→</span><b class="pl"><b class="g-p">die</b> Betten</b><span class="end">-en</span><span class="ko" lang="ko">침대</span></div><div><span class="sg"><b data-say="das Buch, die Bücher"><b class="g-n">das</b> Buch</b></span><span class="arrow">→</span><b class="pl"><b class="g-p">die</b> Bücher</b><span class="end">¨-er</span><span class="ko" lang="ko">책</span></div><div><span class="sg"><b data-say="das Foto, die Fotos"><b class="g-n">das</b> Foto</b></span><span class="arrow">→</span><b class="pl"><b class="g-p">die</b> Fotos</b><span class="end">-s</span><span class="ko" lang="ko">사진</span></div><div><span class="sg"><b data-say="der Spiegel, die Spiegel"><b class="g-m">der</b> Spiegel</b></span><span class="arrow">→</span><b class="pl"><b class="g-p">die</b> Spiegel</b><span class="end">–</span><span class="ko" lang="ko">거울</span></div><div><span class="sg"><b data-say="die Tablette, die Tabletten"><b class="g-f">die</b> Tablette</b></span><span class="arrow">→</span><b class="pl"><b class="g-p">die</b> Tabletten</b><span class="end">-n</span><span class="ko" lang="ko">알약</span></div></div>
     <aside class="gram">
       <p class="gram-title"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg>복수형 – 관사는 언제나 die, 끝 모양은 다섯 가지</p>
       <div class="table-wrap"><table>

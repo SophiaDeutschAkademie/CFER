@@ -1,12 +1,13 @@
 # 2과 HTML 생성 · Meine WG, meine Familie
 import sys, os, re
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kapitel_lib as K
 from kapitel_lib import *
 K.IMG = "../assets/img/k02/"
 K.AV.update({"Amira": "k02/person-amira", "Oksana": "k02/person-oksana", "Herr Brandt": "k02/person-brandt",
              "태호": "k02/person-taeho", "Taeho": "k02/person-taeho", "도윤": "k02/person-doyun"})
-OUT = "/home/user/CFER/web/A1/kapitel-02.html"
+OUT = ROOT + "/web/A1/kapitel-02.html"
 
 def art(a, w):   # 관사 색: der 파랑 · die 빨강 · das 초록 · 복수 die 갈색
     c = {"der": "m", "die": "f", "das": "n", "pl": "p"}[a]
@@ -229,6 +230,7 @@ s1 += homework("hw-1", "1차시 숙제 (60분)", [
 plural = [("der", "Tisch", "die Tische", "-e"), ("der", "Stuhl", "die Stühle", "¨-e"), ("die", "Lampe", "die Lampen", "-n"),
           ("das", "Bett", "die Betten", "-en"), ("das", "Buch", "die Bücher", "¨-er"), ("das", "Foto", "die Fotos", "-s"),
           ("der", "Spiegel", "die Spiegel", "–"), ("die", "Tablette", "die Tabletten", "-n")]
+plural_ko = ["탁자", "의자", "전등", "침대", "책", "사진", "거울", "알약"]
 s2 = block("1교시 · 50분 · Input")
 s2 += act("s2-wiederholung", "", "복습", 5, '    <p><b>혼자 말하기</b>: 방 안의 물건 5개를 보며 „<span lang="de">Das ist ein/eine … Der/Die/Das … ist …</span>“로 소리 내어 말하기.</p>')
 s2 += act("s2-teil-b", 9, "Teil B · <span lang=\"de\">Was ist im Koffer?</span> · 가방 속 물건", 15, f'''{track("2-02", "dlg-2-02", "저녁, WG 부엌. 세 사람이 바뀐 가방을 열어 물건을 하나씩 꺼내요.")}
@@ -258,7 +260,8 @@ s2 += act("s2-teil-b", 9, "Teil B · <span lang=\"de\">Was ist im Koffer?</span>
         <li>„Habt ihr eine Idee?“ → {sel("Lena", ["Lena", "Jonas", "Minjun"])}</li>
       </ol>""")}''')
 
-s2 += act("s2-plural", 10, "<span lang=\"de\">Ein Stuhl, zwei Stühle</span> · 복수형", 15, f'''    <div class="vocab" lang="de">{"".join(f'<div><b data-say="{a} {w}, {p}">{art(a, w)}</b><span>→ {art("pl", p.split(" ",1)[1])}</span><span class="ko" lang="ko">{e}</span></div>' for a, w, p, e in plural)}</div>
+s2 += act("s2-plural", 10, "<span lang=\"de\">Ein Stuhl, zwei Stühle</span> · 복수형", 15, f'''    <p>단수 → 복수. 끝에 붙는 것을 보면서 소리 내어 읽으세요.</p>
+    <div class="plural-list" lang="de">{"".join(f'<div><span class="sg"><b data-say="{a} {w}, {p}">{art(a, w)}</b></span><span class="arrow">→</span><b class="pl">{art("pl", p.split(" ",1)[1])}</b><span class="end">{e}</span><span class="ko" lang="ko">{ko}</span></div>' for (a, w, p, e), ko in zip(plural, plural_ko))}</div>
 {gram("복수형 – 관사는 언제나 die, 끝 모양은 다섯 가지", f"""      <div class="table-wrap"><table>
         <thead><tr><th>끝에 붙는 것</th><th>예</th><th>자주 나오는 경우</th></tr></thead>
         <tbody>
@@ -912,7 +915,7 @@ page = _hw_ids(page)
 
 # ---- 녹음 파일 연결 (assets/audio/k02/*.mp3가 있으면) ----
 AUD = "../assets/audio/k02/"
-_AUD_DIR = "/home/user/CFER/web/assets/audio/k02/"
+_AUD_DIR = ROOT + "/web/assets/audio/k02/"
 def _attach_audio(h):
     def dlg(m):
         did, n = m.group(1), [0]

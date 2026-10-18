@@ -1,8 +1,9 @@
 # 1과 HTML 생성 (초보자용 재설계)
-import re, html
-OUT = "/home/user/CFER/web/A1/kapitel-01.html"
+import re, html, os
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT = ROOT + "/web/A1/kapitel-01.html"
 IMG = "../assets/img/k01/"
-SPRITE = open("/home/user/CFER/web/assets/icons/icons.svg", encoding="utf-8").read()
+SPRITE = open(ROOT + "/web/assets/icons/icons.svg", encoding="utf-8").read()
 keep_navy = {"i-123", "i-mediate", "i-abc"}
 def _rc(m):
     sym = m.group(0); sid = re.search(r'id="([^"]+)"', sym).group(1)
@@ -1318,7 +1319,7 @@ page = f'''<!DOCTYPE html>
 # ---- 녹음 파일 연결 (ElevenLabs eleven_v4로 만든 assets/audio/k01/*.mp3) ----
 import os as _os
 AUD = "../assets/audio/k01/"
-_AUD_DIR = "/home/user/CFER/web/assets/audio/k01/"
+_AUD_DIR = ROOT + "/web/assets/audio/k01/"
 def _attach_audio(h):
     def dlg(m):
         did, n = m.group(1), [0]

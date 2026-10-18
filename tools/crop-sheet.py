@@ -1,7 +1,9 @@
 # 여러 개를 한 장에 그린 시트(2:1)를 잘라 web/assets/img/kXX/ 에 webp로 저장 (SODA 삽화 스킬 규칙: 위쪽 88% 열 합계로 경계)
 import sys, numpy as np
 from PIL import Image
-OUT="/home/user/CFER/web/assets/img/k01/"
+import os
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT=ROOT + "/web/assets/img/k01/"
 def ink(a):  # 흰 배경이 아닌 픽셀
     return (a.min(axis=2) < 215)
 def split(path, names, height, pad=0.07):

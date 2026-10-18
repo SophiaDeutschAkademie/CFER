@@ -656,6 +656,20 @@ a.toc-ch .toc-go { background: var(--accent); color: var(--surface); padding: .3
 /* 2과: 표에서 새로 배우는 줄 강조 · 단어 카드 보조 설명 */
 tr.hl th, tr.hl td { background: color-mix(in srgb, var(--accent, #B87830) 10%, transparent); }
 .vocab small { display: block; color: var(--text-muted); font-size: .8rem; }
+/* 복수형 목록 – 세로 한 줄씩 */
+.plural-list { display: grid; grid-template-columns: 1fr; gap: .6rem; margin: 1rem 0 .75rem; max-width: 760px; }
+.plural-list > div { min-width: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .6rem 1rem; display: grid; grid-template-columns: minmax(0, 11.5rem) 1.6rem minmax(0, 9rem) 4.5rem minmax(0, 1fr); align-items: center; column-gap: .7rem; }
+.plural-list .sg { display: flex; align-items: center; gap: .3rem; min-width: 0; }
+.plural-list .sg > b, .plural-list b.pl { font-size: 1.05rem; white-space: nowrap; }
+.plural-list .sg .say-btn { margin-left: 0 !important; flex: 0 0 auto; }
+.plural-list .arrow { color: var(--text-muted); text-align: center; }
+.plural-list .end { font-size: .85rem; color: var(--text-muted); background: var(--bg); border: 1px solid var(--border); border-radius: 999px; padding: .1rem .5rem; text-align: center; white-space: nowrap; }
+.plural-list .ko { margin: 0; font-size: .95rem; }
+@media (max-width: 600px) {
+  .plural-list > div { grid-template-columns: minmax(0, 1fr) 1.4rem minmax(0, 1fr); row-gap: .25rem; padding: .55rem .8rem; }
+  .plural-list .end { grid-column: 1; justify-self: start; }
+  .plural-list .ko { grid-column: 2 / -1; }
+}
 .sum .table-wrap table { font-size: .88rem; }
 .sum .table-wrap td, .sum .table-wrap th { padding: .35rem .4rem; }
 @media (max-width: 420px) { .sum .table-wrap table { font-size: .8rem; } .sum .table-wrap td, .sum .table-wrap th { padding: .3rem .25rem; } }

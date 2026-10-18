@@ -1,9 +1,11 @@
 # 교재 HTML 생성 공용 함수 (1과 gen_k01.py에서 나눔)
 # 챕터 생성기에서: import kapitel_lib as K; K.IMG = "../assets/img/k02/"
 import re, html
+import os
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMG = "../assets/img/k01/"     # 챕터 그림 폴더 (챕터마다 바꿈)
 PIMG = "../assets/img/"         # 인물 그림은 k01/person-*, k02/person-* 등 어디서든
-SPRITE = open("/home/user/CFER/web/assets/icons/icons.svg", encoding="utf-8").read()
+SPRITE = open(ROOT + "/web/assets/icons/icons.svg", encoding="utf-8").read()
 keep_navy = {"i-123", "i-mediate", "i-abc"}
 def _rc(m):
     sym = m.group(0); sid = re.search(r'id="([^"]+)"', sym).group(1)
