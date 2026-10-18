@@ -475,6 +475,7 @@ footer { max-width: var(--maxw); margin: 4rem auto 2rem; padding: 0 16px; color:
 /* 명함·프로필 카드, 작성된 신청서 */
 .namecards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: .75rem; margin: .75rem 0; max-width: 980px; }
 .namecards figure { margin: 0; }
+.profile-cards { grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); max-width: 1100px; gap: 1rem; }
 img.card-img { display: block; width: 100%; height: auto; border-radius: var(--radius-sm); background: #fff; }
 .namecard { border: 1px solid var(--border); border-left: 4px solid var(--accent-2); border-radius: var(--radius-sm); background: var(--surface); padding: .8rem 1rem; display: grid; gap: .2rem; }
 .namecard small { color: var(--text-muted); font-size: .75rem; letter-spacing: .04em; }
