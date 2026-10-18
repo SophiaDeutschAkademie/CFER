@@ -122,7 +122,7 @@
 > 1. **Frau Wagner:** Mein Name ist Wagner. W – A – G – N – E – R.
 > 2. **Amira:** Ich heiße Haddad. H – A – D – D – A – D.
 > 3. **Junge Frau:** Mein Nachname ist Jeong. J – E – O – N – G.
-> 4. **Ältere Frau:** Schulze. S – C – H – U – L – Z – E. *(→ 민준의 이웃, 11과에서 다시 등장!)*
+> 4. **Ältere Frau:** Schulze. S – C – H – U – L – Z – E. *(→ 민준의 이웃, 8과에서 다시 등장!)*
 
 **Track 1-07** · 전화번호
 > **Frau Wagner:** So, ich habe hier eine Liste. Herr Park, ist Ihre Handynummer null – eins – sieben – sechs, dreizehn, null fünf, achtzehn, neun?

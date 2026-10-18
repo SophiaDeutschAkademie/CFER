@@ -2,16 +2,16 @@
 ### CEFR 기반 통합형 독일어 교재 (A1 → B2)
 
 한국인 학생 **박민준**이 독일 라이프치히(Leipzig)에 도착해 어학원 → 아르바이트 → 대학 입학 → 인턴십 → 졸업까지 겪는 일이
-**48개 챕터에 걸쳐 하나의 이야기**로 이어집니다.
+**44개 챕터에 걸쳐 하나의 이야기**로 이어집니다.
 문법 · 말하기 · 쓰기 · 읽기 · 듣기를 매 챕터 안에서 함께 다룹니다.
 
 | 폴더 / 파일 | 내용 |
 |---|---|
 | [`curriculum/00_교재_설계_개요.md`](curriculum/00_교재_설계_개요.md) | 교재 콘셉트, 등장인물, 전체 스토리 흐름, 챕터 구성 틀 |
-| [`curriculum/01_A1_챕터구성.md`](curriculum/01_A1_챕터구성.md) | A1 · 1–12과 핵심 학습 내용 |
-| [`curriculum/02_A2_챕터구성.md`](curriculum/02_A2_챕터구성.md) | A2 · 13–24과 핵심 학습 내용 |
-| [`curriculum/03_B1_챕터구성.md`](curriculum/03_B1_챕터구성.md) | B1 · 25–36과 핵심 학습 내용 |
-| [`curriculum/04_B2_챕터구성.md`](curriculum/04_B2_챕터구성.md) | B2 · 37–48과 핵심 학습 내용 |
+| [`curriculum/01_A1_챕터구성.md`](curriculum/01_A1_챕터구성.md) | A1 · 1–8과 핵심 학습 내용 (2개월) |
+| [`curriculum/02_A2_챕터구성.md`](curriculum/02_A2_챕터구성.md) | A2 · 9–20과 핵심 학습 내용 (약 4.4개월) |
+| [`curriculum/03_B1_챕터구성.md`](curriculum/03_B1_챕터구성.md) | B1 · 21–32과 핵심 학습 내용 (약 5.5개월) |
+| [`curriculum/04_B2_챕터구성.md`](curriculum/04_B2_챕터구성.md) | B2 · 33–44과 핵심 학습 내용 (약 6.7개월) |
 | [`A1/Kapitel_01_Hallo_ich_bin_Minjun.md`](A1/Kapitel_01_Hallo_ich_bin_Minjun.md) | **1과 시범 원고 (학생용)** |
 | [`A1/Kapitel_01_Loesungen_Lehrerhandbuch.md`](A1/Kapitel_01_Loesungen_Lehrerhandbuch.md) | 1과 정답 · 수업 운영안 · 첨삭 가이드 (교사용) |
 

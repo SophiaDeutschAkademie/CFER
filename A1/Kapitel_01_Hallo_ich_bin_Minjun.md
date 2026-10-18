@@ -98,7 +98,7 @@
 |---|---|
 | Moin! | 안녕! (북독일, 특히 함부르크식 인사 – 하루 종일 사용) |
 | Freut mich! | 반가워! |
-| Ich möchte … studieren. | …에서 공부하고 싶어. *(4과에서 자세히. 지금은 통째로!)* |
+| Ich möchte … studieren. | …에서 공부하고 싶어. *(3과에서 자세히. 지금은 통째로!)* |
 | später | 나중에 |
 
 **B1** 표를 완성하세요.
@@ -138,7 +138,7 @@
 > ⚠️ **주의할 동사**
 > - **heißen**: du hei**ßt** (✗ heißst) – 어간이 ß로 끝나서 s를 또 붙이지 않아요.
 > - **arbeiten** (일하다): du arbeit**e**st, er arbeit**e**t – 어간이 -t로 끝나면 e를 넣어요.
-> - **sprechen** (말하다): du spr**i**chst, er spr**i**cht – e가 i로 바뀌어요. *(4과에서 더!)*
+> - **sprechen** (말하다): du spr**i**chst, er spr**i**cht – e가 i로 바뀌어요. *(3과에서 더!)*
 
 **③ 연습 G1** — 알맞은 형태를 쓰세요. *(1–4번 수업 중, 5–8번 숙제)*
 1. Ich ________ (wohnen) in Leipzig.
@@ -518,7 +518,7 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 **3. 라이프치히(Leipzig)는 어떤 도시?**
 - 독일 동부 **작센(Sachsen)주**에서 가장 큰 도시, 인구 약 60만 명
 - 1409년에 세워진 **라이프치히 대학**은 독일에서 가장 오래된 대학 중 하나
-- 음악가 **바흐**가 일했던 도시, 1989년 **평화 혁명**의 중심지 *(→ 31과에서 Frau Schulze가 들려줄 이야기!)*
+- 음악가 **바흐**가 일했던 도시, 1989년 **평화 혁명**의 중심지 *(→ 27과에서 Frau Schulze가 들려줄 이야기!)*
 - 민준이 도착한 **중앙역(Hauptbahnhof)**은 면적으로 유럽에서 가장 큰 기차역 중 하나
 
 ---
@@ -579,7 +579,7 @@ Frau Wagner가 교실 벽에 반 친구들의 **Steckbrief**(프로필)를 붙�
 
 *(nett = 친절한 · lustig = 재미있는 · sagt = 말한다 · klein = 작은 · da ist kein Tisch = 책상이 없다 · zeigt mir … die Wohnung = 나에게 집을 보여 준다)*
 
-➡️ **다음 과 예고 · Kapitel 2: Willkommen in der WG!**
+➡️ **다음 과 예고 · Kapitel 2: Meine WG, meine Familie**
 민준의 방에는 무엇이 있고, 무엇이 없을까요? Jonas가 보여 줄 WG는 어떤 모습일까요?
 
 ---
